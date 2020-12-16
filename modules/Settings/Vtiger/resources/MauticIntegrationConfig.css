@@ -1,0 +1,146 @@
+.editViewContents td {
+    padding: 15px;
+}
+
+.editViewContents .fieldLabel {
+    word-break: unset;
+    width: 30%;
+}
+
+details summary {
+    font-size: 24px;
+}
+
+table.configDetails {
+    font-size: 13px;
+}
+
+.editViewContents .fieldValue {
+    min-width: 230px;
+}
+
+.inline {
+    white-space: nowrap;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 15px;        
+    border: none;
+    margin-right: 3px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    border-bottom: 3px solid #555;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    border-bottom: 3px solid #555;
+    cursor: auto;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 10px;
+    padding-bottom: 100px;    
+    background: #fff;
+}
+
+.dataTables_info, .dataTables_paginate.paging_simple_numbers{
+    font-size: 12px;
+}
+
+.paginate_button {
+    padding: 2px !important;
+    border: none !important;
+    background: none !important;
+}
+
+.headerblock{
+    background: #f5f5f5;
+    padding: 5px;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+}
+
+.block-module{
+    width: calc(100% - 30px);
+}
+
+.block-checkbox{
+    padding-top: 3px;
+    padding-bottom: 7px;
+    width: 29px;
+}
+
+.headerblock .indicator{
+    margin-right: 5px;
+    color: #a19c9c;
+}
+
+#mapping-field-settings .fieldLabel, #mapping-stage-settings .fieldLabel, #mapping-stage-segment-settings .fieldLabel{
+    border-bottom: solid 1px #ddd;
+    padding: 5px;
+    min-height: 41px;
+}
+
+#mapping-field-settings .fieldLabel.no-border, #mapping-stage-settings .fieldLabel.no-border , #mapping-stage-segment-settings .fieldLabel.no-border{
+    border: none !important;
+}
+
+#mapping-field-settings .form-group, #mapping-stage-settings .form-group, #mapping-stage-segment-settings .form-group{
+    margin-top: 15px;
+    clear: both;
+}
+
+#mapping-field-settings .close-group, #mapping-stage-segment-settings .close-group{
+    float: right;
+    padding: 1px;
+    font-size: 10px;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+.form-group-header, .form-group-footer{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    clear: both;
+}
+
+#mapping-field-settings .fieldLabel, #mapping-stage-settings .fieldLabel, #mapping-stage-segment-settings .fieldLabel{
+    width: 49.5%;
+}
+
+#mapping-field-settings .fieldLabel span, #mapping-stage-settings .fieldLabel span, #mapping-stage-segment-settings .fieldLabel span{
+    display: block;
+    padding-top: 5px;
+}
+
+.mapping-header{
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+}
+
+.checkButton {
+    padding: 7px 25px;
+    margin-right: 10px;
+}

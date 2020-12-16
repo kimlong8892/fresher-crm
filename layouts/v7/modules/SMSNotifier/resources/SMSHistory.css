@@ -1,0 +1,57 @@
+#SMSTableDetail_wrapper table.dataTable thead th,
+#SMSTableDetail_wrapper table.dataTable thead td {
+    border-bottom: none;
+}
+
+#SMSTableDetail_wrapper table.dataTable {
+    border-collapse: collapse
+}
+
+#SMSTableDetail_filter input {
+    border: 1px solid #dedede
+}
+
+select[name=SMSTableDetail_length] {
+    background: none;
+    border: 1px solid #dedede;
+    padding: 1px 8px;
+    height: 28px;
+    color: #666;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    line-height: 1.8;
+    font-size: 12px;
+    padding: 6px 14px;
+}
+
+#SMSTableDetail_wrapper .row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+
+#SMSTableDetail_wrapper table.dataTable thead th, #SMSTableDetail_wrapper table.dataTable thead td {
+    font-size: 14px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: not-allowed;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: white !important;
+    background: linear-gradient(to bottom,#35aa47 0,#35aa47 100%)
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0px 8px;
+}
+
+#SMSTableDetail_wrapper table.dataTable {
+    margin-bottom: 6px;
+}

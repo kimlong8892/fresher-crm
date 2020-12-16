@@ -1,0 +1,1 @@
+UPDATE vtiger_field SET uitype='71', typeofdata='N~O' WHERE columnname = 'targetbudget' AND tablename = 'vtiger_project';

@@ -1,0 +1,34 @@
+<?php
+/***********************************************************************************************
+** The contents of this file are subject to the Vtiger Module-Builder License Version 1.3
+ * ( "License" ); You may not use this file except in compliance with the License
+ * The Original Code is:  Technokrafts Labs Pvt Ltd
+ * The Initial Developer of the Original Code is Technokrafts Labs Pvt Ltd.
+ * Portions created by Technokrafts Labs Pvt Ltd are Copyright ( C ) Technokrafts Labs Pvt Ltd.
+ * All Rights Reserved.
+**
+*************************************************************************************************/
+
+$languageStrings = Array(
+	'CPComboProducts' => 'Gói sản phẩm',
+	'SINGLE_CPComboProducts' => 'Gói sản phẩm',
+	'ModuleName ID' => 'Gói sản phẩm ID',
+	
+	'LBL_ADD_RECORD' => 'Thêm Gói sản phẩm',
+	'LBL_RECORDS_LIST' => 'Danh sách Gói sản phẩm',
+
+    'LBL_GENERAL_INFORMATION' => 'Thông tin chung',
+	'LBL_TRACKING_INFOMATION' => 'Thông tin mô tả',
+
+    'LBL_NAME' => 'Tên',
+    'LBL_DESCRIPTION' => 'Mô tả',
+    'LBL_MODIFIED_TIME' => 'Ngày sửa',
+    'LBL_ASSIGNED_TO' => 'Giao cho',
+    'LBL_CREATED_TIME' => 'Ngày tạo',
+    'LBL_SOURCE_INPUT' => 'Nguồn input',
+    'LBL_STARRED' => 'Theo dõi',
+    'LBL_TAGS' => 'Tags',
+
+);
+	
+?>

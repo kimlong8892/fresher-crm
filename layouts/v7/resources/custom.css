@@ -1,0 +1,1607 @@
+/*ADDED BY PHU VO ON 2018.07.07*/
+/*PURPOSE: Fix Vtiger default theme style issues*/
+
+/*FIX STYLE FOR VTIGER COMPONENTS*/
+/*Quick fix for vtiger footer over hide container*/
+.main-container {
+    padding-bottom: 25px;
+    bottom: unset;
+}
+/* End  Quick fix for vtiger footer over hide container */
+
+/* Quick fix edit overlay footer z index */
+.overlayFooter {
+    z-index: 1;
+}
+/*End fix edit overlay footer z index*/
+
+/* Revert html overflow to default behavior*/
+html {
+    overflow: unset !important;
+}
+/* End Revert html overflow to default behavior */
+
+/* Fix Detail view subpanel too small width */
+.related-tab-more-element .dropdown-menu {
+    width: auto;
+    max-width: 300px;
+}
+
+.related-tabs .dropdown-menu > .mCustomScrollBox > .mCSB_container > li > a 
+ .tab-icon {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.related-tabs .dropdown-menu > .mCustomScrollBox > .mCSB_container > li > a .numberCircle {
+    margin-left: 4px;
+}
+
+.related-tabs .dropdown-menu > .mCustomScrollBox > .mCSB_container > li > a .tab-icon .content {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* End Detail view subpanel too small width */
+
+/* Fix css field name active cause fiellabel and fieldvalue turn to grey background */
+.fieldLabel.active, 
+.fieldValue.active {
+    background-color: transparent !important;
+}
+/* End fix css field name active cause fiellabel and fieldvalue turn to grey background */
+
+[role="menu"] i.fa, /*Fix Menu dropdown font awesome icon issue*/
+.more-tab i,
+.ct-list-item .icon { /*Class for hot fix*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+.more-tab i ~ span, /* Fix navbar show more title*/ 
+.ct-list-item .title{ /*Class for hot fix*/
+    vertical-align: middle;
+}
+
+#messageBar { /*Set Loading background to black transparent .5*/
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#messageBar div { /*Change loading gif to responsive*/
+    top: 25% !important;
+    left: 50% !important;
+    width: 80px;
+    margin-left: -40px;
+}
+
+#messageBar img {
+    width: 100%;
+    height: auto;
+}
+
+/*Component: boostrap switch to 100px*/
+.layoutBlockHeader .bootstrap-switch {
+    width: 100px !important;
+}
+
+.layoutBlockHeader .bootstrap-switch .bootstrap-switch-container {
+    width: 150px !important;
+}
+
+.layoutBlockHeader .bootstrap-switch .bootstrap-switch-container > * {
+    width: 50px !important;
+}
+
+/*Handle switch*/
+.layoutBlockHeader .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-container {
+    margin-left: 0px !important;
+}
+
+.layoutBlockHeader .bootstrap-switch.bootstrap-switch-off .bootstrap-switch-container {
+    margin-left: -50px !important;
+}
+/*End boostrap switch*/
+
+/* Fix Dashboard container conflict style with other ul element */
+.dashBoardContainer .tab-pane .dashBoardTabContents ul {
+    position: unset;
+    height: unset;
+    width: unset;
+}
+
+.dashBoardContainer .tab-pane .dashBoardTabContents ul.dashboard-widgets {
+    position: relative;
+    height: 960px;
+    width: 1260px;
+}
+
+.dashBoardContainer .dashBoardTabContents ul li {
+    border: unset;
+    position: unset;
+}
+
+.dashBoardContainer .dashBoardTabContents ul.dashboard-widgets > li {
+    border: 3px solid #E2E2E4;
+    list-style: none;
+    padding: 15px;
+    position: absolute;
+}
+/* End Fix Dashboard container conflict style with other ul element */
+
+/*END FIX STYLE FOR VTIGER COMPONENTS*/
+
+/*LIGHT FIX TODC BOOSTRAP*/
+/*WARNING: ONLY LIGHT FIX, NOT EFFECT ON LAYOUT STYLE :)*/
+.modal-backdrop { /*Revert to Boostrap modal backdrop background color*/
+    background-color: #000;
+}
+
+#messageBar { /* Progressing*/
+    z-index: 1000000000;
+}
+
+.modal.bootbox-confirm {
+    z-index: 1000000001;
+}
+
+.datepicker {
+  z-index: 1000000000 !important;
+}
+
+/*.disabled {
+    cursor: not-allowed;
+    background-color: #f1f1f1;
+}*/
+/*END LIGHT FIX TODC BOOSTRAP*/
+
+/*LIGNT FIX PEFECT SCROLL*/
+.ps-container.ps-active-x {
+    padding-bottom: 8px !important;
+}
+/*END LIGNT FIX PEFECT SCROLL*/
+
+/*END PHU VO*/
+
+/* FANCY SCROLL BAR */
+
+.fancyScrollbar::-webkit-scrollbar {
+    height:6px !important; 
+    width:6px !important;
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece{
+    background:rgba(214, 218, 220, .6) !important;
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece:vertical:start {
+    border-radius:5px 5px 0 0 !important
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece:vertical:end {
+    border-radius:0 0 5px 5px !important
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece:horizontal:start {
+    border-radius:5px 0 0 5px !important
+}
+
+.fancyScrollbar::-webkit-scrollbar-track-piece:horizontal:end {
+    border-radius:0 5px 5px 0 !important
+}
+
+.fancyScrollbar::-webkit-scrollbar-thumb:horizontal, 
+.fancyScrollbar::-webkit-scrollbar-thumb:vertical {
+    background:#bfbfbf !important; 
+    border-radius:5px !important; 
+    display:block; 
+    height:50px !important;
+}
+
+.fancyScrollbar::-webkit-scrollbar-button:end:increment, 
+.fancyScrollbar::-webkit-scrollbar-button:start:decrement {
+    background:0 0 !important; 
+    display:none !important;
+}
+
+/* Added by Phu Vo on 2019.04.05 */
+/* FORM CONTROL SUPPORT */
+.alignTop {
+  vertical-align: top;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+/* End Phu Vo */
+
+/*Light fix related panel layout*/
+
+.related-tabs .tab-icon {
+    max-width: 100%;
+}
+
+/*END PHU VO*/
+
+/* ADDED BY PHU VO ON 2019.04.05 CUSTOM STYLE FOR RELATED LIST MODAL POPUP */
+.relatedListModal .content-wraper {
+    padding-bottom: 15px;
+}
+
+.relatedListModal .relatedContents {
+    padding: 0px;
+    float: none;
+    overflow: auto;
+}
+
+.relatedListModal .btn-toolbar.row .btn-toolbar {
+    visibility: hidden;
+}
+
+
+.relatedListModal .related-list-actions * {
+    display: none;
+}
+
+.relatedListModal .relatedContents .mCSB_container_wrapper .mCSB_container {
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.relatedListModal .relatedContainer {
+    padding: 15px;
+}
+
+.relatedListModal .listViewEntries .relatedListEntryValues .value {
+    width: 100% !important;
+}
+
+a.stand-owner-plus {
+    display: inline-block;
+}
+
+/* END CUSTOM STYLE FOR RELATED LIST MODAL POPUP */
+
+/* CUSTOM VTIGER NOTIFICATION [Added by Phu Vo on 2019.04.19]*/
+
+.vt-notification {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .22);
+    border: 1px solid #2faed2;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    background-color: white;
+}
+
+.vt-notification .notificationHeader {
+  min-width: 64px !important;
+  height: 64px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.vt-notification .notificationHeader span[data-notify="icon"] {
+    line-height: 1;
+    color: #2faed2;
+    font-size: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.vt-notification .notificationBody {
+    width: 100%;
+    padding: 9px;
+    padding-top: 9px;
+    padding-left: 0px;
+}
+
+
+.vt-notification .notificationBody [data-notify="title"] {
+    color: #333;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.vt-notification .notificationBody [data-notify="message"] {
+    color: #666;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.vt-notification .notificationBody button.close {
+    padding: 2px 6px;
+    position: absolute;
+    top: 0px !important;
+    right: 0px !important;
+    font-size: 22px;
+}
+
+/* STYLE NOTIFICATION BY TYPE */
+
+.vt-notification.success-notify {
+    border: 1px solid #13a76f;
+}
+
+.vt-notification.success-notify .notificationHeader span[data-notify="icon"] {
+    color: #13a76f;
+}
+
+.vt-notification.error-notify {
+    border: 1px solid #e44554;
+}
+
+.vt-notification.error-notify .notificationHeader span[data-notify="icon"] {
+    color: #e44554;
+}
+
+.vt-notification.alert-notify {
+    border-color: #f1b23e;
+}
+
+.vt-notification.alert-notify .notificationHeader span[data-notify="icon"] {
+    color: #f1b23e;
+}
+
+/* END CUSTOM VTIGER NOTIFICATION [Added by Phu Vo on 2019.04.19]*/
+
+/* ADDED BY PHU VO ON 2019.04.24 TO REFACTOR USER INFO MENU LAYOUT */
+
+.profile-info {
+    display: flex;
+}
+
+.profile-info > * {
+    padding: 0px 15px;
+}
+
+.profile-img-wraper {
+    width: 100px;
+    padding: 0px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+}
+
+.profile-img-wraper i.vicon-vtigeruser {
+    background-color: #ef5e29;
+    padding: 6px;
+}
+
+.profile-info-wraper {
+    flex: 1;
+}
+/* END PHU VO [REFACTOR USER INFO MENU LAYOUT] */
+
+/* Added by Hieu Nguyen on 2019-05-24 */
+.input-group.editElement .input-save-wrap {
+    z-index: 1000;
+}
+/* End Hieu Nguyen */
+
+/* Added by Phu Vo on 2019.05.24 to fix select2 dropdown tooltip */
+.summaryViewEntries .select2-container.select2-container-multi.select2, 
+.summaryViewEntries .editViewPageDiv .select2-container.select2-container-multi.select2 {
+    max-height: max-content;
+}
+/* End Phu Vo */
+
+/* Added by Phu Vo on 2019.05.28 to allow assigned user id wrap line at summary view */
+.summaryView .fieldLabel.assigned_user_id {
+    vertical-align: top;
+}
+
+.summaryViewEntries .fieldValue.assigned_user_id .value {
+    white-space: normal;
+}
+/* End Phu Vo */ 
+
+/* Added by Phu Vo on 2019.05.30 to fix owner width at summary view */
+.summaryViewEntries #owner-quickedit-container {
+    width: 30vw;
+    z-index: 1;
+    display: flex;
+}
+
+.summaryViewEntries .fieldValue.assigned_user_id .edit.ajaxEdited {
+    display: flex;
+}
+/* End Phu Vo */
+
+/* Added by Phu Vo on 2019.06.13 to modify select2 */
+ul.select2-choices.ui-sortable {
+    list-style-type: none !important;
+}
+
+li.select2-search-field.ui-sortable-handle {
+    display: list-item !important;
+}
+
+.summaryViewEntries ul.select2-choices.ui-sortable {
+    padding-right: 3px;
+}
+/* End modify select2 */
+
+/* Added by Phu Vo on 2019.09.25 to fix related field with at convert lead popup */
+#convertLeadContainer .inputElement[data-fieldtype="reference"] {
+    width: 100%
+}
+
+#convertLeadContainer .referencefield-wrapper .input-group {
+    min-width: 220px;
+}
+/* End fix related field with at convert lead popup */ 
+
+/* Added by Phu Vo on 2019.05.28 to style custom owner */
+
+.btn {
+    font-weight: 400;
+    background-color: rgb(221,221,221);
+}
+
+.owners .stand-owner-plus-icon {
+    font-size: 12px;
+    color: #606060;
+}
+
+.owners-container .owners-detail_title {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #333;
+}
+
+.owners-container  .owners-detail_owners {
+    margin-bottom: 2px;
+    padding-left: 2em;
+    color: #444;
+}
+
+.owners-container .owners-detail_owner {
+    margin-bottom: 2px;
+}
+
+/* Process main owner at first child */
+.select2-container-multi .select2-choices .select2-search-choice {
+    padding: 4px 5px 3px 18px;
+}
+
+.fieldValue .select2-choices > .select2-search-choice[data-type="Users"].primary {
+    background: #4D7BAE;
+    border: #4D7BAE;
+    color: white;
+}
+
+.fieldValue .select2-choices > .select2-search-choice[data-type="Users"].primary > a {
+    color: white;
+    background: transparent;
+    font: normal normal normal 11px/1 FontAwesome;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldValue .select2-choices > .select2-search-choice[data-type="Users"].primary > a:before {
+    content: '\f00d';
+}
+
+/* Fix assigned to owner validate message fly away */
+.overlayPageContent.fade.in {
+    float: none;
+    display: flex !important;
+    flex-direction: column;
+}
+
+.overlayPageContent .data {
+    flex: 1;
+    height: 100%;
+}
+
+.overlayPageContent .data .overlayEdit {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlayPageContent .data .overlayEdit form#EditView {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 82%; /* Applied by Phuc on 2019.10.25 to show scroll for overlayedit*/
+}
+
+.overlayPageContent .data .overlayEdit #EditView .editViewBody {
+    margin: 0px;
+    height: auto;
+}
+
+.overlayPageContent .data .editViewBody .editViewContents {
+    max-height: unset !important;
+    padding: 0px;
+}
+
+.overlayPageContent .data .select2-offscreen, .select2-offscreen:focus {
+    display: none;
+}
+/* End assigned to owner validate message fly away */
+
+/* Dashboard home widget style*/
+.dashboard-widgets .user-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 30px;
+}
+
+.dashboard-widgets .user-list_optional {
+    height: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.dashboard-widgets .user-list_optional > label {
+    margin: 0px;
+    margin-right: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dashboard-widgets .user-list_input {
+    flex: 1;
+    max-width: 252px;
+}
+/* End Dashboard home widget style */
+
+/* Style select2 user list for edit view */
+.user-list .select2-container {
+    width: 100%;
+}
+/* End style select2 for edit view*/
+
+/* Fix select2 width list view search */
+/* .select2_search_div .select2-container.assigned_user_id ul.select2-choices {
+    min-width: 194px;
+} */
+/* End fix select2 width list view search*/ 
+
+/* Process owner type icon for custom owner field select options */
+.select2-container-multi .select2-choices li.select2-search-choice[data-type="Users"] > div > div:before,
+.select2-container-multi .select2-choices li.select2-search-choice[data-type="Groups"] > div > div:before
+ {
+    display: inline;
+    font-family: 'FontAwesome';
+    margin-right: 4px;
+}
+
+.select2-container-multi .select2-choices li.select2-search-choice[data-type="Users"] > div > div:before {
+    content: '\f007';
+}
+
+.select2-container-multi .select2-choices li.select2-search-choice[data-type="Groups"] > div > div:before {
+    content: '\f0c0';
+} 
+/* Process owner type icon for custom owner field select options */
+
+/* Fix select2 input report list view blur issue */
+.searchRow input.select2-input {
+    width: 100% !important;
+}
+
+.searchRow .select2-container.inputElement {
+    height: auto;
+}
+/* End Fix select2 input report list view blur issue */
+
+/* Fix issue select2 fixed width lead to content hidden */
+.relatedContents .listSearchContributor {
+    width: 100%;
+    min-width: 130px;
+}
+/* End Fix issue select2 fixed width lead to content hidden */
+
+/* Custom Popover style*/
+
+.custom-popover-content {
+    display: none;
+}
+
+.custom-popover-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+    background-color: #2e9fbf;
+    width: 100%;
+    border: none;
+}
+
+.custom-popover-header .popover-title {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+.custom-popover-header .popover-close {
+    font-size: 16px;
+    padding: 4px;
+    margin-right: 4px;
+}
+
+.custom-popover-container {
+    border: 1px solid #7AC1D6;
+    max-width: 280px;
+}
+
+.custom-popover-body.sm {
+    width: 280px;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.popover.top.custom-popover-container .arrow,
+.popover.top.custom-popover-container .arrow:after {
+    border-top-color: #2e9fbf;
+}
+
+.popover.right.custom-popover-container .arrow,
+.popover.right.custom-popover-container .arrow:after {
+    border-right-color: #2e9fbf;
+}
+
+.popover.bottom.custom-popover-container .arrow,
+.popover.bottom.custom-popover-container .arrow:after {
+    border-bottom-color: #2e9fbf;
+}
+
+.popover.left.custom-popover-container .arrow,
+.popover.left.custom-popover-container .arrow:after {
+    border-left-color: #2e9fbf;
+}
+
+/* Fix Position */
+.custom-popover-container.left.sm {
+    margin-top: 46px;
+}
+
+.custom-popover-container.left.sm .arrow {
+    margin-top: -56px;
+}
+/*End Fix Position*/
+
+/* Custom Owner Field Select Users style */
+
+
+.select-users-wraper {
+    display: flex;
+    width: 100% !important;
+}
+
+.select-users-wraper .select2-container {
+    flex: 1;
+}
+
+.select-users-wraper .clearUsers {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    cursor: pointer !important;
+    color: #555;
+    background: #eee;
+    border-left: 0px;
+}
+/* End Custom Owner Field Select Users style */ 
+
+/* [Core] Added by Phu Vo on 2019.08.28 to style clear list view filter button and display clearer current filter message*/
+.listview-table .table-actions.flex-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.listview-table .table-actions.flex-actions .clearFilters {
+    font-size: 18px;
+    display: inline-flex;
+    width: 34px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid #999;
+}
+
+.current-filter-message {
+    text-align: center;
+    font-size: 14px;
+}
+
+#selectAllMsgDiv,
+#deSelectAllMsgDiv {
+    font-size: 14px;
+    color: #15c;
+}
+
+.listview-table .table-actions input.listViewEntriesCheckBox:disabled,
+.listview-table .table-actions input.listViewEntriesMainCheckBox:disabled {
+    border: 1px solid #bbb;
+    background-color: #eee;
+}
+
+div#listview-actions > div.row {
+    height: 50px;
+}
+/* End style list view select all record message */
+
+/* [Core] Added by Phu Vo on 2019.08.28 to process image field style */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageDelete {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+
+.image-delete-wraper {
+    min-width: 50px;
+    text-align: right;
+}
+
+td.fieldValue.imagename {
+    width: 90%;
+}
+
+.swipe-image-holder-sm,
+.swipe-image-holder-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ddd;
+    margin-right: 6px;
+    padding: 6px;
+}
+
+.swipe-image-holder-sm {
+    width: 100px;
+    height: 100px;
+}
+
+.swipe-image-holder-sm:empty {
+    border: none;
+}
+
+.swipe-image-holder-lg {
+    width: 320px;
+    height: 200px;
+}
+
+.swipe-image-holder-lg:empty {
+    border: none;
+}
+
+.swipe-image-holder-sm .image-label,
+.swipe-image-holder-lg .image-label {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swipe-image-holder-sm .image-label > span,
+.swipe-image-holder-lg .image-label > span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Custom animation added by Phu Vo */
+
+.animate-bg-zoomout {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: background-size linear .1s;
+    animation-name: backgroundZoomOut;
+    animation-duration: .4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+
+}
+
+.animate-bg-zoomout:hover {
+    animation-name: backgroundZoomIn;
+}
+
+@keyframes backgroundZoomIn {
+    0% {
+        background-size: auto 90%;
+    }
+    
+    90% {
+        opacity: .8;
+    }
+    
+    100% {
+        background-size: auto 120%;
+    }
+}
+
+@keyframes backgroundZoomOut {
+    from {
+        background-size: auto 120%;
+    }
+    to {
+        background-size: auto 90%;
+    }
+}
+/* End process image field style */
+
+/* For sidebar */
+.app-item-color-DEBITS {
+    border-left: 4px solid brown !important;
+}
+
+/* For menu editor */
+.app-DEBITS {
+    background: brown !important;
+}
+
+/* Widget Table. Added by Hieu Nguyen on 2019-09-25 */
+.widgetTable {
+    width: 100%;
+}
+
+.widgetTable td {
+    padding: 5px;
+}
+/* End Widget Table */
+
+/*BEGIN: Comment out by Kelvin Thang on 2019-04-11 change to apply font Arial, Helvetica */
+/* Added by Phu Vo on 2019.08.28 to apply font Source Sans Pro & Roboto */
+/*html, body,
+strong, b, th,
+.module-action-bar .module-title {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.dashboardTitle b,
+th, .app-menu .app-name,
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Roboto', 'ProximaNova-Semibold', sans-serif;
+}
+
+body {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+strong, b, th {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    font-weight: 500;
+}
+
+h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: 400;
+}
+
+.module-action-bar .module-title {
+    line-height: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice,
+.listview-table tr.searchRow th.inline-search-btn button {
+    font-size: 12px;
+}
+
+.dashboardTab strong {
+    font-size: 1.2em;
+}
+
+.dashboardTitle b {
+    font-size: 1.1em;
+}
+
+.activitytypes .activitytype-indicator,
+.listViewContentHeaderValues {
+    font-size: 13px;
+}
+
+.btn,
+.lists-menu-container .lists-header,
+.dropdown-menu,
+.lists-menu > li > a,
+.settingsgroup ul.list-group,
+.listview-pagenum {
+    font-size: 14px;
+}
+
+h5, .h5,
+.app-name,
+.app-menu .app-modules-dropdown a,
+.current-filter-message,
+.settingsgroup-accordion {
+    font-size: 15px;
+}
+
+.current-filter-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+}
+
+.current-filter-name a {
+    line-height: 1.5em;
+    font-size: 13px;
+    max-width: 220px;
+}
+
+.app-switcher-container .app-icon {
+    font-size: 25px;
+}
+
+.app-menu .app-modules-dropdown li a .module-name {
+    font-family: 'Roboto', 'ProximaNova-Semibold', sans-serif;
+    padding-left: 8px;
+}
+
+.app-menu .app-modules-dropdown li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}*/
+/*End Phu Vo*/
+/*END: Comment out by Kelvin Thang on 2019-04-11 change to apply font Arial, Helvetica */
+
+/*--BEGIN: Added By Kelvin Thang on 2019-04-11 to apply font Arial, Helvetica */
+/*----- FONT-FAMILY -----*/
+body, .jqplot-target {
+    font-family: Arial, Helvetica,'Source Sans Pro', sans-serif !important;
+}
+
+.module-action-bar .module-title {
+    font-family: Arial, Helvetica,'Source Sans Pro', sans-serif;
+}
+
+.dashboardTitle b,
+th, .app-menu .app-name,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Arial, Helvetica,'Source Sans Pro', sans-serif;
+}
+
+/*----- FONT-SIZE -----*/
+body {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+strong, b, th {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+h1, .h1, h2, .h2, h3, .h3,
+h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: 500;
+}
+
+.module-action-bar .module-title {
+    line-height: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice,
+.listview-table tr.searchRow th.inline-search-btn button,
+.settingsPageDiv .layoutTabs {
+    font-size: 12px;
+}
+
+.dashboardTab strong {
+    font-size: 1.2em;
+}
+
+.dashboardTitle b {
+    font-size: 1.1em;
+}
+
+.activitytypes .activitytype-indicator,
+.listViewContentHeaderValues,
+.btn-default {
+    font-size: 13px;
+}
+
+.btn,
+.lists-menu-container .lists-header,
+.dropdown-menu,
+.lists-menu > li > a,
+.settingsgroup ul.list-group,
+.listview-pagenum,
+.settingsgroup-accordion{
+    font-size: 14px;
+}
+
+h5, .h5,
+.app-name,
+.app-menu .app-modules-dropdown a,
+.current-filter-message {
+    font-size: 15px;
+}
+
+.current-filter-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+}
+
+.current-filter-name a {
+    line-height: 1.5em;
+    font-size: 13px;
+    max-width: 220px;
+}
+
+.app-switcher-container .app-icon {
+    font-size: 25px;
+}
+
+.modules-menu ul li a > span{
+    padding: 4px 0 0 0;
+}
+
+.muted, .fieldLabel {
+    color: #000000 !important;
+}
+
+#relatedActivities h4.display-inline-block.pull-left{
+    padding-bottom: 10px;
+}
+/*--END: Added By Kelvin Thang on 2019-04-11 to apply font Arial, Helvetica */
+
+/*--BEGIN: Added By Kelvin Thang on 2019-04-11 to apply Navigation --*/
+.navigation-progress-bar-wrapper {
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 15px auto 85px auto;
+}
+
+.navigation-progress-bar-wrapper ul.progress-bar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+    background-color: #FFF;
+}
+
+.navigation-progress-bar-wrapper li.section {
+    display: inline-block;
+    padding-top: 45px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #5a5a5a;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navigation-progress-bar-wrapper li.section:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: calc(50% - 15px);
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 17px;
+    line-height: 30px;
+    background: gray;
+}
+.navigation-progress-bar-wrapper .status-bar {
+    height: 3px;
+    background: gray;
+    position: relative;
+    top: 21px;
+    margin: 0 auto;
+}
+.navigation-progress-bar-wrapper .current-status {
+    height: 3px;
+    width: 0;
+    border-radius: 1px;
+    background: mediumseagreen;
+}
+
+.navigation-progress-bar-wrapper li.section.visited:before {
+    content: '\2714';
+    /*animation: mediumseagreen .5s linear;*/
+    animation-fill-mode: forwards;
+    background: mediumseagreen;
+}
+
+/* Added by Phuc on 2020.03.18 to update style for Potential */
+.navigation-progress-bar-wrapper li.section.visited.closed-lost:before {
+    animation-fill-mode: forwards;
+    background: #ff4b4b;
+}
+
+.navigation-progress-bar-wrapper li.section.visited.closed-lost:last-child:before {
+    content: '\2718';
+}
+    
+.navigation-progress-bar-wrapper li.section.visited.closed-lost:before {
+    box-shadow: 0 0 0 2px #ff4b4b !important;
+}
+
+.navigation-progress-bar-wrapper li.section.visited:before {
+    box-shadow: 0 0 0 2px mediumseagreen;
+}
+/* Ended by Phuc */
+
+/*--END: Added By Kelvin Thang on 2019-04-11 to apply Navigation --*/
+
+/* Added by Phu Vo on 2019.09.26 to balancing quick create dropdown menu */
+#quickCreateModules .quickCreateModule,
+#quickCreateModules .quickCreateModuleSubmenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    flex-wrap: nowrap;
+}
+
+#quickCreateModules .quick-create-module {
+    line-height: 1.4em;
+    display: inline-flex;
+}
+
+#quickCreateModules [class^="vicon-"], 
+#quickCreateModules [class*=" vicon-"] {
+    height: 1em;
+    width: 1em;
+    display: inline-flex;
+}
+/* End balancing quick create dropdown menu */
+
+/* Added by Hieu Nguyen on 2019-10-02 to fix bug duplicate useless togglePromotion buttons at dashboard */
+.dashboardHeading .buttonGroups .btn-group:not(:first-child) {
+    display: none;
+}
+/* End Hieu Nguyen */
+
+/* Added by Phu Vo on 2019.10.25 to override related list view entities width */
+.listViewEntries .relatedListEntryValues .value {
+    width: initial;
+}
+/* End Phu Vo*/
+
+/* Added by Phu vo on 2019.10.25 to fix detail view extra tab entity height */
+.related-tabs .tab-icon {
+    height: 26px;
+}
+/* End Phu Vo */
+
+/* Added by Phu Vo on 2019.10.25 to fix list view header wrap*/
+.listViewContentHeaderValues {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.listViewContentHeaderValues .customsort {
+    margin-right: 2px;
+}
+/* End Phu Vo*/
+
+/* Added by Hieu Nguyen on 2019-10-28 to fix calendar view height issue */
+.CalendarViewPageDiv {
+    min-height: 600px !important;
+}
+
+.CalendarViewPageDiv .fc-time-grid-container {
+    height: 450px !important;
+}
+/* End Hieu Nguyen */
+
+/* Added by Phuc on 2019.10.28 to set min height for textarea in quick create */
+.quickCreateContent .massEditTable textarea {
+    min-height: 50px;
+}
+/* Ended by PhuC */
+
+/* Added by Phu Vo on 2019.10.31 to balancing input element verticle align */
+.fieldBlockContainer .inputElement {
+    vertical-align: middle;
+}
+/* End Phu Vo */
+
+/* Added by Phu Vo on 2019.11.06 to balancing app menu */
+.app-item {
+    padding: 3% !important;
+    padding-left: 2% !important;
+}
+
+.app-menu .app-icon-list,
+.app-menu .module-icon {
+    line-height: 22px;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-items-wrapper.app-menu-items-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.app-menu .fa-chevron-right {
+    padding: 6px;
+}
+
+.app-menu .app-name {
+    flex: 1;
+    max-width: 100% !important;
+    padding-left: 6px;
+}
+
+.app-menu .menu-items-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app-menu .app-modules-dropdown li a {
+    padding-left: 6px;
+}
+/* End Phu Vo */
+
+/* Added by Phu Vo on 2019.11.08 to fix listview table style issue */
+#table-content.table-container {
+    overflow: hidden;
+}
+
+.listViewPageDiv .floatThead-table {
+    border-left: none;
+}
+
+.listViewEntries .input-group, .referencefield-wrapper .input-group {
+    min-width: unset;
+}
+/* End Phu Vo */
+
+/* Added by PhuVo on 2019.11.12 to revert app min height */
+#page {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.main-container {
+    flex: 1;
+    width: 100%;
+}
+
+.main-container .content-area {
+    min-height: auto;
+}
+/* End Phu Vo */
+
+/* Added by Phuc on 2019.11.18 to display recurrence field */
+.no-float.inputElement {
+    float: none !important;
+    display: inline-table;
+}
+/* End by Phuc */
+
+/* Added by Hieu Nguyen to fix Google Address Autocomplete style inside modal */
+.pac-container {
+    z-index: 10000 !important;
+}
+/* End Hieu Nguyen */
+
+/* Added by Phu Vo on 2019.11.21 to reduce some form label font weight */
+.modal-content label {
+    font-weight: 500;
+}
+/* End Phu Vo */
+
+/* Added by Phu Vo on 2019.11.22 to balancing dashboard mini list row data */
+.miniListContent .minilist-content-wrapper {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* End Phu Vo */
+
+/* Added by Hieu Nguyen on 2019-11-27 to customize saved search list in sidebar */
+#module-filters .lists-menu .listViewFilter .user-avatar {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    /* float: left; */
+}
+/* End Hieu Nguyen */
+
+/* Added by Phu Vo on 2019.12.09 to set custom owner field selection max width */
+.select2-search-choice[data-type="Users"] > div > div,
+.select2-search-choice[data-type="Groups"] > div > div {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* End Phu Vo */
+
+/* [CallCenter] Added by Hieu Nguyen on 2019-12-20 to display a large call button */
+.value[data-field-type="phone"] .btnCall, .recordBasicInfo .phone.value .btnCall {
+    font-size: 120%;
+}
+/* End Hieu Nguyen */
+
+/* [DataTables] Added by Hieu Nguyen on 2019-12-24 */
+.dataTable thead th, .dataTable thead td {
+    border-bottom: 1px solid #dadada !important;
+}
+
+.dataTable.no-footer {
+    border-color: #dadada !important;
+}
+
+.dataTables_info {
+    font-style: italic;
+}
+
+.dataTables_paginate .paginate_button {
+    padding: 4px 10px !important;
+}
+/* End Hieu Nguyen */
+
+/* [Calendar] Added by Hieu Nguyen on 2020-01-06 */
+.activitytypes .activitytype-indicator {
+    margin: 5px 0px;
+}
+/* End Hieu Nguyen */
+
+/* [RelatedList] Added by Hieu Nguyen on 2020-01-16 */
+.relatedContents .relatedListEntryValues {
+    cursor: default !important;
+}
+/* End Hieu Nguyen */
+
+/* [SocialIntegration] Added by Hieu Nguyen on 2020-02-07 */
+.app-item-color-SOCIAL {
+    border-left: 4px solid #2a85ec !important;
+}
+
+.app-SOCIAL {
+    background: #2a85ec !important;
+}
+/* End Hieu Nguyen */
+
+/* [Core] Bug #322: Fix breadcrumb wrap line with small screen */
+.module-action-bar .module-breadcrumb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.module-action-bar .module-breadcrumb > a:first-child {
+    height: 42px;
+    display: flex;
+}
+
+.current-filter-name:last-child {
+    overflow: hidden;
+}
+
+.current-filter-name:last-child a {
+    max-width: max-content;
+}
+
+.module-action-content.clearfix {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.module-action-content.clearfix > .module-breadcrumb {
+    width: 100%;
+}
+
+.module-action-content.clearfix .pull-right #appnav .nav.navbar-nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.module-action-content.clearfix > .pull-right {
+    width: auto;
+}
+
+.module-action-content.clearfix > div:first-child {
+    width: 100%;
+}
+
+.module-action-content.clearfix .pull-right #appnav .nav.navbar-nav > li {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* The following code fix record subject line responsive and line break*/
+
+.detailview-header > .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.detailview-header > .row > * {
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    padding-top: 0px;
+}
+
+.detailview-header .detailViewButtoncontainer > .btn-toolbar {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.detailview-header .detailViewButtoncontainer > .btn-toolbar .btn-group {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.detailview-header .record-header .info-row span {
+    overflow: hidden;
+}
+
+.detailview-header > .row > div:first-child {
+    width: 100%;
+    overflow: hidden;
+}
+
+.module-action-content.clearfix > span:first-child {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* End Phu Vo */
+
+/* Bug #368: Added by Phu Vo to fix assigned user id field at Quick Create modal ui issue */
+#QuickCreate td.fieldValue.assigned_user_id {
+    max-width: 372px;
+}
+/* End Phu Vo */
+
+/* [Kanban] Added by Hieu Nguyen on 2020-03-10 to display kanban shortcut at module ListView */
+.listViewContentHeader .listColumnFilter {
+    float: left !important;
+    margin-left: 10px !important;
+}
+
+.listViewContentHeader .kanban-shortcut {
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+}
+/* End Hieu Nguyen */
+
+/* [Calendar] Fix quick create field user invitees fix height cause some content could not seen */
+.quickCreateContent .fieldValue.user_invitees .inputElement {
+    height: auto;
+}
+/* End Phu Vo */
+
+/* [Core] Bug #324: Added by Phu Vo to revert body position from Bootstrap Docs library */
+body {
+    position: static;
+}
+/* End Phu Vo */
+
+/* Added by Phuc on 2020.04.09 to apply css for custom report chart widgets */
+.dashBoardContainer .filterContainer .fieldValue .date-time-field{
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.dashBoardContainer .filterContainer .text-field{
+    padding: 0px;
+}
+
+.dashBoardContainer h6.widget-title{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 3px;
+}
+
+div.chart-area-3{
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+
+div[data-displayed-by = 'three_latest_years'] + label {
+    display: none;
+}
+
+div[data-displayed-by = 'three_latest_years'] + label + div{
+    display: none;
+}
+/* Ended by Phuc */
+
+/* Added by Phu Vo on 2020.06.08 */
+/* [Core] Handle how multipicklist field will display */
+
+[data-field-type="multipicklist"] .value {
+    display: inline;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+[data-field-type="multipicklist"] .picklist-color {
+    display: inline-block;
+    padding: 3px 6px 1px 6px !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 2px;
+    word-break: keep-all;
+}
+
+/* End by Phu Vo */

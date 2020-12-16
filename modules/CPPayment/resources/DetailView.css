@@ -1,0 +1,163 @@
+span.span-status {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.not-proposed-yet {
+    background: #03037a;
+    border: 1px solid #03037a;
+}
+
+.proposed {
+    background: #037a4f;
+    border: 1px solid #037a4f;
+}
+
+.not-approved-yet {
+    background: #03037a;
+    border: 1px solid #03037a;
+}
+
+.approved {
+    background: #037a4f;
+    border: 1px solid #037a4f;
+}
+
+.not_completed {
+    background: #03037a;
+    border: 1px solid #03037a;
+}
+
+.completed {
+    background: #037a4f;
+    border: 1px solid #037a4f;
+}
+
+.cancelled {
+    background: #a10326;
+    border: 1px solid #a10326;
+}
+
+.rejected {
+    background: #a10326;
+    border: 1px solid #a10326;
+}
+
+#tbl-invoices {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table#tbl-invoices td, table#tbl-invoices th {
+    border: 1px solid #aeaeae !important;
+    padding: 5px;
+}
+
+table#tbl-invoices th {
+    text-align: center;
+    background: whitesmoke;
+}
+
+.remove{
+    border-left: 1px silver solid !important;
+    border-right: 1px silver solid !important;
+    padding: 5px 8px;
+    font-size: 13px;
+    color: #555;
+    border: 1px solid #d9d9d9;
+    border-top-color: silver;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+table#tbl-invoices td.right {
+    text-align: right;
+}
+
+table#tbl-invoices td.center {
+    text-align: center;
+}
+
+/* For navigation bar */
+.navigation-progress-bar-wrapper {
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 15px auto 85px auto;
+}
+
+.navigation-progress-bar-wrapper ul.progress-bar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+    background-color: #FFF;
+}
+
+.navigation-progress-bar-wrapper li.section {
+    display: inline-block;
+    padding-top: 45px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #5a5a5a;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navigation-progress-bar-wrapper li.section:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: calc(50% - 15px);
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 17px;
+    line-height: 30px;
+    background: gray;
+}
+
+.navigation-progress-bar-wrapper .status-bar {
+    height: 3px;
+    background: gray;
+    position: relative;
+    top: 21px;
+    margin: 0 auto;
+}
+
+.navigation-progress-bar-wrapper .current-status {
+    height: 3px;
+    width: 0;
+    border-radius: 1px;
+    background: mediumseagreen;
+}
+
+.navigation-progress-bar-wrapper li.section.visited:before {
+    content: '\2714';
+    /*animation: mediumseagreen .5s linear;*/
+    animation-fill-mode: forwards;
+    background: mediumseagreen;
+}
+
+.navigation-progress-bar-wrapper li.section.visited.current:before {
+    box-shadow: 0 0 0 2px mediumseagreen;
+}
+
+.navigate-status-approved{
+    color: mediumseagreen;
+}
+
+.navigate-status-rejected{
+    color: red;
+}

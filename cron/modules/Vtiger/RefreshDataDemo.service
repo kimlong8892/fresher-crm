@@ -1,0 +1,7 @@
+<?php
+
+// Added by Tung Bui on 2020-04-02
+// Run this query to register the scheduler: INSERT INTO `vtiger_cron_task`(`name`, `handler_file`, `frequency`, `laststart`, `lastend`, `status`, `module`, `sequence`, `description`) VALUES ('RefreshDataDemo', 'cron/modules/Vtiger/RefreshDataDemo.service', 86400, 0, 0, 1, 'Vtiger', 14, '');
+vimport('includes.runtime.Globals');
+require_once('modules/Vtiger/models/Service.php');
+Vtiger_SetupInstance_Model::refreshDataDemo();

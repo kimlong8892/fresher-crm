@@ -1,0 +1,65 @@
+<?php
+
+/* System auto-generated on 2020-07-10 12:05:47 pm.  */
+
+$languageStrings = array(
+    'SalesOrder' => 'Đơn hàng',
+    'SINGLE_SalesOrder' => 'Đơn hàng',
+    'LBL_EXPORT_TO_PDF' => 'Xuất ra file PDF',
+    'LBL_SEND_MAIL_PDF' => 'Gửi email kèm file PDF',
+    'LBL_ADD_RECORD' => 'Thêm Đơn hàng',
+    'LBL_RECORDS_LIST' => 'DS Đơn hàng',
+    'LBL_SO_INFORMATION' => 'Thông tin đơn hàng',
+    'Recurring Invoice Information' => 'Thông tin hóa đơn định kỳ',
+    'SalesOrder No' => 'Mã Đơn hàng',
+    'Quote Name' => 'Báo giá',
+    'Customer No' => 'Mã khách hàng',
+    'Requisition No' => 'Số đơn hàng',
+    'Tracking Number' => 'Mã đơn vận chuyển',
+    'Sales Commission' => 'Hoa hồng sales',
+    'Purchase Order' => 'Đơn hàng mua',
+    'Vendor Terms' => 'Điều khoản nhà cung cấp',
+    'Pending' => 'Đang chờ',
+    'Enable Recurring' => 'Tự động tạo theo định kỳ',
+    'Frequency' => 'Tần suất',
+    'Start Period' => 'Thời gian bắt đầu',
+    'End Period' => 'Thời gian kết thúc',
+    'Payment Duration' => 'Thời hạn thanh toán',
+    'Invoice Status' => 'Tình trạng hóa đơn (mặc định)',
+    'Cancel' => 'Hủy bỏ',
+    'Daily' => 'Hằng ngày',
+    'Weekly' => 'Hằng tuần',
+    'Monthly' => 'Hằng tháng',
+    'Quarterly' => 'Hằng quý',
+    'Yearly' => 'Hằng năm',
+    'Net 30 days' => 'Trong vòng 30 ngày',
+    'Net 45 days' => 'Trong vòng 45 ngày',
+    'Net 60 days' => 'Trong vòng 60 ngày',
+    'Sub Total' => 'Tổng trước thuế',
+    'AutoCreated' => 'Được tạo tự động',
+    'Sent' => 'Đã gửi KH',
+    'Credit Invoice' => 'Đã tạo hóa đơn',
+    'Paid' => 'Đã thanh toán',
+    'Created' => 'Đã tạo',
+    'LBL_THIS' => 'Này',
+    'LBL_IS_DELETED_FROM_THE_SYSTEM_PLEASE_REMOVE_OR_REPLACE_THIS_ITEM' => 'Mặt hàng này đã bị xóa hãy xóa hoặc thay thế bằng một mặt hàng khác',
+    'LBL_THIS_LINE_ITEM_IS_DELETED_FROM_THE_SYSTEM_PLEASE_REMOVE_THIS_LINE_ITEM' => 'Mặt hàng này không tồn tại, hãy xóa nó khỏi đơn hàng',
+    'LBL_PDF_TITLE' => 'ĐƠN HÀNG',
+    'LBL_CPRECEIPT_LIST' => 'Phiếu thu',
+    'LBL_CPPAYMENT_LIST' => 'Phiếu chi',
+    'LBL_TOTAL_RECEIVED' => 'Tổng thu',
+    'LBL_TOTAL_PAID' => 'Tổng chi',
+    'LBL_PROFIT' => 'Lợi nhuận',
+    'LBL_BALANCE' => 'Còn lại',
+    'LBL_RECEIVER_NAME' => 'Tên người nhận',
+    'LBL_RECEIVER_NUMBER' => 'Số điện thoại',
+    'Approved' => 'Đã chấp nhận',
+    'Delivered' => 'Đã giao hàng',
+    'paymented' => 'Đã thanh toán',
+    'Cancelled' => 'Đã hủy'
+);
+
+$jsLanguageStrings = array(
+    'JS_PLEASE_REMOVE_LINE_ITEM_THAT_IS_DELETED' => 'Hãy xóa mặt hàng không tồn tại'
+);
+

@@ -1,0 +1,11 @@
+.planned-calls-widget .widgetTable th, .planned-calls-widget .widgetTable td {
+    padding: 0px !important;
+}
+
+.planned-calls-widget .widgetRow .today {
+    color: #ffc400 !important;
+}
+
+.planned-calls-widget .widgetRow .overdue {
+    color: red !important;
+}

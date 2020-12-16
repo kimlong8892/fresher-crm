@@ -1,0 +1,2 @@
+SET @integrationBlockId = (SELECT blockid FROM vtiger_settings_blocks WHERE label = 'LBL_INTEGRATION');
+UPDATE vtiger_settings_field SET blockid = @integrationBlockId WHERE name IN ('LBL_SMS_GATEWAY_CONFIG', 'LBL_CALLCENTER_CONFIG');

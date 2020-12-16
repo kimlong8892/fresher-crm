@@ -1,0 +1,421 @@
+/* NOTIFICATION GLOBAL CSS */
+/* Uncoment by Phu Vo on 2019.09.24 to set Roboto as default font family */
+.notification,
+.notification .font{
+    font-family: Roboto;
+}
+/* End set Roboto as default font family */
+
+.notification .hide {
+    display: none;
+}
+
+.notification .rel {
+    position: relative;
+}
+
+.notification .inline {
+    display: inline-block;
+}
+
+/* NOTIFICATION POPOVER */
+
+div#notification_popover {
+    /* display: block; */
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0px;
+}
+
+.notification .popover {
+    right: 0px;
+    margin-top: 0px;
+    max-width: unset;
+    width: 400px;
+}
+
+.notification .popover .arrow {
+    right: 10px;
+}
+
+/* NOTIFICATION TABS STYLE */
+.notification .notify-tab-pane:not(.active) {
+    display: none;
+}
+
+.notification .nav-item a {
+    text-align: center;
+}
+
+/* .notification .nav-item.active {
+    font-weight: bold;
+} */
+
+.notification .nav-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.notification .nav-tabs > .nav-item {
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    margin: 0px;
+    margin-bottom: -1px;
+    height: 100%;
+    padding: 10px 15px;
+}
+
+.notification .nav-tabs .nav-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle !important;
+    padding: 0px;
+}
+
+.notification .popover-content {
+    padding: 0;
+}
+
+.notify-item {
+    display: flex;
+    padding: 6px;
+    padding-bottom: 2px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.notify-item:not([data-read="0"]):hover {
+    background-color: #f3f3f3;
+}
+
+.notify-item[data-read="0"] {
+    background-color: #f0f8ff;
+}
+
+.notify-item[data-read="0"]:hover {
+    background-color: #e1ebf5;
+}
+
+.notify-item_avatar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4px;
+}
+
+.notify-item_container {
+    padding: 4px;
+    padding-top: 6px;
+    padding-left: 6px;
+    flex: 1;
+}
+
+.notify-item_createdtime {
+    font-size: 10px;
+    text-align: right;
+}
+
+.notification_items .avatar-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #9a78bd;
+    color: white;
+    overflow: hidden;
+}
+
+.notification_items .avatar-container > img {
+    height: 100%;
+}
+
+.notification_items .avatar-container > * {
+    font-size: 18px;
+}
+
+.notify-item_message {
+    font-size: inherit;
+    overflow: hidden;
+    max-height: 100%;
+    text-overflow: ellipsis;
+}
+
+.notify-item_content {
+    height: 3em;
+    font-size: 13px;
+}
+
+.notify-item.single .notify-item_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.notify-item span.name, .notify-popup span.name {
+    font-weight: bold;
+}
+
+.notification .nav-tabs > .nav-item.active {
+    border-bottom: 2px solid #666;
+    border-bottom: 2px solid rgb(46, 159, 191);
+    background-color: rgba(46, 159, 191, .06);
+    /* background-color: white; */
+    background-color: rgb(46, 159, 191);
+}
+
+.notification .notification_subtabs.nav-tabs > .nav-item.active {
+    border-bottom: 2px solid rgba(46, 159, 191, .7);
+}
+
+.notification .nav-tabs > .nav-item.active .nav-link {
+    background-color: transparent;
+    color: rgb(41, 142, 171);
+    color: white;
+    cursor: pointer;
+}
+
+.notification .nav-tabs.tabs-type .nav-link {
+    position: relative;
+    top: 3px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification .nav-tabs .nav-link:hover {
+    padding: 0px;
+    background-color: transparent;
+}
+
+.notification .notification_subtabs.nav-tabs > .nav-item.active {
+    background-color: #00ccff;
+    background-color: #fefefe;
+    background-color: white;
+}
+
+.notification .notification_subtabs.nav-tabs > .nav-item.active .nav-link {
+    color: #555;
+    font-weight: normal;
+    margin-bottom: -2px;
+}
+
+.notification_tabs .nav-link > * {
+    font-size: 26px;
+}
+
+.notification_tabs .nav-link > i.fa-clock-o {
+    font-size: 29px;
+    margin-top: -2px;
+}
+
+.notification_subtabs.nav-tabs > .nav-item {
+    padding: 5px;
+}
+
+.notification_subtabs.nav-tabs > .nav-item .nav-link {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.notification_container {
+    background-color: white;
+}
+
+/* COUNTERS */
+.notification_counter, 
+.notification_sub-counter {
+    position: absolute;
+    color: white;
+    font-size: 11px;
+    font-weight: normal;
+    font-family:  Roboto, Helvetica, sans-serif;
+    line-height: 1;
+}
+
+.notification_counter {
+    font-size: 11px;
+    padding: 2px 4px;
+    background-color: red;
+    background-color: #e81535;
+    border-radius: 3px;
+    top: 6px;
+    right: 3px;
+}
+
+.notification_sub-counter {
+    padding: 2px 4px;
+    background-color: #e81535;
+    border-radius: 3px;
+    top: 50%;
+    right: 50%;
+    margin-top: -18px;
+    margin-right: -20px;
+}
+
+.notification_inline-counter {
+    line-height: 1.1;
+    font-size: 11px;
+    margin-left: 4px;
+    position: absolute;
+    color: white;
+    background-color: #009966;
+    border-radius: 3px;
+    padding: 1px 4px;
+}
+
+/* NOTIFICATION LOADER */
+.notification_loader,
+.notification_empty-list {
+    text-align: center;
+    padding: 8px;
+}
+
+/* LIST STATUS */
+.notification_list-footer > * {
+    display: none;
+}
+
+/* Default display none notification_empty-list */
+.notification_list .notification_empty-list {
+    display: none;
+}
+
+.notification_list[data-status="loading"] .notification_loader,
+.notification_list[data-status="empty"] .notification_empty-list
+{
+    display: block;
+}
+
+/* LIST SCROLL */
+.notification_list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* NOTIFICATION POPUP CONTAINER */
+
+div#notifications_poup-container {
+    position: fixed;
+    top: 45px;
+    right: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 1;
+    height: 0px;
+    overflow: visible;
+}
+
+/* NOTIFICATIONS POOPUP STYLE */
+
+.notify-popup {
+    width: 270px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 3px #ddd;
+    margin: 4px;
+}
+
+.notify-popup_title {
+    padding: 6px 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notify-popup_title-wraper {
+    line-height: 1.4em;
+    /* max-height: 2.2em; */
+    color: #e81535;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+span.notify-popup_title-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notify-popup_content {
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.notify-popup_content .row {
+    margin-bottom: 4px;
+}
+
+.notify-popup_field-label {
+    text-transform: capitalize;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.notify-popup_field-label:after {
+    content: ":";
+}
+
+.notify-popup_field-value {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.notify-popup_footer .center {
+    text-align: center;
+    padding: 6px 8px;
+    border-top: 1px solid #eee;
+}
+
+.notify-popup_footer .cancelLink, .notify-popup_footer button[name="submit"] {
+    padding: 2px 6px !important;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.notify-popup_tips {
+    padding: 4px 8px;
+    color: #888;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.notification_footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 1px solid #eee;
+}
+
+.notification_footer .footer-item {
+    padding: 4px 6px !important;
+    position: relative;
+    color: #12627b;
+}
+
+.notification_footer .footer-item:not(:last-child):after {
+    content: '';
+    display: block;
+    height: 1em;
+    position: absolute;
+    border-right: 1px solid #666666;
+    top: 50%;
+    margin-top: -0.5em;
+    right: 0px;
+}
+
+/* Bug #258: Added by Phu Vo on 2020.03.27 to fix to long notification content */
+.notification_inapp-notify [data-notify="message"] {
+    max-height: 3.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* End Phu Vo */

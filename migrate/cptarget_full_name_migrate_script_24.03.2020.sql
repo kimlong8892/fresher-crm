@@ -1,0 +1,1 @@
+UPDATE vtiger_entityname SET fieldname = 'lastname,firstname' WHERE modulename = 'CPTarget';
