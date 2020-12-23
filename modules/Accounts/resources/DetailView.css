@@ -1,0 +1,12 @@
+.fieldLabel.accountname span,
+.fieldLabel.accounts_type span,
+.fieldLabel.email1 span,
+.fieldLabel.mobile span,
+.fieldLabel.industry span{
+    color: blue !important;
+}
+
+.fieldLabel.employees span,
+.fieldLabel.annual_revenue span {
+    color: red !important;
+}

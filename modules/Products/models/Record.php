@@ -610,4 +610,22 @@ class Products_Record_Model extends Vtiger_Record_Model {
 		return array('subProductsTotalCost' => CurrencyField::convertToUserFormat((float)$subProductsTotalCost, '', true, true),
 					 'subProductsCosts'		=> $subProductsCostInfo);
 	}
+
+	// Implemented by Long Nguyen on 2020-12-23 to retrieve a product by its serial
+    static function getInstanceBySerial($serial)
+    {
+        $db = PearDatabase::getInstance();
+        $sql = "SELECT p.*, e.*
+            FROM vtiger_products as p
+            INNER JOIN vtiger_crmentity AS e ON (e.crmid = p.productid AND e.deleted = 0 AND e.setype = 'Products')
+            WHERE p.serialno = ?";
+        $params = array($serial);
+        $result = $db->pquery($sql, $params);
+        $data = $db->fetchByAssoc($result);
+
+        $record = new Products_Record_Model();
+        $record->setData($data);
+
+        return $record;
+    }
 }

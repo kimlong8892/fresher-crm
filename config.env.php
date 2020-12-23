@@ -6,8 +6,8 @@
     *   Note: config.evn.php should be ignore in git repository, each developer should create this file himself to prevent conflict
     */
 
-    ini_set('display_errors','on'); version_compare(PHP_VERSION, '5.5.0') <= 0 ? error_reporting(E_WARNING & ~E_NOTICE & ~E_DEPRECATED) : error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT);   // DEBUGGING
-    ini_set('display_errors','on'); error_reporting(E_ALL); // STRICT DEVELOPMENT
+    ini_set('display_errors','off'); version_compare(PHP_VERSION, '5.5.0') <= 0 ? error_reporting(E_WARNING & ~E_NOTICE & ~E_DEPRECATED) : error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT);   // DEBUGGING
+    ini_set('display_errors','off'); error_reporting(E_ALL); // STRICT DEVELOPMENT
 
     /* database configuration
         db_server
@@ -22,7 +22,7 @@
     $dbconfig['db_port'] = ':3306';
     $dbconfig['db_username'] = 'root';
     $dbconfig['db_password'] = '@Admin123';
-    $dbconfig['db_name'] = 'crm';
+    $dbconfig['db_name'] = 'crm_fresher';
     $dbconfig['db_type'] = 'mysqli';
     $dbconfig['db_status'] = 'true';
 

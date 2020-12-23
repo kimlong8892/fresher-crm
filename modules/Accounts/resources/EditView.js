@@ -1,23 +1,21 @@
-/*
-    EditView.js
-    Author: Hieu Nguyen
-    Date: 2018-11-29
-    Purpose: to handle logic on the UI
-*/
-
-jQuery(function($) {
-    // Init auto complete address
-    GoogleMaps.initAutocomplete($(':input[name="bill_street"]'), {
-        city: $(':input[name="bill_city"]'), 
-        state: $(':input[name="bill_state"]'), 
-        zip: $(':input[name="bill_zip"]'), 
-        country: $(':input[name="bill_country"]')
-    });
-
-    GoogleMaps.initAutocomplete($(':input[name="ship_street"]'), {
-        city: $(':input[name="ship_city"]'), 
-        state: $(':input[name="ship_state"]'), 
-        zip: $(':input[name="ship_zip"]'), 
-        country: $(':input[name="ship_country"]')
+jQuery(function ($) {
+    $("form#EditView .saveButton").on("click", function (event) {
+        var accountTypeValue = $("select[name='accounttype']").val().trim();
+        var employees = $("input[name='employees']");
+        var annuaRevenue = $("input[name='annual_revenue']");
+        if (accountTypeValue == 'Competitor') {
+            let employeesValue = employees.val().trim();
+            let annuaRevenueValue = annuaRevenue.val().trim();
+            if (employeesValue == '' || employeesValue == '0' || annuaRevenueValue == '') {
+                if (!confirm(app.vtranslate('JS_CONFIRM_SAVING_COMPETIOR_WITHOUT_ITS_REQUIRED_FIELDS'))) {
+                    event.preventDefault();
+                    if (annuaRevenueValue == '') {
+                        annuaRevenue.focus();
+                    } else {
+                        employees.focus();
+                    }
+                }
+            }
+        }
     });
 });
