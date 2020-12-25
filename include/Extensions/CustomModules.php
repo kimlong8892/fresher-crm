@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2019-08-15 08:37:02 am.  */
+/* System auto-generated on 2020-12-25 03:39:45 pm.  */
 
 $customModules = array(
     'CPSMSTemplate' => array(
@@ -71,7 +71,7 @@ $customModules = array(
         'displayNameEn' => 'Social Feedbacks',
         'displayNameVn' => 'Tương tác MXH',
         'menu' => 'MARKETING'
-    ),    
+    ),
     'CPReceipt' => array(
         'moduleName' => 'CPReceipt',
         'displayNameEn' => 'Receipts',
@@ -83,7 +83,7 @@ $customModules = array(
         'displayNameEn' => 'Asset Account',
         'displayNameVn' => 'Tài khoản',
         'menu' => 'DEBITS'
-    ),    
+    ),
     'CPPayment' => array(
         'moduleName' => 'CPPayment',
         'displayNameEn' => 'Payments',
@@ -94,7 +94,7 @@ $customModules = array(
         'moduleName' => 'CPTransferMoney',
         'displayNameEn' => 'Transfer Money',
         'displayNameVn' => 'Chuyển khoản',
-        'menu' => 'DEBITS' 
+        'menu' => 'DEBITS'
     ),
     'CPReportDebits' => array(
         'moduleName' => 'CPReportDebits',
@@ -120,12 +120,20 @@ $customModules = array(
         'isExtension' => false
     ),
     'CPComboProducts' => array(
-		'moduleName' => 'CPComboProducts',
-		'displayNameEn' => 'Combo Products',
-		'displayNameVn' => 'Gói sản phẩm',
-		'menu' => 'SALES',
-		'hasActivities' => false,
-		'isExtension' => false
-	),
+        'moduleName' => 'CPComboProducts',
+        'displayNameEn' => 'Combo Products',
+        'displayNameVn' => 'Gói sản phẩm',
+        'menu' => 'SALES',
+        'hasActivities' => false,
+        'isExtension' => false
+    ),
+    'CPDemo' => array(
+        'moduleName' => 'CPDemo',
+        'displayNameEn' => 'Demo',
+        'displayNameVn' => 'Demo',
+        'menu' => 'MARKETING',
+        'hasActivities' => true,
+        'isExtension' => false
+    )
 );
 

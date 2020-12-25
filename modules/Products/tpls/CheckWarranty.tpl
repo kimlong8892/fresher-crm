@@ -6,7 +6,7 @@
             <input type="text"
                    name="serial"
                    value="{$smarty.post.seral}"
-                   placeholder="{vtranslate('LBL_CHECK_WARRANTY_PLACEHOLDER')}">
+                   placeholder="{vtranslate('LBL_CHECK_WARRANTY_SERIAL_PLACEHOLDER')}">
             &nbsp
             <button id="btnCheck" class="btn btn-primary">
                 {vtranslate('LBL_CHECK_WARRANTY_SUBMIT_BTN', 'Products')}

@@ -19,18 +19,8 @@ class Products_CheckWarrantyAjax_View extends CustomView_Base_View
 
     public function process(Vtiger_Request $request)
     {
-        $viewer = $this->getViewer($request);
+        $matchedProduct = Products_Record_Model::getInstanceBySerial($request->get('serial'));
 
-        if (!empty($_POST)) {
-            $matchedProduct = Products_Record_Model::getInstanceBySerial($request->get('serial'));
-            $viewer->assign('RESULT', $this->renderResult($matchedProduct));
-        }
-
-        $viewer->display('modules/Products/tpls/CheckWarranty.tpl');
-    }
-
-    public function renderResult($matchedProduct)
-    {
         if ($matchedProduct == null || $matchedProduct->get('productid') == '') {
             return vtranslate('LBL_WARRANTY_SERIAL_NOT_FOUND', 'Products');
         }

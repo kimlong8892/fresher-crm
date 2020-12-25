@@ -86,7 +86,10 @@ $languageStrings = array(
     'LBL_WARRANTY_START_DATE' => 'Ngày bắt đầu bảo hành',
     'LBL_WARRANTY_END_DATE' => 'Ngày kết thúc bảo hành',
     'LBL_WARRANTY_STATUS_VALID' => 'Còn BH',
-    'LBL_WARRANTY_STATUS_ENDED' => 'Hết BH'
+    'LBL_WARRANTY_STATUS_ENDED' => 'Hết BH',
+    'LBL_WARRANTY_STATUS' => 'Trạng thái',
+    'LBL_CHECK_WARRANTY_NO_PRODUCT_MATCH_ERROR_MSG' => 'Không tìm thấy sản phẩm này',
+    'LBL_WARRANTY_BTN_EXTEND' => 'Gia hạn'
 
 );
 
@@ -94,6 +97,9 @@ $jsLanguageStrings = array(
     'JS_SUB_PRODUCTS_WILL_BE_SHOWN_IN_INVENTORY' => 'Sản phẩm con sẽ hiển thị trong kho',
     'JS_SUB_PRODUCTS_WILL_NOT_BE_SHOWN_IN_INVENTORY' => 'Sản phẩm con sẽ không hiển thị trong kho',
     'JS_SUCCESSFULLY_CHANGED_BUNDLE_COST' => 'Đã thay đổi giá của gói sản phẩm',
-    'JS_DELETION_OR_IN_ACTIVATION_CHILD_PRODUCT_MESSAGE' => 'SP này là một phần của gói sản phẩm. Giá của gói sản phẩm vẫn không đổi nếu bạn xóa SP này. Bạn có muốn tiếp tục không?'
+    'JS_DELETION_OR_IN_ACTIVATION_CHILD_PRODUCT_MESSAGE' => 'SP này là một phần của gói sản phẩm. Giá của gói sản phẩm vẫn không đổi nếu bạn xóa SP này. Bạn có muốn tiếp tục không?',
+    'JS_CHECK_WARRANTY_ERROR_MSG' => 'Không tìm thấy sản phẩm này',
+    'JS_CHECK_WARRANTY_NO_PRODUCT_MATCH_ERROR_MSG' => 'Không tìm thấy sản phẩm này',
+    'JS_TITLE_PROMPT_PRODUCT_EXTEND' => 'Nhập số ngày gia hạn bảo hành'
 );
 

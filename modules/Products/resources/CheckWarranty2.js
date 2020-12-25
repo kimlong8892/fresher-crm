@@ -25,8 +25,6 @@ CustomView_BaseController_Js('Products_CheckWarranty2_Js', {}, {
                             return;
                         }
                         // Show result
-                        console.log(data);
-                        $('#result').html("");
                         $('#result').html(data);
                     });
                 return false; // Prevent submit button to reload the page
