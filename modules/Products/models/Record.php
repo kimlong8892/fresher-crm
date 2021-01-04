@@ -673,17 +673,12 @@ class Products_Record_Model extends Vtiger_Record_Model
     {
         $recordModel = Products_Record_Model::getInstanceById($productId, 'Products');
         $newExpiryDate = date('Y-m-d', strtotime($recordModel->get('expiry_date') . ' + ' . $dateExtend . ' days'));
+        //$recordModel->set('mode', 'edit');
 //        $recordModel->set(
 //            'expiry_date',
 //            $newExpiryDate
 //        );
-//        $recordModel->set('mode', 'edit');
-//        try {
-//            $recordModel->save();
-//            return true;
-//        } catch (Exception $exception) {
-//            throw $exception;
-//        }
+//        $recordModel->save();
         $db = PearDatabase::getInstance();
         $sql = "UPDATE vtiger_products
             SET expiry_date = ? WHERE productid = ?";

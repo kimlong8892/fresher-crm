@@ -17,7 +17,7 @@ class CPDemo_RelationListView_Model extends Vtiger_RelationListView_Model
 
             $headerLinks = [];
 
-            if (Users_Privileges_Model::isPermitted($moduleModel->getName, 'CreateView')) {
+            if (Users_Privileges_Model::isPermitted('SMSNotifier', 'CreateView')) {
                 // Show additional button
                 $newLink = array(
                     'linktype' => 'LISTVIEWBASIC',

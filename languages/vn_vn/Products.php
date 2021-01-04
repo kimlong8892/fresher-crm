@@ -89,8 +89,9 @@ $languageStrings = array(
     'LBL_WARRANTY_STATUS_ENDED' => 'Hết BH',
     'LBL_WARRANTY_STATUS' => 'Trạng thái',
     'LBL_CHECK_WARRANTY_NO_PRODUCT_MATCH_ERROR_MSG' => 'Không tìm thấy sản phẩm này',
-    'LBL_WARRANTY_BTN_EXTEND' => 'Gia hạn'
-
+    'LBL_WARRANTY_BTN_EXTEND' => 'Gia hạn',
+    'LBL_CHECK_MODAL_PRODUCT_SUBMIT_BTN' => 'Thêm sản phẩm',
+    'LBL_DEMO_LISTVIEW_ADVANCED_BUTTON' => 'Demo Link'
 );
 
 $jsLanguageStrings = array(

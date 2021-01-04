@@ -18,7 +18,7 @@ class CPDemo_ListView_Model extends Vtiger_ListView_Model
             // Show additional button
             $advancedLinks[] = array(
                 'linktype' => 'LISTVIEW',
-                'linklabel' => 'LBL_DEMO_LISTVIEW_ADVANCED_BUTTON',
+                'linklabel' => vtranslate('LBL_DEMO_LISTVIEW_ADVANCED_BUTTON', 'Products'),
                 'linkurl' => 'javascript:alert("Hello World!")'
             );
 
@@ -38,7 +38,7 @@ class CPDemo_ListView_Model extends Vtiger_ListView_Model
             }
         }
 
-        if (Users_Privileges_Model::isPermitted($moduleModel->getName, 'CreateView')) {
+        if (Users_Privileges_Model::isPermitted($moduleModel->getName(), 'CreateView')) {
             // show additional button
             $button = array(
                 'linktype' => 'LISTVIEWMASSACTION',

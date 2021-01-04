@@ -40,6 +40,8 @@ $languageStrings = array(
     'LBL_ACCOUNTS_TYPE' => 'Mô hình kinh doanh',
     'LBL_ACCOUNTS_TYPE_B2B' => 'B2B',
     'LBL_ACCOUNTS_TYPE_B2C' => 'B2C',
+    'LBL_TITLE_COUNT_EMAIL_1' => 'Tổng số email 1',
+    'LBL_TITLE_COUNT_EMAIL_2' => 'Tổng số email 2'
 );
 
 $jsLanguageStrings = array(

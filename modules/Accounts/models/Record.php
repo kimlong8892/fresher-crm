@@ -148,4 +148,35 @@ class Accounts_Record_Model extends Vtiger_Record_Model
 
         return $adb->fetchByAssoc($result) ? true : false;
     }
+
+    // add by Long Nguyen to count email
+    static function countEmail1()
+    {
+        $db = PearDatabase::getInstance();
+        $sql = "SELECT COUNT(*) as count_email1 FROM vtiger_account WHERE email1 <> ?";
+        $params = array('');
+        $db->pquery($sql, $params);
+        $result = $db->pquery($sql, $params);
+        $data = $db->fetchByAssoc($result);
+
+        $record = new Accounts_Record_Model();
+        $record->setData($data);
+
+        return $record->get('count_email1');
+    }
+
+    static function countEmail2()
+    {
+        $db = PearDatabase::getInstance();
+        $sql = "SELECT COUNT(*) as count_email2 FROM vtiger_account WHERE email2 <> ?";
+        $params = array('');
+        $db->pquery($sql, $params);
+        $result = $db->pquery($sql, $params);
+        $data = $db->fetchByAssoc($result);
+
+        $record = new Accounts_Record_Model();
+        $record->setData($data);
+
+        return $record->get('count_email2');
+    }
 }
