@@ -1759,6 +1759,17 @@ class Accounts extends CRMEntity {
 		}
 		return $entityIds;
 	}
+    function countRelate($relateName, $id = null) {
+        global $adb;
+	    if($id == null){
+	        $id = $this->id;
+        }
+        $query = 'SELECT * FROM vtiger_crmentityrel
+				WHERE crmid = ? AND module = "Accounts" AND relmodule = ?';
+        $accountContacts = $adb->pquery($query, array($id, $relateName));
+        $return = $adb->num_rows($accountContacts);
+        return $return;
+    }
 
 	function getRelatedPotentialIds($id) {
 		$relatedIds = array();

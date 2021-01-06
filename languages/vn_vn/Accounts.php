@@ -40,8 +40,10 @@ $languageStrings = array(
     'LBL_ACCOUNTS_TYPE' => 'Mô hình kinh doanh',
     'LBL_ACCOUNTS_TYPE_B2B' => 'B2B',
     'LBL_ACCOUNTS_TYPE_B2C' => 'B2C',
-    'LBL_TITLE_COUNT_EMAIL_1' => 'Tổng số email 1',
-    'LBL_TITLE_COUNT_EMAIL_2' => 'Tổng số email 2'
+    'LBL_TITLE_COUNT_EMAIL' => 'Tổng email',
+    'LBL_TITLE_COUNT_DOCS' => 'Tổng tài liệu',
+    'LBL_TITLE_COUNT_SP' => 'Tổng yêu cầu hỗ trợ',
+    'LBL_TITLE_COUNT_CALENDA' => 'Tổng hoạt động'
 );
 
 $jsLanguageStrings = array(

@@ -20,19 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9113ee6-ac81-40c3-a8ce-d70636349782" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/Accounts/tpls/ExtraSummaryView.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65083316-4a41-482a-910b-4b583a5fa2f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/65083316-4a41-482a-910b-4b583a5fa2f4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4fed3752c30d4a4f3844d85e68446372e7bf50d6.file.SummaryViewWidgets.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4fed3752c30d4a4f3844d85e68446372e7bf50d6.file.SummaryViewWidgets.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/7f7ab51ef29f8b6decfae628ea6ca639ad8bd14d.file.CheckWarranty4.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/7f7ab51ef29f8b6decfae628ea6ca639ad8bd14d.file.CheckWarranty4.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/763f4ba65f52a5f186e628d53487e6fc1e8f793b.file.ExtraSummaryView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/763f4ba65f52a5f186e628d53487e6fc1e8f793b.file.ExtraSummaryView.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/vn_vn/Accounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Accounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/vn_vn/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/v7/modules/Accounts/SummaryViewWidgets.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/v7/modules/Accounts/SummaryViewWidgets.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Accounts/Accounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/Accounts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Accounts/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/models/Record.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Accounts/tpls/ExtraSummaryView.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/tpls/ExtraSummaryView.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Accounts/views/Detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/views/Detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/CPDemo/models/ListView.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/CPDemo/models/ListView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/CPDemo/models/RelationListView.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/CPDemo/models/RelationListView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/models/Record.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +108,9 @@
       <workItem from="1609118533205" duration="28000" />
       <workItem from="1609292229130" duration="10076000" />
       <workItem from="1609303601889" duration="853000" />
+      <workItem from="1609908344105" duration="4051000" />
+      <workItem from="1609920777105" duration="100000" />
+      <workItem from="1609921386719" duration="8927000" />
     </task>
     <servers />
   </component>
@@ -158,11 +158,21 @@
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Accounts/views/Detail.php</url>
-          <line>97</line>
-          <option name="timeStamp" value="61" />
+          <url>file://$PROJECT_DIR$/modules/Accounts/models/Record.php</url>
+          <line>183</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/modules/Accounts/Accounts.php</url>
+          <line>1763</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="$moduleModel-&gt;getModuleIcon()" language="PHP" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

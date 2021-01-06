@@ -77,10 +77,9 @@ class Accounts_Detail_View extends Vtiger_Detail_View
 
         $recordId = $request->get('record');
         $moduleName = $request->getModule();
-        $recordModel = Vtiger_Record_Model::getInstanceById($recordId);
+        $recordModel = Vtiger_Record_Model::getInstanceById($recordId, $moduleName);
         $recordStrucure = Vtiger_RecordStructure_Model::getInstanceFromRecordModel($recordModel,
             Vtiger_RecordStructure_Model::RECORD_STRUCTURE_MODE_SUMMARY);
-
         $extraSummary = 'Hello World! Test';
         $viewer = $this->getViewer($request);
         $viewer->assign('RECORD', $recordModel);
@@ -89,17 +88,14 @@ class Accounts_Detail_View extends Vtiger_Detail_View
         $viewer->assign('SUMMARY_RECORD_STRUCTURE', $recordStrucure->getStructure());
         $viewer->assign('USER_MODEL', Users_Record_Model::getCurrentUserModel());
         $viewer->assign('MODULE_NAME', $moduleName);
-//        $countEmail1 = Accounts_Record_Model::countEmail1();
-//        $viewer->assign('COUNT_EMAIL_1', $countEmail1);
-//        $countEmail2 = Accounts_Record_Model::countEmail2();
-//        $viewer->assign('COUNT_EMAIL_2', $countEmail2);
-
-
-        $moduleModel = Vtiger_Module::getInstance('ModComments');
-        $entityAccount = new Accounts();
-        $Emails = $entityAccount->get_comments($moduleModel->getId());
-
-
+        $countEmail = $recordModel->getEntity()->countRelate("Emails");
+        $countDocs = $recordModel->getEntity()->countRelate("Documents");
+        $countSP = $recordModel->getEntity()->countRelate("HelpDesk");
+        $countCalenda = $recordModel->getEntity()->countRelate("Calendar");
+        $viewer->assign('COUNT_EMAIL', $countEmail);
+        $viewer->assign('COUNT_DOCS', $countDocs);
+        $viewer->assign('COUNT_SP', $countSP);
+        $viewer->assign('COUNT_CALENDA', $countCalenda);
         return $viewer->view('ModuleSummaryView.tpl', $moduleName, true);
     }
 

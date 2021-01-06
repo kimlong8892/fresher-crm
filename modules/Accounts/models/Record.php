@@ -179,4 +179,17 @@ class Accounts_Record_Model extends Vtiger_Record_Model
 
         return $record->get('count_email2');
     }
+
+    static function countRelate($sql){
+        $db = PearDatabase::getInstance();
+        $params = array('');
+        $db->pquery($sql, $params);
+        $result = $db->pquery($sql, $params);
+        $data = $db->fetchByAssoc($result);
+
+        $record = new Accounts_Record_Model();
+        $record->setData($data);
+
+        return $record;
+    }
 }
