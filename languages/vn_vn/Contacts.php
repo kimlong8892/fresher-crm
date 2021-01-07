@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2019-10-01 09:08:08 am.  */
+/* System auto-generated on 2021-01-07 11:49:18 am.  */
 
 $languageStrings = array(
     'Contacts' => 'Người liên hệ',
@@ -29,16 +29,12 @@ $languageStrings = array(
     'Mailing Zip' => 'Mã vùng',
     'Mailing Country' => 'Quốc gia',
     'Mailing Po Box' => 'Vùng, Miền',
-
-    // [Core][SOr2IHIo] Modified by Phu Vo on 2019.12.09
     'Other Street' => 'Địa chỉ khác',
     'Other City' => 'Tỉnh/ TP khác',
     'Other State' => 'Quận huyện khác',
     'Other Zip' => 'Mã vùng khác',
     'Other Country' => 'Quốc gia khác',
     'Other Po Box' => 'Vùng, Miền khác',
-    // End Phu Vo
-    
     'Contact Image' => 'Hình ảnh',
     'Other Phone' => 'ĐT khác',
     'Email' => 'Email',
@@ -49,27 +45,17 @@ $languageStrings = array(
     'User List' => 'DS người dùng',
     'LBL_TRANSACTIONS' => 'Giao dịch',
     '' => '',
-
-    // [SocialIntegration] Added by Phu Vo on 2019.10.31
     'LBL_ZALO_ID_SYNCED' => 'Đã đồng bộ Zalo',
     'LBL_CPSOCIALMESSAGELOG_LIST' => 'Lịch sử gửi tin nhắn MXH',
     'LBL_CPSOCIALARTICLELOG_LIST' => 'Lịch sử gửi bài viết MXH',
     'LBL_RELATED_CAMPAIGN' => 'Chiến dịch',
     'LBL_CPSOCIALFEEDBACK_LIST' => 'Tương tác MXH',
-
-    // Added by Phu Vo on 2019.10.07
     'LBL_RELATED_CUSTOMER' => 'Khách hàng',
-    // End SocialIntegration
-
-    // Added by Phuc on 2019.11.04 for debits
-	'LBL_CPRECEIPT_LIST' => 'Phiếu thu',
+    'LBL_CPRECEIPT_LIST' => 'Phiếu thu',
     'LBL_CPPAYMENT_LIST' => 'Phiếu chi',
-    // Ended by Phuc
-
-    // Added by Phuc on 2020.03.24 for mautic history
     'LBL_CPMAUTICCONTACTHISTORY_LIST' => 'Lịch sử Mautic',
     'LBL_LAST_SYNCED_MAUTIC_HISTORY_TIME' => 'Lần cuối đồng bộ lịch sử Mautic',
-    // Ended by Phuc
+    'LBL_AGE' => 'Độ tuổi'
 );
 
 $jsLanguageStrings = array(

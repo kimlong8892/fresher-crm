@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2019-08-15 09:00:51 am.  */
+/* System auto-generated on 2021-01-07 11:49:18 am.  */
 
 $languageStrings = array(
     'Contacts' => 'Contacts',
@@ -49,27 +49,17 @@ $languageStrings = array(
     'Prof.' => 'Prof.',
     'User List' => 'User List',
     'LBL_MAUTIC_ID' => 'Mautic ID',
-
-    // [SocialIntegration] Added by Phu Vo on 2019.10.31
     'LBL_ZALO_ID_SYNCED' => 'Zalo Id Synced',
     'LBL_CPSOCIALMESSAGELOG_LIST' => 'Social Message Log',
     'LBL_CPSOCIALARTICLELOG_LIST' => 'Social Article Log',
     'LBL_RELATED_CAMPAIGN' => 'Campaign',
     'LBL_CPSOCIALFEEDBACK_LIST' => 'Social Feedback',
-
-    // Added by Phu Vo on 2019.10.07
     'LBL_RELATED_CUSTOMER' => 'Customer',
-    // End SocialIntegration
-
-    // Added by Phuc on 2019.11.04 for debits
     'LBL_CPRECEIPT_LIST' => 'Receipts',
     'LBL_CPPAYMENT_LIST' => 'Payments',
-    // Ended by Phuc
-
-    // Added by Phuc on 2020.03.24 for mautic history
     'LBL_CPMAUTICCONTACTHISTORY_LIST' => 'Mautic History',
     'LBL_LAST_SYNCED_MAUTIC_HISTORY_TIME' => 'Last synced Mautic history times',
-    // Ended by Phuc
+    'LBL_AGE' => 'Age'
 );
 
 $jsLanguageStrings = array(

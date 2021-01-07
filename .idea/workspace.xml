@@ -20,16 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9113ee6-ac81-40c3-a8ce-d70636349782" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65083316-4a41-482a-910b-4b583a5fa2f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/65083316-4a41-482a-910b-4b583a5fa2f4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/actions/SaveSystemNotificationsConfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/actions/SaveUserNotificationsConfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/resources/SystemNotifications.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/resources/SystemNotifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/resources/UserNotifications.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/resources/UserNotifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/tpls/SystemNotifications.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/tpls/UserNotifications.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/views/SystemNotifications.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Settings/Vtiger/views/UserNotifications.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4fed3752c30d4a4f3844d85e68446372e7bf50d6.file.SummaryViewWidgets.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4fed3752c30d4a4f3844d85e68446372e7bf50d6.file.SummaryViewWidgets.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/763f4ba65f52a5f186e628d53487e6fc1e8f793b.file.ExtraSummaryView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/763f4ba65f52a5f186e628d53487e6fc1e8f793b.file.ExtraSummaryView.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/vn_vn/Accounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Accounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/Accounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/Accounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/models/Record.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/tpls/ExtraSummaryView.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/tpls/ExtraSummaryView.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/views/Detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/views/Detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/en_us/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/Contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/vn_vn/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Contacts/BlocksAndFieldsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Contacts/BlocksAndFieldsRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Contacts/handlers/ContactHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Contacts/handlers/ContactHandler.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +86,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebCty/website2020" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -110,7 +117,8 @@
       <workItem from="1609303601889" duration="853000" />
       <workItem from="1609908344105" duration="4051000" />
       <workItem from="1609920777105" duration="100000" />
-      <workItem from="1609921386719" duration="8927000" />
+      <workItem from="1609921386719" duration="9726000" />
+      <workItem from="1609983841534" duration="8178000" />
     </task>
     <servers />
   </component>
@@ -167,12 +175,17 @@
           <line>1763</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/modules/Settings/Vtiger/actions/SaveUserNotificationsConfig.php</url>
+          <line>12</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/modules/Settings/Vtiger/views/UserNotifications.php</url>
+          <line>18</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="index.php">
-        <watch expression="$moduleModel-&gt;getModuleIcon()" language="PHP" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
