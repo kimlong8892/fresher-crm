@@ -29,7 +29,7 @@
     $dbconfig['db_hostname'] = $dbconfig['db_server'].$dbconfig['db_port'];
 
     // log_sql default value = false
-    $dbconfig['log_sql'] = false;
+    $dbconfig['log_sql'] = true;
 
     // persistent default value = true
     $dbconfigoption['persistent'] = true;

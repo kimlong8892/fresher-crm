@@ -15,10 +15,26 @@ class ContactHandler extends VTEventHandler
 
     function handleEvent($eventName, $entityData)
     {
-        if($eventName == "vtiger.entity.beforesave"){
+        if ($eventName === "vtiger.entity.beforesave") {
             // add handler functions here
             $this->caculateAge($entityData);
         }
+
+        if ($eventName === "vtiger.entity.aftersave") {
+            // add handler functions here
+            $this->demoAfterSave($entityData);
+        }
+
+        if ($eventName === "vtiger.entity.beforedelete") {
+            // add handler functions here
+
+        }
+
+        if ($eventName === "vtiger.entity.afterdelete") {
+            // add handler functions here
+
+        }
+
 
         if ($eventName === 'vtiger.batchevent.save') {
             // Add handler functions here
@@ -47,14 +63,23 @@ class ContactHandler extends VTEventHandler
         // $recordModel->set('accountname', 'Foo bar');
     }
 
-    function caculateAge(&$entityData){
+    function caculateAge(&$entityData)
+    {
         require_once('include/fields/DateTimeField.php');
         // Calculate age only when the birthday is specified
-        if($entityData->get('birthday')) {
+        if ($entityData->get('birthday')) {
             $birthday = new DateTimeField($entityData->get('birthday'));
             $birthdayDb = $birthday->getDBInsertDateValue();
             $age = date('Y') - date('Y', strtotime($birthdayDb));
             $entityData->set('age', $age);
+        } else {
+            $entityData->set('age', 0);
+        }}
+
+    function demoAfterSave(&$entityData)
+    {
+        if($entityData->get('leadsource') == "Web Site"){
+            return false;
         }
     }
 }

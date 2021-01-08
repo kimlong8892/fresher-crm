@@ -180,7 +180,8 @@ class Accounts_Record_Model extends Vtiger_Record_Model
         return $record->get('count_email2');
     }
 
-    static function countRelate($sql){
+    static function countRelate($sql)
+    {
         $db = PearDatabase::getInstance();
         $params = array('');
         $db->pquery($sql, $params);
@@ -191,5 +192,21 @@ class Accounts_Record_Model extends Vtiger_Record_Model
         $record->setData($data);
 
         return $record;
+    }
+
+    static function queryListAccountCompetior()
+    {
+        global $adb;
+        $sql = "SELECT * FROM vtiger_account WHERE account_type = ?";
+        $params = array('Competitor');
+        $adb->pquery($sql, $params);
+        $result = $adb->pquery($sql, $params);
+        $return = [];
+        while ($row = $adb->fetchByAssoc($result)){
+            $record = new Accounts_Record_Model();
+            $record->setData($row);
+            $return[] = $record;
+        }
+        return $return;
     }
 }

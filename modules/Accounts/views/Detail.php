@@ -74,7 +74,6 @@ class Accounts_Detail_View extends Vtiger_Detail_View
     // Implemented by Hieu Nguyen on 2018-09-05
     public function showModuleSummaryView(Vtiger_Request $request)
     {
-
         $recordId = $request->get('record');
         $moduleName = $request->getModule();
         $recordModel = Vtiger_Record_Model::getInstanceById($recordId, $moduleName);
