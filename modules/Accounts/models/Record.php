@@ -149,41 +149,12 @@
 			return $adb->fetchByAssoc($result) ? true : false;
 		}
 		
-		// add by Long Nguyen to count email
-		static function countEmail1()
-		{
-			$db = PearDatabase::getInstance();
-			$sql = "SELECT COUNT(*) as count_email1 FROM vtiger_account WHERE email1 <> ?";
-			$params = array('');
-			$db->pquery($sql, $params);
-			$result = $db->pquery($sql, $params);
-			$data = $db->fetchByAssoc($result);
-			
-			$record = new Accounts_Record_Model();
-			$record->setData($data);
-			
-			return $record->get('count_email1');
-		}
-		
-		static function countEmail2()
-		{
-			$db = PearDatabase::getInstance();
-			$sql = "SELECT COUNT(*) as count_email2 FROM vtiger_account WHERE email2 <> ?";
-			$params = array('');
-			$result = $db->pquery($sql, $params);
-			$data = $db->fetchByAssoc($result);
-			
-			$record = new Accounts_Record_Model();
-			$record->setData($data);
-			
-			return $record->get('count_email2');
-		}
-		
 		// implement by Kim Long 13/01/2021
 		static function queryListAccountCompetior()
 		{
 			global $adb;
-			$sql = "SELECT * FROM vtiger_account WHERE account_type = ?";
+			$sql = "SELECT * FROM vtiger_account WHERE account_type = ?
+                    INNER JOIN vtiger_crmentity ON (crmid = accountid AND deleted = 0)";
 			$params = array('Competitor');
 			$result = $adb->pquery($sql, $params);
 			$return = [];
@@ -199,7 +170,9 @@
 		{
 			global $adb;
 			try {
-				$sql = "DELETE FROM vtiger_senotesrel WHERE crmid = ?";
+				$sql = "DELETE FROM vtiger_senotesrel
+                        INNER JOIN vtiger_crmentity ON (vtiger_senotesrel.crmid = vtiger_crmentity.crmid AND deleted = 0)
+                        WHERE crmid = ?";
 				$params = array($record->getId());
 				$adb->pquery($sql, $params);
 				return true;
@@ -225,7 +198,15 @@
 		
 		static function updateContactToCompany()
 		{
-		
+            global $adb;
+            $sql = "SELECT * FROM vtiger_account
+                    INNER JOIN vtiger_crmentity ON (crmid = contactid AND deleted = 0) LIMIT 1";
+            $result = $adb->pquery($sql);
+            while ($row = $adb->fetchByAssoc($result)) {
+                $sqlUpdate = "UPDATE vtiger_contactdetails SET accountid = ?
+                                WHERE accountid = 0";
+                $adb->pquery($sqlUpdate, [$row['accountid']]);
+            }
 		}
 		
 		

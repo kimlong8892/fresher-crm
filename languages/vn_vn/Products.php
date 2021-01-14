@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2020-12-23 05:03:28 pm.  */
+/* System auto-generated on 2021-01-14 10:25:22 am.  */
 
 $languageStrings = array(
     'Products' => 'Sản phẩm',
@@ -95,7 +95,10 @@ $languageStrings = array(
     'LBL_SERIAL_NO' => 'Số serial',
     'LBL_CHECK_WARRANTY_SERIAL_PLACEHOLDER' => 'Sô serial...',
     'LBL_UPDATE_MODAL_PRODUCT_SUBMIT_BTN' => 'Cập nhật thông tin',
-    'LBL_UPDATE_PRODUCT_MODAL_TITLE' => 'Cập nhật thông tin'
+    'LBL_UPDATE_PRODUCT_MODAL_TITLE' => 'Cập nhật thông tin',
+    'LBL_STATUS_WARRANTY' => 'Trạng thái bảo hành',
+    'LBL_WARRANT_VALID' => 'Còn bảo hành',
+    'LBL_WARRANT_ENDED' => 'Hết bảo hành'
 );
 
 $jsLanguageStrings = array(

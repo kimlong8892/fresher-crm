@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9113ee6-ac81-40c3-a8ce-d70636349782" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/Accounts/resources/TestDateTime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Products/actions/UpdateAjax.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron/modules/Contacts/SendHappyBirthdayMsg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron/modules/Products/CheckWarrantyMsg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Contacts/models/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Products/models/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Reports/custom/CustomerAgeReportHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/0e928f5968d41fb32df1e05c4d3ec9ad2bacb4a0.file.CheckWarranty5.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/0e928f5968d41fb32df1e05c4d3ec9ad2bacb4a0.file.CheckWarranty5.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/7f7ab51ef29f8b6decfae628ea6ca639ad8bd14d.file.CheckWarranty4.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/7f7ab51ef29f8b6decfae628ea6ca639ad8bd14d.file.CheckWarranty4.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a899f4edf0dac950a60eca16040402ad2b2c62f2.file.TestUiComponent.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/a899f4edf0dac950a60eca16040402ad2b2c62f2.file.TestUiComponent.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_override.php" beforeDir="false" afterPath="$PROJECT_DIR$/config_override.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/en_us/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/Products.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/vn_vn/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Products.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/callcenter.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/callcenter.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/installation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/installation.log" afterDir="false" />
@@ -35,25 +37,10 @@
       <change beforePath="$PROJECT_DIR$/logs/setup_instance.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/setup_instance.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/soap.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/soap.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/sqltime.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sqltime.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/vtigercrm.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/vtigercrm.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/webservice.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/webservice.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/Accounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/Accounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/HandlersRegister.sample.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/HandlersRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/handlers/AccountBatchHandler.sample.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/handlers/AccountBatchHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/handlers/AccountHandler.sample.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/handlers/AccountHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Accounts/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/models/Record.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Accounts/views/Detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/views/Detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Contacts/handlers/ContactHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Contacts/handlers/ContactHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/actions/CheckWarrantyAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/actions/CheckWarrantyAjax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/models/Record.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/resources/CheckWarranty4.css" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/resources/CheckWarranty4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/resources/CheckWarranty4.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/resources/CheckWarranty4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/resources/CheckWarranty5.css" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/resources/CheckWarranty5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/resources/CheckWarranty5.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/resources/CheckWarranty5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/resources/TestUiComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/resources/TestUiComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/tpls/CheckWarranty4.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/tpls/CheckWarranty4.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/tpls/CheckWarranty5.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/tpls/CheckWarranty5.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/tpls/TestUiComponent.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/tpls/TestUiComponent.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Products/views/TestUiComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/views/TestUiComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/BlocksAndFieldsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/BlocksAndFieldsRegister.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +56,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="127.0.0.1" id="e4e72cf8-c34d-4cc5-a892-12b91af8f5e1" name="127.0.0.1" />
@@ -148,7 +136,7 @@
       <workItem from="1610081536586" duration="9221000" />
       <workItem from="1610348433373" duration="21000" />
       <workItem from="1610501585446" duration="25280000" />
-      <workItem from="1610587396375" duration="822000" />
+      <workItem from="1610587396375" duration="12394000" />
     </task>
     <servers />
   </component>
@@ -212,8 +200,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/modules/Accounts/handlers/AccountHandler.php</url>
-          <line>35</line>
-          <option name="timeStamp" value="100" />
+          <line>53</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/modules/Contacts/models/Service.php</url>
+          <line>8</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/modules/Products/models/Service.php</url>
+          <line>6</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/cron/modules/Products/CheckWarrantyMsg.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/modules/Reports/custom/CustomerAgeReportHandler.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="112" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

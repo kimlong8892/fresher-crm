@@ -576,3 +576,8 @@ $countryCodes = array(
     '1876' => array('name' => 'JAMAICA', 'code' => '1876', 'short_name' => 'JM'),
 );
 // End Phu Vo
+// implement by Long Nguyen 14/01/2021
+$happyBirthDayConfig = array(
+    'contacts_sms_template_id' => 1784,
+    'contacts_email_template_id' => 35,
+);
