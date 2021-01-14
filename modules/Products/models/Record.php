@@ -659,13 +659,36 @@ class Products_Record_Model extends Vtiger_Record_Model
     static function declareProduct($productName, $serial, $warrantyStartDate, $warrantyEndDate)
     {
         $recordModel = Products_Record_Model::getCleanInstance('Products');
-        $recordModel->set('ProductName', $productName);
+        $recordModel->set('productname', $productName);
         $recordModel->set('serial_no', $serial);
         $recordModel->set('start_date', $warrantyStartDate);
         $recordModel->set('expiry_date', $warrantyEndDate);
         $recordModel->save();
 
         return $recordModel->get('id');
+    }
+
+    // Implemented by Long Nguyen on 2020-12-24 to update product
+    static function updateProduct($productId, $productName, $serial, $warrantyStartDate, $warrantyEndDate)
+    {
+        $warrantyStartDate = date("Y-m-d", strtotime($warrantyStartDate) );
+        $warrantyEndDate = date("Y-m-d", strtotime($warrantyEndDate) );
+        try {
+//            $recordModel = Products_Record_Model::getInstanceById($productId);
+//            $recordModel->set('mode', 'edit');
+//            $recordModel->set('productname', $productName);
+//            $recordModel->set('serialno', $serial);
+//            $recordModel->set('start_date', $warrantyStartDate);
+//            $recordModel->set('expiry_date', $warrantyEndDate);
+//            $recordModel->save();
+            $db = PearDatabase::getInstance();
+            $sql = "UPDATE vtiger_products SET productname = ?, serialno = ?, start_date = ?, expiry_date = ? WHERE productid = ?";
+            $params = array($productName, $serial, $warrantyStartDate, $warrantyEndDate, $productId);
+            $db->pquery($sql, $params);
+            return true;
+        } catch (Exception $exception){
+            throw $exception;
+        }
     }
 
     // Implemented by Long Nguyen on 2020-12-25 to extend expiry_date by productid

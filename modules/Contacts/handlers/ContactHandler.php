@@ -78,8 +78,6 @@ class ContactHandler extends VTEventHandler
 
     function demoAfterSave(&$entityData)
     {
-        if($entityData->get('leadsource') == "Web Site"){
-            return false;
-        }
+    
     }
 }

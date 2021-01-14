@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-25 09:41:41
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-13 15:39:39
          compiled from "modules/Products/tpls/TestUiComponent.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:7605519325fe41919c35684-82181834%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a899f4edf0dac950a60eca16040402ad2b2c62f2' => 
     array (
       0 => 'modules/Products/tpls/TestUiComponent.tpl',
-      1 => 1608864099,
+      1 => 1610527176,
       2 => 'file',
     ),
   ),
@@ -19,13 +19,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5fe41919c792c',
   'variables' => 
   array (
+    'dateTime' => 0,
     'MODULE' => 0,
     'HEADER_TITLE' => 0,
     'USER_MODEL' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe41919c792c')) {function content_5fe41919c792c($_smarty_tpl) {?><link rel="stylesheet" href="<?php echo vresource_url('libraries/jquery/bootstrapswitch/css/bootstrap3/bootstrap-switch.min.css');?>
+<?php if ($_valid && !is_callable('content_5fe41919c792c')) {function content_5fe41919c792c($_smarty_tpl) {?><script>var test_var = <?php echo json_encode(array('a'=>1,'b'=>2));?>
+;console.log(typeof (test_var));var test_date = '<?php echo $_smarty_tpl->tpl_vars['dateTime']->value;?>
+';</script><link rel="stylesheet"href="<?php echo vresource_url('libraries/jquery/bootstrapswitch/css/bootstrap3/bootstrap-switch.min.css');?>
 "/><script src="<?php echo vresource_url('libraries/jquery/bootstrapswitch/js/bootstrap-switch.min.js');?>
 "></script><button id="btnDeclare" class="btn btn-primary"><?php echo vtranslate('LBL_CHECK_MODAL_PRODUCT_SUBMIT_BTN','Products');?>
 </button><div class="contents tabbable"><ul class="nav nav-tabs marginBottom10px"><li class="tab1 active"><a data-toggle="tab" href="#tab1"><strong>Tab1</strong></a></li><li class="tab2"><a data-toggle="tab" href="#tab2"><strong>Tab2</strong></a></li><li class="tab3"><a data-toggle="tab" href="#tab3"><strong>Tab3</strong></a></li></ul><div class="tab-content overflowVisible"><div class="tab-pane active" id="tab1">Tab1 content</div><div class="tab-pane" id="tab2">wsdfsdfsdfsdfsdf</div><div class="tab-pane" id="tab3">tab333333333</div></div></div><div id="declareProductModal" class="modal-dialog modal-content hide"><?php ob_start();?><?php echo vtranslate('LBL_DECLARE_PRODUCT_MODAL_TITLE','Products');?>

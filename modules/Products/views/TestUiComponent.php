@@ -21,6 +21,16 @@ class Products_TestUiComponent_View extends CustomView_Base_View
     function process(Vtiger_Request $request)
     {
         $viewer = $this->getViewer($request);
+
+        // test date
+        $admin = Users::getActiveAdminUser();
+        $_POST['datetime'] = '22-08-2018 11:11';
+        $inputDateTime = $_POST['datetime'];
+        $dateTime = new DateTimeField($inputDateTime);
+        $dateTime = $dateTime->getDBInsertDateValue($admin);
+
+        $viewer->assign('dateTime', $dateTime);
+
         $viewer->display('modules/Products/tpls/TestUiComponent.tpl');
     }
 }

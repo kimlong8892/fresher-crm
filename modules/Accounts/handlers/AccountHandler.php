@@ -17,43 +17,40 @@ class AccountHandler extends VTEventHandler {
 		
 		if($eventName === 'vtiger.entity.beforesave') {
 			// Add handler functions here
-			$this->checkSomething($entityData);
-			$this->modifySomething($entityData);
+		
 		}
 
 		if($eventName === 'vtiger.entity.aftersave') {
 			// Add handler functions here
-			$this->updateSomething($entityData);
-			$this->deleteSomething($entityData);
-			$this->sendNotifyEmail($entityData);
+			$this->removeDocs($entityData);
+			
 		}
 
 		if($eventName === 'vtiger.entity.beforedelete') {
 			// Add handler functions here
+			$this->updateContactBeforeDelete($entityData);
 		}
 
 		if($eventName === 'vtiger.entity.afterdelete') {
 			// Add handler functions here
+			$this->updateContactToCompany($entityData);
 		}
 	}
 
-	private function checkSomething(&$entityData) {
-		// Logic here
+	private function removeDocs($entityData)
+	{
+		if($entityData->get('accounttype') == "Competitor"){
+			Accounts_Record_Model::removeDocsForCompetitor($entityData);
+		}
 	}
-
-	private function modifySomething(&$entityData) {
-		// Logic here
+	
+	private function updateContactBeforeDelete($entityData)
+	{
+		Accounts_Record_Model::updateContactBeforeDelete($entityData);
 	}
-
-	private function updateSomething(&$entityData) {
-		// Logic here
-	}
-
-	private function deleteSomething($entityData) {
-		// Logic here
-	}
-
-	private function sendNotifyEmail($entityData) {
-		// Logic here
+	
+	private function updateContactToCompany($entityData)
+	{
+		Accounts_Record_Model::updateContactToCompany($entityData);
 	}
 }

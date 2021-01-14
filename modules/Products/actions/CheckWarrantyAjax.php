@@ -28,7 +28,11 @@ class Products_CheckWarrantyAjax_Action extends Vtiger_Action_Controller
 
             $productInfo['warranty_status'] = $warrantyStatus;
             $productInfo['warranty_status_label'] = vtranslate($warrantyStatusLabelKey, 'Products');
+            $productInfo['productname'] = html_entity_decode($productInfo['productname']);
+            $productInfo['start_date'] = date("d-m-Y", strtotime($productInfo['start_date']));
+            $productInfo['expiry_date'] = date("d-m-Y", strtotime($productInfo['expiry_date']));
         }
+
 
         // response
         $result = array('matched_product' => $productInfo);

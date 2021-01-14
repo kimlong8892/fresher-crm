@@ -79,7 +79,6 @@ $languageStrings = array(
     'LBL_HEIGHT' => 'Chiều cao (cm)',
     'LBL_PRODUCT_PROPERTIES' => 'Quy cách sản phẩm',
     'LBL_CHECK_WARRANTY_TITLE' => 'Kiểm tra bảo hành',
-    'LBL_CHECK_WARRANTY_SERIAL_PLACEHOLDER' => 'Nhập số serial...',
     'LBL_CHECK_WARRANTY_SUBMIT_BTN' => 'Kiểm tra',
     'LBL_WARRANTY_PRODUCT_NAME' => 'Tên SP',
     'LBL_WARRANTY_SERIAL_NO' => 'Số Serial',
@@ -91,7 +90,12 @@ $languageStrings = array(
     'LBL_CHECK_WARRANTY_NO_PRODUCT_MATCH_ERROR_MSG' => 'Không tìm thấy sản phẩm này',
     'LBL_WARRANTY_BTN_EXTEND' => 'Gia hạn',
     'LBL_CHECK_MODAL_PRODUCT_SUBMIT_BTN' => 'Thêm sản phẩm',
-    'LBL_DEMO_LISTVIEW_ADVANCED_BUTTON' => 'Demo Link'
+    'LBL_DEMO_LISTVIEW_ADVANCED_BUTTON' => 'Demo Link',
+    'LBL_DECLARE_PRODUCT_MODAL_TITLE' => 'Thêm sản phẩm',
+    'LBL_SERIAL_NO' => 'Số serial',
+    'LBL_CHECK_WARRANTY_SERIAL_PLACEHOLDER' => 'Sô serial...',
+    'LBL_UPDATE_MODAL_PRODUCT_SUBMIT_BTN' => 'Cập nhật thông tin',
+    'LBL_UPDATE_PRODUCT_MODAL_TITLE' => 'Cập nhật thông tin'
 );
 
 $jsLanguageStrings = array(
@@ -101,6 +105,8 @@ $jsLanguageStrings = array(
     'JS_DELETION_OR_IN_ACTIVATION_CHILD_PRODUCT_MESSAGE' => 'SP này là một phần của gói sản phẩm. Giá của gói sản phẩm vẫn không đổi nếu bạn xóa SP này. Bạn có muốn tiếp tục không?',
     'JS_CHECK_WARRANTY_ERROR_MSG' => 'Không tìm thấy sản phẩm này',
     'JS_CHECK_WARRANTY_NO_PRODUCT_MATCH_ERROR_MSG' => 'Không tìm thấy sản phẩm này',
-    'JS_TITLE_PROMPT_PRODUCT_EXTEND' => 'Nhập số ngày gia hạn bảo hành'
+    'JS_TITLE_PROMPT_PRODUCT_EXTEND' => 'Nhập số ngày gia hạn bảo hành',
+    'JS_DECLARE_PRODUCT_SUCCESS_MSG' => 'Thêm sản phẩm thành công',
+    'JS_UPDATE_PRODUCT_SUCCESS_MSG' => 'Cập nhật sản phẩm thành công'
 );
 

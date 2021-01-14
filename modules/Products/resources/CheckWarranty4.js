@@ -53,6 +53,11 @@ CustomView_BaseController_Js('Products_CheckWarranty4_Js', {}, {
                 var callBackFunction = function (data) {
                     data.find('#declareProductModal').removeClass('hide');
                     var form = data.find('.declareProductForm');
+                    // init modal
+                    vtUtils.initDatePickerFields(form);
+                    var controller = Vtiger_Edit_Js.getInstance();
+                    controller.registerBasicEvents(form);
+                    vtUtils.applyFieldElementsView(form);
                     var productName = form.find('[name="product_name"]');
                     var serialNo = form.find('[name="serial_no"]');
                     var warrantyStartDate = form.find('[name="warranty_start_date"]');
@@ -79,7 +84,7 @@ CustomView_BaseController_Js('Products_CheckWarranty4_Js', {}, {
                                         return;
                                     }
                                     app.helper.hideModal();
-                                    var message = app.vtranslate('JS_DECLARE_PRODUCT_SUCCESS_ERROR_MSG');
+                                    var message = app.vtranslate('JS_DECLARE_PRODUCT_SUCCESS_MSG');
                                     app.helper.showSuccessNotification({'message': message});
                                 });
                         }

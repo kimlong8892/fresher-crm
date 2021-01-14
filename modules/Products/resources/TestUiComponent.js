@@ -6,6 +6,7 @@ CustomView_BaseController_Js('Products_TestUiComponent_Js', {}, {
     registerEventFormInit: function () {
         // Init form
         jQuery(function ($) {
+            console.log(app);
             $('#btnDeclare').click(function () {
                 var declareProductModal = $('#declareProductModal').clone(true, true);
                 var callBackFunction = function (data) {

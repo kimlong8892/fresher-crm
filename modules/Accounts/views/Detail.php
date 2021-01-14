@@ -88,7 +88,7 @@ class Accounts_Detail_View extends Vtiger_Detail_View
         $viewer->assign('USER_MODEL', Users_Record_Model::getCurrentUserModel());
         $viewer->assign('MODULE_NAME', $moduleName);
         $countEmail = $recordModel->getEntity()->countRelate("Emails");
-        $countDocs = $recordModel->getEntity()->countRelate("Documents");
+        $countDocs = $recordModel->getEntity()->countDocs();
         $countSP = $recordModel->getEntity()->countRelate("HelpDesk");
         $countCalenda = $recordModel->getEntity()->countRelate("Calendar");
         $viewer->assign('COUNT_EMAIL', $countEmail);

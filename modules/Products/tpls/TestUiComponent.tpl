@@ -1,5 +1,11 @@
 {strip}
-    <link rel="stylesheet" href="{vresource_url('libraries/jquery/bootstrapswitch/css/bootstrap3/bootstrap-switch.min.css')}"/>
+    <script>
+        var test_var = {json_encode(['a' => 1, 'b' => 2])};
+        console.log(typeof (test_var));
+        var test_date = '{$dateTime}';
+    </script>
+    <link rel="stylesheet"
+          href="{vresource_url('libraries/jquery/bootstrapswitch/css/bootstrap3/bootstrap-switch.min.css')}"/>
     <script src="{vresource_url('libraries/jquery/bootstrapswitch/js/bootstrap-switch.min.js')}"></script>
     <button id="btnDeclare" class="btn btn-primary">
         {vtranslate('LBL_CHECK_MODAL_PRODUCT_SUBMIT_BTN', 'Products')}
@@ -22,7 +28,6 @@
             </div>
         </div>
     </div>
-
     <div id="declareProductModal" class="modal-dialog modal-content hide">
         {assign var=HEADER_TITLE value={vtranslate('LBL_DECLARE_PRODUCT_MODAL_TITLE', 'Products')}}
         {include file='ModalHeader.tpl'|vtemplate_path:$MODULE TITLE=$HEADER_TITLE}
@@ -92,12 +97,10 @@
             </div>
 
 
-
             <div class="form-group">
                 <div class="input-group inputElement p-4" style="margin-bottom: 3px">
                     <input type="text" name="date-field-test" class="form-control datePicker" data-fieldtype="date"
-                           data-date-
-                           format="{$USER_MODEL->get('date_format')}"
+                           data-date-format="{$USER_MODEL->get('date_format')}"
                            data-rule-required="true"/>
                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                 </div>

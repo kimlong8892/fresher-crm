@@ -23,3 +23,7 @@
 #result table th, td{
     border: 1px solid silver;
 }
+
+#declareProductForm{
+    padding: 15px !important;
+}

@@ -6,7 +6,7 @@
             <input type="text"
                    name="serial"
                    value="{$smarty.post.seral}"
-                   placeholder="{vtranslate('LBL_CHECK_WARRANTY_SERIAL_PLACEHOLDER')}">
+                   placeholder="{vtranslate('LBL_CHECK_WARRANTY_SERIAL_PLACEHOLDER', 'Products')}">
             &nbsp;
             <button id="btnCheck" class="btn btn-primary">
                 {vtranslate('LBL_CHECK_WARRANTY_SUBMIT_BTN', 'Products')}
@@ -43,13 +43,21 @@
                         <button id="btn-warranty-extend" type="button" style="display: none;">{vtranslate(LBL_WARRANTY_BTN_EXTEND, 'Products')}</button>
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="form-group" style="padding: 7px;">
+                            <button id="btnUpdateModal" class="btn btn-primary">
+                                {vtranslate('LBL_UPDATE_MODAL_PRODUCT_SUBMIT_BTN', 'Products')}
+                            </button>
+                        </div>
+                    </td>
+                </tr>
             </table>
         </div>
-
         <div id="declareProductModal" class="modal-dialog modal-content hide">
             {assign var=HEADER_TITLE value={vtranslate('LBL_DECLARE_PRODUCT_MODAL_TITLE', 'Products')}}
             {include file='ModalHeader.tpl'|vtemplate_path:$MODULE TITLE=$HEADER_TITLE}
-            <form class="form-horizontal declareProductForm" method="POST">
+            <form class="form-horizontal declareProductForm" method="POST" id="declareProductForm">
                 <input type="hidden" name="leftSideModule" value="{$SELECTED_MODULE_NAME}"/>
                 <div class="form-group">
                     <label class="control-label fieldLabel col-sm-5">
@@ -78,17 +86,92 @@
                         <span class="redColor">*</span>
                     </label>
                     <div class="controls col-sm-6">
-                        <input type="text" name="warranty_start_date" class="form-control" data-rule-required="true"/>
+                        <div class="input-group inputElement">
+                            <input type="text" name="warranty_start_date"
+                                   data-fieldtype="date"
+                                   data-date-format="{$USER_MODEL->get('date_format')}"
+                                   class="form-control datePicker"
+                                   autocomplete="off"
+                                   data-rule-required="true"/>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label fieldLabel col-sm-5">
                         <span>{vtranslate('LBL_WARRANTY_END_DATE', 'Products')}</span>
+                        <span class="redColor">*</span>
+                    </label>
+                    <div class="controls col-sm-6">
+                        <div class="input-group inputElement">
+                            <input type="text" name="warranty_end_date"
+                                   data-fieldtype="date"
+                                   data-date-format="{$USER_MODEL->get('date_format')}"
+                                   class="form-control datePicker"
+                                   autocomplete="off"
+                                   data-rule-required="true"/>
+                        </div>
+                    </div>
+                </div>
+                {include file='ModalFooter.tpl'|@vtemplate_path:'Vtiger'}
+            </form>
+        </div>
+        <div id="updateProductModal" class="modal-dialog modal-content hide">
+            {assign var=HEADER_TITLE value={vtranslate('LBL_UPDATE_PRODUCT_MODAL_TITLE', 'Products')}}
+            {include file='ModalHeader.tpl'|vtemplate_path:$MODULE TITLE=$HEADER_TITLE}
+            <form class="form-horizontal updateProductForm" method="POST" id="updateProductForm">
+                <input type="hidden" name="leftSideModule" value="{$SELECTED_MODULE_NAME}"/>
+                <input type="hidden" name="product_id">
+                <div class="form-group">
+                    <label class="control-label fieldLabel col-sm-5">
+                        <span>{vtranslate('LBL_PRODUCT_NAME', 'Products')}</span>
                         &nbsp;
                         <span class="redColor">*</span>
                     </label>
                     <div class="controls col-sm-6">
-                        <input type="text" name="warranty_end_date" class="form-control" data-rule-required="true"/>
+                        <input type="text" name="product_name" class="form-control" data-rule-required="true"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label fieldLabel col-sm-5">
+                        <span>{vtranslate('LBL_SERIAL_NO', 'Products')}</span>
+                        &nbsp;
+                        <span class="redColor">*</span>
+                    </label>
+                    <div class="controls col-sm-6">
+                        <input type="text" name="serial_no" class="form-control" data-rule-required="true"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label fieldLabel col-sm-5">
+                        <span>{vtranslate('LBL_WARRANTY_START_DATE', 'Products')}</span>
+                        &nbsp;
+                        <span class="redColor">*</span>
+                    </label>
+                    <div class="controls col-sm-6">
+                        <div class="input-group inputElement">
+                            <input type="text" name="warranty_start_date"
+                                   data-fieldtype="date"
+                                   data-date-format="{$USER_MODEL->get('date_format')}"
+                                   class="form-control datePicker"
+                                   autocomplete="off"
+                                   data-rule-required="true"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label fieldLabel col-sm-5">
+                        <span>{vtranslate('LBL_WARRANTY_END_DATE', 'Products')}</span>
+                        <span class="redColor">*</span>
+                    </label>
+                    <div class="controls col-sm-6">
+                        <div class="input-group inputElement">
+                            <input type="text" name="warranty_end_date"
+                                   data-fieldtype="date"
+                                   data-date-format="{$USER_MODEL->get('date_format')}"
+                                   class="form-control datePicker"
+                                   autocomplete="off"
+                                   data-rule-required="true"/>
+                        </div>
                     </div>
                 </div>
                 {include file='ModalFooter.tpl'|@vtemplate_path:'Vtiger'}
