@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2020-07-10 12:05:47 pm.  */
+/* System auto-generated on 2021-01-15 11:03:29 am.  */
 
 $languageStrings = array(
     'SalesOrder' => 'Đơn hàng',
@@ -56,7 +56,10 @@ $languageStrings = array(
     'Approved' => 'Đã chấp nhận',
     'Delivered' => 'Đã giao hàng',
     'paymented' => 'Đã thanh toán',
-    'Cancelled' => 'Đã hủy'
+    'Cancelled' => 'Đã hủy',
+    'LBL_DATE_STOCK_IN' => 'Ngày nhập hàng',
+    'LBL_DATE_CLOSE' => 'Ngày chốt',
+    'LBL_PRODUCT_LIST' => 'Products'
 );
 
 $jsLanguageStrings = array(

@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2020-12-23 11:06:55 am.  */
+/* System auto-generated on 2021-01-15 11:01:17 am.  */
 
 $languageStrings = array(
     'Accounts' => 'Công ty',
@@ -43,7 +43,9 @@ $languageStrings = array(
     'LBL_TITLE_COUNT_EMAIL' => 'Tổng email',
     'LBL_TITLE_COUNT_DOCS' => 'Tổng tài liệu',
     'LBL_TITLE_COUNT_SP' => 'Tổng yêu cầu hỗ trợ',
-    'LBL_TITLE_COUNT_CALENDA' => 'Tổng hoạt động'
+    'LBL_TITLE_COUNT_CALENDA' => 'Tổng hoạt động',
+    'LBL_TAX_CODE' => 'Mã số thuế',
+    'LBL_SALESORDER_LIST' => 'SalesOrder'
 );
 
 $jsLanguageStrings = array(

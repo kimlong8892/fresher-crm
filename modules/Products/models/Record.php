@@ -708,4 +708,13 @@ class Products_Record_Model extends Vtiger_Record_Model
         $params = array($newExpiryDate, $productId);
         $db->pquery($sql, $params);
     }
+    
+    // implement check exists serial by Long Nguyen 15/01/2021
+    static function checkExistsSerial($serial, $recordId = null) {
+        $product = Products_Record_Model::getInstanceBySerial($serial);
+        if($product->getData() == null || ($recordId != null && $product->get('productid') == $recordId)){
+            return false;
+        }
+        return true;
+    }
 }

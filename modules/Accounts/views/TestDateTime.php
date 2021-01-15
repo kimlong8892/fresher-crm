@@ -15,6 +15,27 @@ class Accounts_TestDateTime_View extends Vtiger_View_Controller
 
     public function process(Vtiger_Request $request)
     {
+        /*
+        require_once('libraries/PHPExcel/PHPExcel.php');
+        $objPHPExcel = new PHPExcel();
+        $objPHPExcel->getProperties()
+            ->setCreator("Temporaris")
+            ->setLastModifiedBy("Temporaris")
+            ->setTitle("Template Relevé des heures intérimaires")
+            ->setSubject("Template excel")
+            ->setDescription("Template excel permettant la création d'un ou plusieurs relevés d'heures")
+            ->setKeywords("Template excel");
+        $objPHPExcel->setActiveSheetIndex(0);
+        $objPHPExcel->getActiveSheet()->SetCellValue('A1', "12");
+        $objPHPExcel->getActiveSheet()->SetCellValue('B1', "13");
+    
+        $writer = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+        header('Content-Type: application/vnd.ms-excel');
+        header('Content-Disposition: attachment;filename="excel.xls"');
+        header('Cache-Control: max-age=0');
+        $writer->save('php://output');
+        die;
+        */
         require_once('include/fields/DateTimeField.php');
         echo '<head><meta charset="UTF-8"></head>';
         $admin = Users::getActiveAdminUser(); // Lấy ra user admin (có id = 1) dùng cho ví dụ bên dưới

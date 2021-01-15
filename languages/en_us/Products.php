@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2021-01-14 10:25:22 am.  */
+/* System auto-generated on 2021-01-15 05:45:46 pm.  */
 
 $languageStrings = array(
     'Products' => 'Products',
@@ -78,7 +78,9 @@ $languageStrings = array(
     'LBL_WIDTH' => 'Width (cm)',
     'LBL_HEIGHT' => 'Height (cm)',
     'LBL_PRODUCT_PROPERTIES' => 'Product Properties',
-    'LBL_STATUS_WARRANTY' => 'Warranty Status'
+    'LBL_STATUS_WARRANTY' => 'Warranty Status',
+    'LBL_DATE_PRODUCE' => 'Date Produce',
+    'LBL_PRODUCTS_TYPE' => 'Product type'
 );
 
 $jsLanguageStrings = array(

@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2019-08-15 09:01:25 am.  */
+/* System auto-generated on 2021-01-15 11:01:17 am.  */
 
 $relationships = array(
     array(
@@ -26,6 +26,18 @@ $relationships = array(
         'listingFunctionName' => 'get_dependents_list',
         'leftSideReferenceFieldName' => null,
         'rightSideReferenceFieldName' => 'account_id'
+    ),
+    array(
+        'leftSideModule' => 'Accounts',
+        'rightSideModule' => 'SalesOrder',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_SALESORDER_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_account'
     )
 );
 
