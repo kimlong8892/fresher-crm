@@ -1,9 +1,7 @@
 <?php
 
-class CPDemo_ListView_Model extends Vtiger_ListView_Model
-{
-    public function getAdvancedLinks()
-    {
+class CPDemo_ListView_Model extends Vtiger_ListView_Model {
+    public function getAdvancedLinks() {
         $advancedLinks = parent::getAdvancedLinks();
         $moduleModel = $this->getModule();
 
@@ -26,8 +24,7 @@ class CPDemo_ListView_Model extends Vtiger_ListView_Model
         }
     }
 
-    public function getListViewMassActions($linksParams)
-    {
+    public function getListViewMassActions($linksParams) {
         $massActions = parent::getListViewMassActions($linksParams);
         $moduleModel = $this->getModule();
 

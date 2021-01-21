@@ -43,9 +43,10 @@ $languageStrings = array(
     'LBL_TITLE_COUNT_EMAIL' => 'Tổng email',
     'LBL_TITLE_COUNT_DOCS' => 'Tổng tài liệu',
     'LBL_TITLE_COUNT_SP' => 'Tổng yêu cầu hỗ trợ',
-    'LBL_TITLE_COUNT_CALENDA' => 'Tổng hoạt động',
+    'LBL_TITLE_COUNT_CALENDAR' => 'Tổng hoạt động',
     'LBL_TAX_CODE' => 'Mã số thuế',
-    'LBL_SALESORDER_LIST' => 'SalesOrder'
+    'LBL_SALESORDER_LIST' => 'SalesOrder',
+    'ANNUALREVENUE' => 'Tổng doanh thu'
 );
 
 $jsLanguageStrings = array(

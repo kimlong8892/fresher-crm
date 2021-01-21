@@ -1784,34 +1784,6 @@
 			return $entityIds;
 		}
 		
-		// count record module relate by Long Nguyen 13/01/2021
-		function countRelate($relateName, $id = null)
-		{
-			global $adb;
-			if ($id == null) {
-				$id = $this->id;
-			}
-			$query = 'SELECT * FROM vtiger_crmentityrel
-				WHERE crmid = ? AND module = "Accounts" AND relmodule = ?';
-			$accountContacts = $adb->pquery($query, array($id, $relateName));
-			$return = $adb->num_rows($accountContacts);
-			return $return;
-		}
-		
-		// count record for this Account by Long Nguyen 13/01/2021
-		function countDocs($id = null)
-		{
-			global $adb;
-			if ($id == null) {
-				$id = $this->id;
-			}
-			$query = 'SELECT * FROM vtiger_senotesrel
-				WHERE crmid = ?';
-			$accountContacts = $adb->pquery($query, array($id));
-			$return = $adb->num_rows($accountContacts);
-			return $return;
-		}
-		
 		function getRelatedPotentialIds($id)
 		{
 			$relatedIds = array();

@@ -1,15 +1,12 @@
 <?php
 
-class Products_CheckWarranty5_View extends CustomView_Base_View
-{
+class Products_CheckWarranty5_View extends CustomView_Base_View {
 
-    public function __construct()
-    {
+    public function __construct() {
         parent::__construct($isFullView = true);
     }
 
-    function checkPermission(Vtiger_Request $request)
-    {
+    function checkPermission(Vtiger_Request $request) {
         $moduleName = $request->getModule();
         // Write your own logic to check for access permission
         $allowAccess = true; // set this to false if user's role is not permission
@@ -18,8 +15,7 @@ class Products_CheckWarranty5_View extends CustomView_Base_View
         }
     }
 
-    function process(Vtiger_Request $request)
-    {
+    function process(Vtiger_Request $request) {
         $viewer = $this->getViewer($request);
         $viewer->display('modules/Products/tpls/CheckWarranty5.tpl');
     }

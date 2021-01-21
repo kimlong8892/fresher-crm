@@ -8,15 +8,13 @@
 	 * All Rights Reserved.
 	 *************************************************************************************/
 	
-	class Accounts_Record_Model extends Vtiger_Record_Model
-	{
+	class Accounts_Record_Model extends Vtiger_Record_Model {
 		
 		/**
 		 * Function returns the details of Accounts Hierarchy
 		 * @return <Array>
 		 */
-		function getAccountHierarchy()
-		{
+		function getAccountHierarchy() {
 			$focus = CRMEntity::getInstance($this->getModuleName());
 			$hierarchy = $focus->getAccountHierarchy($this->getId());
 			$i = 0;
@@ -38,8 +36,7 @@
 		 * Function returns the url for create event
 		 * @return <String>
 		 */
-		function getCreateEventUrl()
-		{
+		function getCreateEventUrl() {
 			$calendarModuleModel = Vtiger_Module_Model::getInstance('Calendar');
 			return $calendarModuleModel->getCreateEventRecordUrl() . '&parent_id=' . $this->getId();
 		}
@@ -58,8 +55,7 @@
 		 * Function to check duplicate exists or not
 		 * @return <boolean>
 		 */
-		public function checkDuplicate()
-		{
+		public function checkDuplicate() {
 			$db = PearDatabase::getInstance();
 			
 			$query = "SELECT 1 FROM vtiger_crmentity WHERE setype = ? AND label = ? AND deleted = 0";
@@ -82,8 +78,7 @@
 		 * Function to get List of Fields which are related from Accounts to Inventory Record.
 		 * @return <array>
 		 */
-		public function getInventoryMappingFields()
-		{
+		public function getInventoryMappingFields() {
 			return array(
 				//Billing Address Fields
 				array('parentField' => 'bill_city', 'inventoryField' => 'bill_city', 'defaultValue' => ''),
@@ -106,8 +101,7 @@
 		/**
 		 * Extended and Modifiied by Phu Vo on 2019.09.16 to prevent delete personal Account
 		 */
-		public function delete()
-		{
+		public function delete() {
 			if (self::isPersonalAccount($this->getId())) return;
 			parent::delete();
 		}
@@ -115,8 +109,7 @@
 		/**
 		 * Extended and Modifiied by Phu Vo on 2019.09.16 to prevent delete personal Account
 		 */
-		public function isDeletable()
-		{
+		public function isDeletable() {
 			if (self::isPersonalAccount($this->getId())) return false;
 			return parent::isDeletable();
 		}
@@ -124,8 +117,7 @@
 		/**
 		 * Extended and Modifiied by Phu Vo on 2019.09.16 to prevent delete personal Account
 		 */
-		public function isEditable()
-		{
+		public function isEditable() {
 			if (self::isPersonalAccount($this->getId())) return false;
 			return parent::isEditable();
 		}
@@ -136,8 +128,7 @@
 		 * @return Boolean True for personal account
 		 * @author Phu Vo (2019.09.16)
 		 */
-		static function isPersonalAccount($recordId)
-		{
+		static function isPersonalAccount($recordId) {
 			global $adb;
 			
 			$sql = "SELECT 1 FROM vtiger_account AS a
@@ -149,9 +140,8 @@
 			return $adb->fetchByAssoc($result) ? true : false;
 		}
 		
-		// implement by Kim Long 13/01/2021
-		static function queryListAccountCompetior()
-		{
+		// implement by Long Nguyen 13/01/2021
+		static function queryListAccountCompetior() {
 			global $adb;
 			$sql = "SELECT * FROM vtiger_account WHERE account_type = ?
                     INNER JOIN vtiger_crmentity ON (crmid = accountid AND deleted = 0)";
@@ -166,12 +156,10 @@
 			return $return;
 		}
 		
-		static function removeDocsForCompetitor($record)
-		{
+		static function removeDocsForCompetitor($record) {
 			global $adb;
 			try {
 				$sql = "DELETE FROM vtiger_senotesrel
-                        INNER JOIN vtiger_crmentity ON (vtiger_senotesrel.crmid = vtiger_crmentity.crmid AND deleted = 0)
                         WHERE crmid = ?";
 				$params = array($record->getId());
 				$adb->pquery($sql, $params);
@@ -181,8 +169,7 @@
 			}
 		}
 		
-		static function updateContactBeforeDelete($record)
-		{
+		static function updateContactBeforeDelete($record) {
 			global $adb;
 			try {
 				$sql = "UPDATE vtiger_contactdetails
@@ -196,8 +183,7 @@
 			}
 		}
 		
-		static function updateContactToCompany()
-		{
+		static function updateContactToCompany() {
             global $adb;
             $sql = "SELECT * FROM vtiger_account
                     INNER JOIN vtiger_crmentity ON (crmid = contactid AND deleted = 0) LIMIT 1";
@@ -208,6 +194,24 @@
                 $adb->pquery($sqlUpdate, [$row['accountid']]);
             }
 		}
-		
-		
+
+		static function updateAnnualRevenue($annualRevenue, $contactId){
+		    global $adb;
+		    $accountId = Accounts_Record_Model::getAccountIdByContact($contactId);
+            $sqlUpdate = "UPDATE vtiger_account SET annualrevenue = (annualrevenue + ?)
+                                WHERE accountid = ?";
+            $adb->pquery($sqlUpdate, [$annualRevenue, $accountId]);
+        }
+
+        static function getAccountIdByContact($contactId){
+            global $adb;
+            $sql = "SELECT * FROM vtiger_contactdetails
+                    INNER JOIN vtiger_crmentity ON (crmid = contactid AND deleted = 0)
+                    WHERE contactid = ?";
+            $result = $adb->pquery($sql, [$contactId]);
+            while($row = $adb->fetchByAssoc($result)){
+                return $row['accountid'];
+            }
+            return null;
+        }
 	}

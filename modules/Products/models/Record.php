@@ -15,13 +15,11 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get Taxes Url
      * @return <String> Url
      */
-    function getTaxesURL()
-    {
+    function getTaxesURL() {
         return 'index.php?module=Inventory&action=GetTaxes&record=' . $this->getId();
     }
 
-    function getPurchaseOrderTaxesURL()
-    {
+    function getPurchaseOrderTaxesURL() {
         return 'index.php?module=PurchaseOrder&action=GetTaxes&record=' . $this->getId();
     }
 
@@ -29,8 +27,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get available taxes for this record
      * @return <Array> List of available taxes
      */
-    function getTaxes()
-    {
+    function getTaxes() {
         $db = PearDatabase::getInstance();
 
         $result = $db->pquery('SELECT vtiger_producttaxrel.*, vtiger_inventorytaxinfo.taxname, vtiger_inventorytaxinfo.taxlabel, vtiger_inventorytaxinfo.compoundon FROM vtiger_producttaxrel
@@ -78,8 +75,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get subproducts for this record
      * @return <Array> of subproducts
      */
-    function getSubProducts($active = false)
-    {
+    function getSubProducts($active = false) {
         $db = PearDatabase::getInstance();
 
         $query = 'SELECT vtiger_products.productid, quantity FROM vtiger_products
@@ -108,8 +104,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get Url to Create a new Quote from this record
      * @return <String> Url to Create new Quote
      */
-    function getCreateQuoteUrl()
-    {
+    function getCreateQuoteUrl() {
         $quotesModuleModel = Vtiger_Module_Model::getInstance('Quotes');
 
         return "index.php?module=" . $quotesModuleModel->getName() . "&view=" . $quotesModuleModel->getEditViewName() . "&product_id=" . $this->getId() .
@@ -120,8 +115,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get Url to Create a new Invoice from this record
      * @return <String> Url to Create new Invoice
      */
-    function getCreateInvoiceUrl()
-    {
+    function getCreateInvoiceUrl() {
         $invoiceModuleModel = Vtiger_Module_Model::getInstance('Invoice');
 
         return "index.php?module=" . $invoiceModuleModel->getName() . "&view=" . $invoiceModuleModel->getEditViewName() . "&product_id=" . $this->getId() .
@@ -132,8 +126,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get Url to Create a new PurchaseOrder from this record
      * @return <String> Url to Create new PurchaseOrder
      */
-    function getCreatePurchaseOrderUrl()
-    {
+    function getCreatePurchaseOrderUrl() {
         $purchaseOrderModuleModel = Vtiger_Module_Model::getInstance('PurchaseOrder');
 
         return "index.php?module=" . $purchaseOrderModuleModel->getName() . "&view=" . $purchaseOrderModuleModel->getEditViewName() . "&product_id=" . $this->getId() .
@@ -144,8 +137,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get Url to Create a new SalesOrder from this record
      * @return <String> Url to Create new SalesOrder
      */
-    function getCreateSalesOrderUrl()
-    {
+    function getCreateSalesOrderUrl() {
         $salesOrderModuleModel = Vtiger_Module_Model::getInstance('SalesOrder');
 
         return "index.php?module=" . $salesOrderModuleModel->getName() . "&view=" . $salesOrderModuleModel->getEditViewName() . "&product_id=" . $this->getId() .
@@ -158,8 +150,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * @param <Object> $focus
      * @return <Array> List of individual taxes
      */
-    function getDetailsForInventoryModule($focus)
-    {
+    function getDetailsForInventoryModule($focus) {
         $productId = $this->getId();
         $currentUser = Users_Record_Model::getCurrentUserModel();
         $productDetails = getAssociatedProducts($this->getModuleName(), $focus, $productId, $focus->getModuleName());
@@ -229,8 +220,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get Tax Class Details for this record(Product)
      * @return <Array> List of Taxes
      */
-    public function getTaxClassDetails()
-    {
+    public function getTaxClassDetails() {
         $taxClassDetails = $this->get('taxClassDetails');
         if (!empty($taxClassDetails)) {
             return $taxClassDetails;
@@ -292,8 +282,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get all taxes
      * @return <Array> List of taxes
      */
-    public function getAllTaxes()
-    {
+    public function getAllTaxes() {
         $allTaxesList = $this->get('alltaxes');
         if (!empty($allTaxesList)) {
             return $allTaxesList;
@@ -315,8 +304,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get price details
      * @return <Array> List of prices
      */
-    public function getPriceDetails()
-    {
+    public function getPriceDetails() {
         $priceDetails = $this->get('priceDetails');
         if (!empty($priceDetails)) {
             return $priceDetails;
@@ -330,8 +318,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get base currency details
      * @return <Array>
      */
-    public function getBaseCurrencyDetails()
-    {
+    public function getBaseCurrencyDetails() {
         $baseCurrencyDetails = $this->get('baseCurrencyDetails');
         if (!empty($baseCurrencyDetails)) {
             return $baseCurrencyDetails;
@@ -357,8 +344,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get Image Details
      * @return <array> Image Details List
      */
-    public function getImageDetails()
-    {
+    public function getImageDetails() {
         $db = PearDatabase::getInstance();
         $imageDetails = array();
         $recordId = $this->getId();
@@ -404,8 +390,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * @param <Array> $recordIdsList
      * @return <Array> List of images of given products
      */
-    public static function getProductsImageDetails($recordIdsList = false)
-    {
+    public static function getProductsImageDetails($recordIdsList = false) {
         $db = PearDatabase::getInstance();
         $imageDetails = $imageIdsList = $imagePathList = $imageNamesList = $imageOriginalNamesList = array();
         if ($recordIdsList) {
@@ -454,8 +439,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * @param <String> $searchKey
      * @return <Array> - List of Vtiger_Record_Model or Module Specific Record Model instances
      */
-    public static function getSearchResult($searchKey, $module = false)
-    {
+    public static function getSearchResult($searchKey, $module = false) {
         $db = PearDatabase::getInstance();
 
         $query = 'SELECT label, crmid, setype, createdtime FROM vtiger_crmentity WHERE label LIKE ? AND vtiger_crmentity.deleted = 0';
@@ -513,8 +497,7 @@ class Products_Record_Model extends Vtiger_Record_Model
     /**
      * Function to get acive status of record
      */
-    public function getActiveStatusOfRecord()
-    {
+    public function getActiveStatusOfRecord() {
         $activeStatus = $this->get('active');
         if ($activeStatus) {
             return $activeStatus;
@@ -532,8 +515,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * @param <Integer> $price - listprice
      * @param <Integer> $currencyId - currencyId
      */
-    function updateListPrice($relatedRecordId, $price, $currencyId)
-    {
+    function updateListPrice($relatedRecordId, $price, $currencyId) {
         $db = PearDatabase::getInstance();
 
         $result = $db->pquery('SELECT * FROM vtiger_pricebookproductrel WHERE pricebookid = ? AND productid = ?',
@@ -553,8 +535,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get whether product is bundle or not
      * @return <boolean> True/False
      */
-    public function isBundle()
-    {
+    public function isBundle() {
         $db = PearDatabase::getInstance();
 
         $query = 'SELECT 1 FROM vtiger_seproductsrel INNER JOIN vtiger_crmentity 
@@ -568,8 +549,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to update show bundles option
      * @param <Boolean> true/false
      */
-    public function updateShowBundlesOption($value)
-    {
+    public function updateShowBundlesOption($value) {
         $db = PearDatabase::getInstance();
 
         $query = 'UPDATE vtiger_products SET is_subproducts_viewable = ? WHERE productid = ?';
@@ -580,8 +560,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to check whether bundle is viewable or not
      * @return boolean
      */
-    public function isBundleViewable()
-    {
+    public function isBundleViewable() {
         $db = PearDatabase::getInstance();
         $result = $db->pquery('SELECT is_subproducts_viewable FROM vtiger_products WHERE productid = ?', array($this->getId()));
 
@@ -596,8 +575,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * @param <Number> $subProductId
      * @param <Number> $quantity
      */
-    public function updateSubProductQuantity($subProductId, $quantity)
-    {
+    public function updateSubProductQuantity($subProductId, $quantity) {
         $db = PearDatabase::getInstance();
         if (!$quantity) {
             $quantity = 1;
@@ -611,8 +589,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get subproducts costs and total cost in user currency
      * @return <Array>
      */
-    public function getSubProductsCostsAndTotalCostInUserCurrency()
-    {
+    public function getSubProductsCostsAndTotalCostInUserCurrency() {
         $subProductsTotalCost = 0;
         $subProductsCostInfo = array();
         if ($this->isBundle()) {
@@ -638,13 +615,12 @@ class Products_Record_Model extends Vtiger_Record_Model
     }
 
     // Implemented by Long Nguyen on 2020-12-23 to retrieve a product by its serial
-    static function getInstanceBySerial($serial)
-    {
+    static function getInstanceBySerial($serial) {
         $db = PearDatabase::getInstance();
-        $sql = "SELECT p.*, e.*
+        $sql = "SELECT p.productid, p.serialno
             FROM vtiger_products as p
             INNER JOIN vtiger_crmentity AS e ON (e.crmid = p.productid AND e.deleted = 0 AND e.setype = 'Products')
-            WHERE p.serialno = ?";
+            WHERE p.serialno = ? AND p.serialno <> ''";
         $params = array($serial);
         $result = $db->pquery($sql, $params);
         $data = $db->fetchByAssoc($result);
@@ -656,8 +632,7 @@ class Products_Record_Model extends Vtiger_Record_Model
     }
 
     // Implemented by Long Nguyen on 2020-12-24 to declare and save new product
-    static function declareProduct($productName, $serial, $warrantyStartDate, $warrantyEndDate)
-    {
+    static function declareProduct($productName, $serial, $warrantyStartDate, $warrantyEndDate) {
         $recordModel = Products_Record_Model::getCleanInstance('Products');
         $recordModel->set('productname', $productName);
         $recordModel->set('serial_no', $serial);
@@ -669,18 +644,10 @@ class Products_Record_Model extends Vtiger_Record_Model
     }
 
     // Implemented by Long Nguyen on 2020-12-24 to update product
-    static function updateProduct($productId, $productName, $serial, $warrantyStartDate, $warrantyEndDate)
-    {
+    static function updateProduct($productId, $productName, $serial, $warrantyStartDate, $warrantyEndDate) {
         $warrantyStartDate = date("Y-m-d", strtotime($warrantyStartDate) );
         $warrantyEndDate = date("Y-m-d", strtotime($warrantyEndDate) );
         try {
-//            $recordModel = Products_Record_Model::getInstanceById($productId);
-//            $recordModel->set('mode', 'edit');
-//            $recordModel->set('productname', $productName);
-//            $recordModel->set('serialno', $serial);
-//            $recordModel->set('start_date', $warrantyStartDate);
-//            $recordModel->set('expiry_date', $warrantyEndDate);
-//            $recordModel->save();
             $db = PearDatabase::getInstance();
             $sql = "UPDATE vtiger_products SET productname = ?, serialno = ?, start_date = ?, expiry_date = ? WHERE productid = ?";
             $params = array($productName, $serial, $warrantyStartDate, $warrantyEndDate, $productId);
@@ -692,16 +659,9 @@ class Products_Record_Model extends Vtiger_Record_Model
     }
 
     // Implemented by Long Nguyen on 2020-12-25 to extend expiry_date by productid
-    static function extendExpiryDateProduct($productId, $dateExtend)
-    {
+    static function extendExpiryDateProduct($productId, $dateExtend) {
         $recordModel = Products_Record_Model::getInstanceById($productId, 'Products');
         $newExpiryDate = date('Y-m-d', strtotime($recordModel->get('expiry_date') . ' + ' . $dateExtend . ' days'));
-        //$recordModel->set('mode', 'edit');
-//        $recordModel->set(
-//            'expiry_date',
-//            $newExpiryDate
-//        );
-//        $recordModel->save();
         $db = PearDatabase::getInstance();
         $sql = "UPDATE vtiger_products
             SET expiry_date = ? WHERE productid = ?";
@@ -716,5 +676,26 @@ class Products_Record_Model extends Vtiger_Record_Model
             return false;
         }
         return true;
+    }
+
+    // implement update status warranty auto for cron task by Long Nguyen 20/01/2021
+    static function updateStatusWarranty(){
+        global $adb;
+        $db = PearDatabase::getInstance();
+        $sql = "SELECT p.*, e.*
+            FROM vtiger_products as p
+            INNER JOIN vtiger_crmentity AS e ON (e.crmid = p.productid AND e.deleted = 0)";
+        $result = $db->pquery($sql, []);
+        while ($row = $adb->fetchByAssoc($result)) {
+            $warrantyStatus = (strtotime($row['expiry_date']) > strtotime(date('Y-m-d'))) ? true : false;
+            $strStatus = "";
+            if($warrantyStatus){
+                $strStatus = vtranslate('LBL_WARRANT_VALID', 'Products');
+            } else {
+                $strStatus = vtranslate('LBL_WARRANT_ENDED', 'Products');
+            }
+            $sqlUpdate = "UPDATE vtiger_products set status_warranty = ? WHERE productid = ?";
+            $db->pquery($sqlUpdate, [$strStatus, $row['productid']]);
+        }
     }
 }

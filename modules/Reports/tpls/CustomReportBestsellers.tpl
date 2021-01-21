@@ -1,4 +1,8 @@
 {strip}
+    <style>
+
+    </style>
+
     <div {if $PRINT}style="width:80%; margin:auto"{/if}>
         <h2>{$REPORT_NAME}</h2>
 
@@ -8,8 +12,6 @@
                 {foreach item=HEADER_NAME from=$REPORT_HEADERS}
                     <th {if !$PRINT}nowrap{/if}>{$HEADER_NAME}</th>
                 {/foreach}
-                <th {if !$PRINT}nowrap{/if}>{vtranslate('LBL_AGE', $PRIMARY_MODULE)}</th>
-                {if !$PRINT}<th nowrap>{vtranslate('LBL_ACTION')}</th>{/if}
             </tr>
             </thead>
             <tbody>

@@ -1,12 +1,21 @@
 <?php
 require_once('modules/Reports/custom/CustomReportHandler.php');
 
-class BestsellersHandler extends CustomReportHandler{
-    function prepare(){
-        parent::prepare();
+class BestsellersHandler extends CustomReportHandler {
+    function prepare() {
+        // Fetch column list
+        $this->getQueryColumnsList($this->reportid, 'HTML');
+        $this->_columnslist = array_insert_before(
+            'vtiger_crmentity:crmid:LBL_ACTION:crmid:I',
+            $this->_columnslist,
+            'margin',
+            "SUM(vtiger_inventoryproductreltmpSalesOrder.margin) AS Sales_Order_margin"
+        );
     }
 
-    function renderReportResult($filterSql, $showReportName = false, $print = false){
+    function renderReportResult($filterSql, $showReportName = true, $print = false){
+        var_dump($this);
+        die;
         $processor = function(&$rowViewer, &$result, $row) {
             $rowViewer->assign('ROW_DATA', $row);
             $result .= $rowViewer->fetch('modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl');
@@ -16,7 +25,11 @@ class BestsellersHandler extends CustomReportHandler{
         if($showReportName) {
             $mainViewer->assign('REPORT_NAME', $this->reportname);
         }
-        $mainViewer->assign('REPORT_HEADERS', $this->getReportHeaders());
+        $reportHeader = $this->getReportHeaders();
+        $reportHeader[1] = vtranslate('LBL_TOTAL_AMOUNT', 'SalesOrder');
+        $reportHeader[2] = vtranslate('LBL_TOTAL_MONEY', 'SalesOrder');
+        unset($reportHeader[3]);
+        $mainViewer->assign('REPORT_HEADERS', $reportHeader);
         $mainViewer->assign('REPORT_RESULT', $this->getReportResult($processor, $filterSql, false, $print));
         $mainViewer->assign('PRIMARY_MODULE', $this->primarymodule);
         $mainViewer->assign('PRINT', $print);

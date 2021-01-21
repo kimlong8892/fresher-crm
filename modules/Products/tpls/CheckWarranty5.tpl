@@ -93,6 +93,7 @@
                                    class="form-control datePicker"
                                    autocomplete="off"
                                    data-rule-required="true"/>
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                     </div>
                 </div>
@@ -109,6 +110,7 @@
                                    class="form-control datePicker"
                                    autocomplete="off"
                                    data-rule-required="true"/>
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                     </div>
                 </div>
@@ -155,6 +157,7 @@
                                    class="form-control datePicker"
                                    autocomplete="off"
                                    data-rule-required="true"/>
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                     </div>
                 </div>
@@ -171,6 +174,7 @@
                                    class="form-control datePicker"
                                    autocomplete="off"
                                    data-rule-required="true"/>
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                     </div>
                 </div>

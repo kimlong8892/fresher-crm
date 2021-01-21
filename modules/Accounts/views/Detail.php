@@ -87,14 +87,19 @@ class Accounts_Detail_View extends Vtiger_Detail_View
         $viewer->assign('SUMMARY_RECORD_STRUCTURE', $recordStrucure->getStructure());
         $viewer->assign('USER_MODEL', Users_Record_Model::getCurrentUserModel());
         $viewer->assign('MODULE_NAME', $moduleName);
-        $countEmail = $recordModel->getEntity()->countRelate("Emails");
-        $countDocs = $recordModel->getEntity()->countDocs();
-        $countSP = $recordModel->getEntity()->countRelate("HelpDesk");
-        $countCalenda = $recordModel->getEntity()->countRelate("Calendar");
+
+
+        $countEmail = $recordModel->countRelate("Emails");
+        $countDocs = $recordModel->countDocs();
+        $countSP = $recordModel->countRelate("HelpDesk");
+        $countCalendar = $recordModel->countRelate("Calendar");
+
+
+
         $viewer->assign('COUNT_EMAIL', $countEmail);
         $viewer->assign('COUNT_DOCS', $countDocs);
         $viewer->assign('COUNT_SP', $countSP);
-        $viewer->assign('COUNT_CALENDA', $countCalenda);
+        $viewer->assign('COUNT_CALENDAR', $countCalendar);
         return $viewer->view('ModuleSummaryView.tpl', $moduleName, true);
     }
 

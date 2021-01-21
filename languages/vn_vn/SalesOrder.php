@@ -59,7 +59,9 @@ $languageStrings = array(
     'Cancelled' => 'Đã hủy',
     'LBL_DATE_STOCK_IN' => 'Ngày nhập hàng',
     'LBL_DATE_CLOSE' => 'Ngày chốt',
-    'LBL_PRODUCT_LIST' => 'Products'
+    'LBL_PRODUCT_LIST' => 'Products',
+    'LBL_TOTAL_AMOUNT' => 'Tổng số lượng',
+    'LBL_TOTAL_MONEY' => 'Tổng tiền'
 );
 
 $jsLanguageStrings = array(

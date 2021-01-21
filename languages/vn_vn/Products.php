@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2021-01-15 05:45:46 pm.  */
+/* System auto-generated on 2021-01-20 09:16:47 am.  */
 
 $languageStrings = array(
     'Products' => 'Sản phẩm',
@@ -100,7 +100,9 @@ $languageStrings = array(
     'LBL_WARRANT_VALID' => 'Còn bảo hành',
     'LBL_WARRANT_ENDED' => 'Hết bảo hành',
     'LBL_DATE_PRODUCE' => 'Ngày sản xuất',
-    'LBL_PRODUCTS_TYPE' => 'Loại sản phẩm'
+    'LBL_PRODUCTS_TYPE' => 'Loại sản phẩm',
+    'Products Product Category' => 'Danh mục sản phẩm',
+    'LBL_ERROR_SERIAL' => 'Trùng số serial'
 );
 
 $jsLanguageStrings = array(
@@ -113,7 +115,10 @@ $jsLanguageStrings = array(
     'JS_TITLE_PROMPT_PRODUCT_EXTEND' => 'Nhập số ngày gia hạn bảo hành',
     'JS_DECLARE_PRODUCT_SUCCESS_MSG' => 'Thêm sản phẩm thành công',
     'JS_UPDATE_PRODUCT_SUCCESS_MSG' => 'Cập nhật sản phẩm thành công',
-    'LBL_ERROR_SERIAL' => 'Trùng số serial',
-    'LBL_ERROR_SERIAL_OR_EMPTY' => 'Trùng số serial hoặc rỗng'
+    'JS_LBL_ERROR_SERIAL' => 'Trùng số serial',
+    'JS_LBL_ERROR_SERIAL_OR_EMPTY' => 'Trùng số serial hoặc rỗng',
+    'JS_DECLARE_PRODUCT_ERROR_MSG' => 'Lỗi không xác định',
+    'JS_DECLARE_PRODUCT_FAIL' => 'Tạo sản phẩm thất bại',
+    'Products Product Category' => 'Loại sản phẩm'
 );
 

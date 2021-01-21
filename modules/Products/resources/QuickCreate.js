@@ -12,7 +12,7 @@ jQuery(function ($) {
             .then(function (error, data) {
                 app.helper.hideProgress();
                 if (data.is_exists) {
-                    alert(app.vtranslate("LBL_ERROR_SERIAL"));
+                    alert(app.vtranslate("JS_LBL_ERROR_SERIAL"));
                 }
             });
         event.preventDefault();
@@ -29,7 +29,7 @@ jQuery(function ($) {
         app.request.post({data: params})
             .then(function (error, data) {
                 if (data.is_exists) {
-                    alert(app.vtranslate("LBL_ERROR_SERIAL"));
+                    alert(app.vtranslate("JS_LBL_ERROR_SERIAL"));
                 } else {
                     $("form#QuickCreate").submit();
                 }

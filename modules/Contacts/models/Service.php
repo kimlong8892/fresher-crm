@@ -2,9 +2,8 @@
 require_once('include/SMSer.php');
 require_once('include/Mailer.php');
 
-class Contacts_Service_Model{
-    static function sendHappyBirthdayMsg()
-    {
+class Contacts_Service_Model {
+    static function sendHappyBirthdayMsg() {
         global $adb, $happyBirthDayConfig;
         $log = LoggerManager::getLogger('PLATFORM');
         $log->info('[CRON] Started sendHappyBirthdayMsg');

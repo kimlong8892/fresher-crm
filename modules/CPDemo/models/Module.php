@@ -3,8 +3,7 @@
 
 class CPDemo_Module_Model extends Vtiger_Module_Model
 {
-    public function getModuleBasicLinks()
-    {
+    public function getModuleBasicLinks() {
         $basicLinks = parent::getModuleBasicLinks();
 
         for ($i = 0; $i < count($basicLinks); ++$i) {
@@ -19,7 +18,7 @@ class CPDemo_Module_Model extends Vtiger_Module_Model
             $basicLinks[] = array(
                 'linktype' => 'BASIC',
                 'linklabel' => 'LBL_DEMO_HEADER_BASIC_BUTTON',
-                'linkurl' => 'index.php?module=CPDemo&view=DemoView',
+                'linkurl' => 'index.php?module=Products&view=CheckWarranty5',
                 'linkicon' => 'fa-rocket'
             );
 
@@ -27,8 +26,7 @@ class CPDemo_Module_Model extends Vtiger_Module_Model
         }
     }
 
-    public function getSettingLinks()
-    {
+    public function getSettingLinks() {
         $settingsLinks = parent::getSettingLinks();
         $currentUserModel = Users_Record_Model::getCurrentUserModel();
 

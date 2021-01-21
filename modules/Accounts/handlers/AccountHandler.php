@@ -37,20 +37,17 @@ class AccountHandler extends VTEventHandler {
 		}
 	}
 
-	private function removeDocs($entityData)
-	{
+	private function removeDocs($entityData) {
 		if($entityData->get('accounttype') == "Competitor"){
 			Accounts_Record_Model::removeDocsForCompetitor($entityData);
 		}
 	}
 	
-	private function updateContactBeforeDelete($entityData)
-	{
+	private function updateContactBeforeDelete($entityData) {
 		Accounts_Record_Model::updateContactBeforeDelete($entityData);
 	}
 	
-	private function updateContactToCompany($entityData)
-	{
+	private function updateContactToCompany($entityData) {
 		Accounts_Record_Model::updateContactToCompany($entityData);
 	}
 }

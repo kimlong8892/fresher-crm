@@ -765,4 +765,40 @@ class Vtiger_Record_Model extends Vtiger_Base_Model {
 		return array_merge($relatedModuleRecordIds, $directrelatedModuleRecordIds, $indirectrelatedModuleRecordIds);
 	}
 
+    // count record module relate by Long Nguyen 13/01/2021
+    function countRelate($relateName, $id = null) {
+        global $adb;
+
+        if (empty($id)) {
+            $id = $this->getId();
+        }
+
+        $query = 'SELECT count(*) FROM vtiger_account as a INNER JOIN vtiger_crmentity as e ON(a.accountid = e.crmid)
+                  INNER JOIN vtiger_crmentityrel as vc ON (e.crmid = vc.crmid)
+                  WHERE e.deleted = 0 and a.accountid = ? and vc.relmodule = ? GROUP BY accountid';
+        $count = $adb->getOne($query, array($id, $relateName));
+        if(empty($count)){
+            $count = 0;
+        }
+        return $count;
+    }
+
+    // count record for this Account by Long Nguyen 13/01/2021
+    function countDocs($id = null) {
+        global $adb;
+        if (empty($id)) {
+            $id = $this->getId();
+        }
+        $query = 'SELECT count(*) FROM vtiger_account as a INNER JOIN vtiger_crmentity as e ON(a.accountid = e.crmid)
+                  INNER JOIN vtiger_senotesrel as vc ON (e.crmid = vc.crmid)
+                  WHERE e.deleted = 0 and a.accountid = ? GROUP BY a.accountid';
+        $count = $adb->getOne($query, array($id));
+
+        if(empty($count)){
+            $count = 0;
+        }
+
+        return $count;
+    }
+
 }

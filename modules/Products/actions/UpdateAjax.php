@@ -25,8 +25,14 @@ class Products_UpdateAjax_Action extends Vtiger_Action_Controller
             $serialNo = $request->get('serial_no');
             $warrantyStartDate = $request->get('warranty_start_date');
             $warrantyEndDate = $request->get('warranty_end_date');
-            $statusUpdate = Products_Record_Model::updateProduct($productId ,$productName, $serialNo, $warrantyStartDate, $warrantyEndDate);
-            $result = array('success' => $statusUpdate, 'serial_no' => $serialNo);
+
+            $existsSerial = Products_Record_Model::checkExistsSerial($serialNo, $productId);
+            if(!$existsSerial){
+                $statusUpdate = Products_Record_Model::updateProduct($productId ,$productName, $serialNo, $warrantyStartDate, $warrantyEndDate);
+            }
+            $result = array('success' => true, 'serial_no' => $serialNo, 'exists_serial' => $existsSerial);
+
+            // response
             $response = new Vtiger_Response();
             $response->setResult($result);
             $response->emit();

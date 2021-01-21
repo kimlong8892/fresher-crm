@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-07 08:51:52
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-20 17:54:43
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Accounts/SummaryViewWidgets.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:7887052825fe301bc8a2591-47620871%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4fed3752c30d4a4f3844d85e68446372e7bf50d6' => 
     array (
       0 => '/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Accounts/SummaryViewWidgets.tpl',
-      1 => 1609298330,
+      1 => 1611116123,
       2 => 'file',
     ),
   ),

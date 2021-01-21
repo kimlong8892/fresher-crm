@@ -64,6 +64,14 @@ class Accounts_TestDateTime_View extends Vtiger_View_Controller
 
         $displayDateTime = $displayDate . ' ' . $displayTime;
         echo '<br/>Ngày giờ hiển thị lại cho người dùng: ' . $displayDateTime;
+
+        $testDateTime = date("Y-m-d");
+        echo "<br><br>";
+        echo $testDateTime;
+        $dateTimeTest = new DateTimeField($testDateTime);
+        echo $dateTimeTest->getDisplayDate();
+
+
     }
 
     public function postProcess(Vtiger_Request $request)

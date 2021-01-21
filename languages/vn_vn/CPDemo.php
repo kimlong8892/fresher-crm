@@ -20,7 +20,8 @@ $languageStrings = array(
     'LBL_TAGS' => 'Tags',
     'LBL_DEMO_HEADER_BASIC_BUTTON' => 'Demo Header Basic',
     'LBL_DEMO_HEADER_SETTING_BUTTON' => 'Demo Header Setting',
-    'LBL_ACCOUNT_LIST' => 'Accounts'
+    'LBL_ACCOUNT_LIST' => 'Accounts',
+    'LBL_DEMO_DETAILVIEW_BASIC_BUTTON' => 'Demo'
 );
 
 $jsLanguageStrings = null;

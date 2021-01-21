@@ -1,14 +1,11 @@
 <?php
 
-class Products_CheckWarrantyAjax_View extends CustomView_Base_View
-{
-    public function __construct()
-    {
+class Products_CheckWarrantyAjax_View extends CustomView_Base_View {
+    public function __construct() {
         parent::__construct($isFullView = true);
     }
 
-    public function checkPermission(Vtiger_Request $request)
-    {
+    public function checkPermission(Vtiger_Request $request) {
         $moduleName = $request->getModule();
         // Write your own logic to check for access permission
         $allowAccess = true; // set this to false if user's role is not permission
@@ -17,8 +14,7 @@ class Products_CheckWarrantyAjax_View extends CustomView_Base_View
         }
     }
 
-    public function process(Vtiger_Request $request)
-    {
+    public function process(Vtiger_Request $request) {
         $matchedProduct = Products_Record_Model::getInstanceBySerial($request->get('serial'));
 
         if ($matchedProduct == null || $matchedProduct->get('productid') == '') {

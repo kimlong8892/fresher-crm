@@ -25,8 +25,8 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="well" style="min-height: 125px; padding-left: 0px; padding-right: 0px;">
-                        <div><label class="font-x-small">{vtranslate('LBL_TITLE_COUNT_CALENDA', $MODULE_NAME)}</label></div>
-                        <div><label class="font-x-x-large">{$COUNT_CALENDA}</label></div>
+                        <div><label class="font-x-small">{vtranslate('LBL_TITLE_COUNT_CALENDAR', $MODULE_NAME)}</label></div>
+                        <div><label class="font-x-x-large">{$COUNT_CALENDAR}</label></div>
                     </div>
                 </div>
             </div>

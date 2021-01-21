@@ -1,9 +1,7 @@
 <?php
 
-class CPDemo_DetailView_Model extends Vtiger_DetailView_Model
-{
-    public function getDetailViewLinks($linkParams)
-    {
+class CPDemo_DetailView_Model extends Vtiger_DetailView_Model {
+    public function getDetailViewLinks($linkParams) {
         $linkModelList = parent::getDetailViewLinks($linkParams);
         $currentUserModel = Users_Privileges_Model::getCurrentUserPrivilegesModel();
         $moduleModel = $this->getModule();
