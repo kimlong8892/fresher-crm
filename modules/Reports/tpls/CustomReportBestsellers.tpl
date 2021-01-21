@@ -8,7 +8,7 @@
 
         <table cellpadding="5" cellpadding="0" class="{if !$PRINT}table table-bordered{else}printReport reportPrintData{/if}">
             <thead>
-            <tr class="blockHeader">
+            <tr class="blockHeader" style="background: blue; color: white;">
                 {foreach item=HEADER_NAME from=$REPORT_HEADERS}
                     <th {if !$PRINT}nowrap{/if}>{$HEADER_NAME}</th>
                 {/foreach}

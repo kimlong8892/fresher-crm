@@ -6,17 +6,22 @@ class BestsellersHandler extends CustomReportHandler {
         // Fetch column list
         $this->getQueryColumnsList($this->reportid, 'HTML');
         $this->_columnslist = array_insert_before(
-            'vtiger_crmentity:crmid:LBL_ACTION:crmid:I',
+            'vtiger_inventoryproductreltmpSalesOrder:total_quantity:SalesOrder_Total_Quantity:total_quantity:V',
             $this->_columnslist,
-            'margin',
-            "SUM(vtiger_inventoryproductreltmpSalesOrder.margin) AS Sales_Order_margin"
+            'total_quantity',
+            "sum(vtiger_inventoryproductreltmpSalesOrder.quantity) AS SalesOrder_Total_Quantity"
         );
     }
 
     function renderReportResult($filterSql, $showReportName = true, $print = false){
-        var_dump($this);
-        die;
+
+
+
         $processor = function(&$rowViewer, &$result, $row) {
+            $rowData = Products_Record_Model::getToTotalAmountInOrderByProductCategory($row['products_product_category']);
+            $row['total_quantity'] = $rowData['total_quantity'];
+            $row['total_money'] = $rowData['total_money'];
+
             $rowViewer->assign('ROW_DATA', $row);
             $result .= $rowViewer->fetch('modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl');
         };
@@ -34,6 +39,9 @@ class BestsellersHandler extends CustomReportHandler {
         $mainViewer->assign('PRIMARY_MODULE', $this->primarymodule);
         $mainViewer->assign('PRINT', $print);
 
+//
+//        var_dump($this->_columnslist);
+//        die;
         $reportResult = $mainViewer->fetch('modules/Reports/tpls/CustomReportBestsellers.tpl');
         return $reportResult;
     }

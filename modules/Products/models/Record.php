@@ -698,4 +698,30 @@ class Products_Record_Model extends Vtiger_Record_Model
             $db->pquery($sqlUpdate, [$strStatus, $row['productid']]);
         }
     }
+
+    static function getToTotalAmountInOrderByProductCategory($productCategory){
+        global $adb;
+        $sql = "select vtiger_products.productcategory,
+                sum(vtiger_inventoryproductreltmpProducts.quantity) as total_quantity ,
+                sum(vtiger_inventoryproductreltmpProducts.margin) as total_money
+                from vtiger_salesorder
+                inner join vtiger_crmentity on vtiger_crmentity.crmid=vtiger_salesorder.salesorderid
+                left join vtiger_groups on vtiger_groups.groupid = vtiger_crmentity.smownerid
+                left join vtiger_users on vtiger_users.id = vtiger_crmentity.smownerid
+                LEFT JOIN vtiger_inventoryproductrel AS vtiger_inventoryproductreltmpProducts
+                ON (vtiger_salesorder.salesorderid=vtiger_inventoryproductreltmpProducts.id)
+                left join vtiger_products
+                on vtiger_products.productid=vtiger_inventoryproductreltmpProducts.productid
+                left join vtiger_crmentity as vtiger_crmentityProducts
+                on vtiger_crmentityProducts.crmid=vtiger_products.productid
+                and vtiger_crmentityProducts.deleted=0 where vtiger_crmentity.deleted=0
+                and vtiger_products.productcategory <> ''
+                and vtiger_crmentity.setype = 'SalesOrder'
+                and vtiger_products.productcategory = ?
+                group by productcategory";
+        $result = $adb->pquery($sql, [$productCategory]);
+        while ($row = $adb->fetchByAssoc($result)) {
+            return $row;
+        }
+    }
 }
