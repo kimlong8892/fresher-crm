@@ -20,13 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9113ee6-ac81-40c3-a8ce-d70636349782" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/Reports/resources/BestsellersHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelBestSeller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Reports/custom/SummaryByCustomer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportSummaryByCustomer.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f10b49cb3345db67ffb75ab45663e1ee227b9fc3.file.CustomReportRowTemplateBestsellers.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f10b49cb3345db67ffb75ab45663e1ee227b9fc3.file.CustomReportRowTemplateBestsellers.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f9d5c06754ddf48050d146d1b47eb9c80c0b4899.file.CustomReportBestsellers.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f9d5c06754ddf48050d146d1b47eb9c80c0b4899.file.CustomReportBestsellers.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/vn_vn/Reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Reports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/actions/CheckSerialAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/actions/CheckSerialAjax.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Products/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/models/Record.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Reports/custom/BestsellersHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/custom/BestsellersHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Reports/resources/BestsellersHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/resources/BestsellersHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportBestsellers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportBestsellers.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +138,7 @@
       <workItem from="1611192596018" duration="17365000" />
       <workItem from="1611217367623" duration="767000" />
       <workItem from="1611220479519" duration="6477000" />
-      <workItem from="1611278951548" duration="8124000" />
+      <workItem from="1611278951548" duration="14121000" />
     </task>
     <servers />
   </component>
@@ -223,16 +229,6 @@
           <url>file://$PROJECT_DIR$/modules/Accounts/views/Detail.php</url>
           <line>91</line>
           <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Products/models/Record.php</url>
-          <line>724</line>
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Products/models/Record.php</url>
-          <line>730</line>
-          <option name="timeStamp" value="159" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

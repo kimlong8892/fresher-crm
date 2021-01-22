@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-21 15:05:48
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-22 11:05:54
          compiled from "modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:166941217060024475bf1329-13861088%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f10b49cb3345db67ffb75ab45663e1ee227b9fc3' => 
     array (
       0 => 'modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl',
-      1 => 1611216343,
+      1 => 1611288351,
       2 => 'file',
     ),
   ),
@@ -32,5 +32,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 foreach ($_from as $_smarty_tpl->tpl_vars['VALUE']->key => $_smarty_tpl->tpl_vars['VALUE']->value){
 $_smarty_tpl->tpl_vars['VALUE']->_loop = true;
  $_smarty_tpl->tpl_vars['KEY']->value = $_smarty_tpl->tpl_vars['VALUE']->key;
-?><?php if (strpos($_smarty_tpl->tpl_vars['KEY']->value,'lbl_action')===false){?><td <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE']->value;?>
+?><?php if (strpos($_smarty_tpl->tpl_vars['KEY']->value,'lbl_action')===false){?><td <?php if ($_smarty_tpl->tpl_vars['KEY']->value!="productcategory"){?>style="text-align: right;"<?php }?> <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE']->value;?>
 </td><?php }?><?php } ?></tr><?php }} ?>

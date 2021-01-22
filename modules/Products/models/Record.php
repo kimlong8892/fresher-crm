@@ -708,8 +708,6 @@ class Products_Record_Model extends Vtiger_Record_Model
                 sum(vtiger_inventoryproductreltmpProducts.margin) as total_money
                 from vtiger_salesorder
                 inner join vtiger_crmentity on vtiger_crmentity.crmid=vtiger_salesorder.salesorderid
-                left join vtiger_groups on vtiger_groups.groupid = vtiger_crmentity.smownerid
-                left join vtiger_users on vtiger_users.id = vtiger_crmentity.smownerid
                 LEFT JOIN vtiger_inventoryproductrel AS vtiger_inventoryproductreltmpProducts
                 ON (vtiger_salesorder.salesorderid=vtiger_inventoryproductreltmpProducts.id)
                 left join vtiger_products
@@ -721,6 +719,7 @@ class Products_Record_Model extends Vtiger_Record_Model
                 and vtiger_crmentity.setype = 'SalesOrder'
                 and vtiger_products.start_date <= ?
                 and vtiger_products.expiry_date >= ?
+                and vtiger_salesorder.sostatus = 'Delivered'
                 group by productcategory";
         $result = $adb->pquery($sql, [$startDate, $endDate]);
         $return = [];

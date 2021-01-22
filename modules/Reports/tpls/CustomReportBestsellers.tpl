@@ -15,6 +15,7 @@
                            class="form-control datePicker"
                            autocomplete="off"
                            placeholder="{vtranslate('PLACEHOLDER_START_DATE_BEST_SELLERS', 'Reports')}"
+                           value="{if !empty($START_DATE)}{$START_DATE}{/if}"
                            data-rule-required="true"/>
                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                 </div>
@@ -24,6 +25,7 @@
                            class="form-control datePicker"
                            autocomplete="off"
                            placeholder="{vtranslate('PLACEHOLDER_END_DATE_BEST_SELLERS', 'Reports')}"
+                           value="{if !empty($END_DATE)}{$END_DATE}{/if}"
                            data-rule-required="true"/>
                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                 </div>
@@ -34,17 +36,25 @@
         </form>
         {if $IS_EMPTY_REPORT_RESULT}
             <h1 style="color: #cb2134; text-align: center;">{vtranslate('LBL_RESULT_EMPTY', 'Reports')}</h1>
+        {elseif !empty($REPORT_RESULT)}
+            <div style="text-align: right;">
+                <button class="btn btn-primary"
+                        id="btn-export-excel"
+                        name="export_excel"
+                        type="button"
+                        style="margin-bottom: 10px;">{vtranslate('LBL_EXPORT_EXCEL', 'Reports')}</button>
+            </div>
         {/if}
         <table {if empty($REPORT_RESULT)}style="display: none;" {/if} cellpadding="5" cellpadding="0" class="{if !$PRINT}table table-bordered{else}printReport reportPrintData{/if}">
             <thead>
                 <tr class="blockHeader" style="background: blue; color: white;">
-                    <th>
+                    <th style="text-align: left !important;">
                         {vtranslate('LBL_PRODUCT_CATEGORY_NAME', 'Reports')}
                     </th>
-                    <th>
+                    <th style="text-align: right !important;">
                         {vtranslate('LBL_TOTAL_AMOUNT_NAME', 'Reports')}
                     </th>
-                    <th>
+                    <th style="text-align: right !important;">
                         {vtranslate('LBL_TOTAL_MONEY_NAME', 'Reports')}
                     </th>
                 </tr>

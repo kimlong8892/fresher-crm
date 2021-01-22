@@ -5,15 +5,9 @@ class BestsellersHandler extends CustomReportHandler {
     function prepare() {
         // Fetch column list
         $this->getQueryColumnsList($this->reportid, 'HTML');
-        $this->_columnslist = array_insert_before(
-            'vtiger_inventoryproductreltmpSalesOrder:total_quantity:SalesOrder_Total_Quantity:total_quantity:V',
-            $this->_columnslist,
-            'total_quantity',
-            "sum(vtiger_inventoryproductreltmpSalesOrder.quantity) AS SalesOrder_Total_Quantity"
-        );
     }
 
-    function renderReportResult($filterSql, $showReportName = true, $print = false){
+    function renderReportResult($filterSql, $showReportName = false, $print = false){
         $mainViewer = new Vtiger_Viewer();
         if($showReportName) {
             $mainViewer->assign('REPORT_NAME', $this->reportname);
@@ -22,8 +16,10 @@ class BestsellersHandler extends CustomReportHandler {
         $result = "";
         if(isset($_REQUEST['start_date']) || isset($_REQUEST['end_date'])){
             $startDate = $_REQUEST['start_date'];
-            $startDate = new DateTimeField($startDate);
             $endDate = $_REQUEST['end_date'];
+            $mainViewer->assign('START_DATE', $startDate);
+            $mainViewer->assign('END_DATE', $endDate);
+            $startDate = new DateTimeField($startDate);
             $endDate = new DateTimeField($endDate);
             $data = Products_Record_Model::getReportBestSellers($startDate->getDBInsertDateValue(), $endDate->getDBInsertDateValue());
             if(count($data) != 0){

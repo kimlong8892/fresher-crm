@@ -1,10 +1,8 @@
 <?php
 
 
-class Products_CheckSerialAjax_Action extends Vtiger_Action_Controller
-{
-    public function checkPermission(Vtiger_Request $request)
-    {
+class Products_CheckSerialAjax_Action extends Vtiger_Action_Controller {
+    public function checkPermission(Vtiger_Request $request) {
         $moduleName = $request->getModule();
         $moduleModel = Vtiger_Module_Model::getInstance($moduleName);
         $currentUserPriviligesModel = Users_Privileges_Model::getCurrentUserPrivilegesModel();

@@ -248,6 +248,7 @@ $languageStrings = array(
     'LBL_TOTAL_AMOUNT_NAME' => 'Tổng số lượng',
     'LBL_TOTAL_MONEY_NAME' => 'Tổng tiền',
     'LBL_RESULT_EMPTY' => 'Không tìm thấy báo cáo phù hợp',
+    'LBL_EXPORT_EXCEL' => 'Xuất Excel',
 );
 $jsLanguageStrings = array(
 	'JS_DUPLICATE_RECORD' => 'Nhân đôi báo cáo',
