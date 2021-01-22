@@ -102,7 +102,9 @@ $languageStrings = array(
     'LBL_DATE_PRODUCE' => 'Ngày sản xuất',
     'LBL_PRODUCTS_TYPE' => 'Loại sản phẩm',
     'Products Product Category' => 'Danh mục sản phẩm',
-    'LBL_ERROR_SERIAL' => 'Trùng số serial'
+    'LBL_ERROR_SERIAL' => 'Trùng số serial',
+    'LBL_DATE_SELL' => 'Ngày bán',
+    'LBL_MONEY_SELL' => 'Số tiền bán',
 );
 
 $jsLanguageStrings = array(

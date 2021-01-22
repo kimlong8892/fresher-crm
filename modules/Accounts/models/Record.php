@@ -214,4 +214,18 @@
             }
             return null;
         }
+
+        static function getAllAccount(){
+            global $adb;
+            $sql = "SELECT accountid, accountname FROM vtiger_account
+                    INNER JOIN vtiger_crmentity vc on vtiger_account.accountid = vc.crmid
+                    where vc.deleted = 0 and vtiger_account.accountname <> '';";
+            $result = $adb->pquery($sql, []);
+            $return = [];
+            while ($row = $adb->fetchByAssoc($result)) {
+                $return[] = $row;
+            }
+
+            return $return;
+        }
 	}

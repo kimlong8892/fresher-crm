@@ -729,4 +729,27 @@ class Products_Record_Model extends Vtiger_Record_Model
 
         return $return;
     }
+
+    static function getProductInOrderByAccountId($accountId, $startDate, $endDate){
+        global $adb;
+        $sql = "SELECT vtiger_products.serialno,
+                        vtiger_products.productname,
+                        vc.createdtime,
+                        vtiger_products.unit_price
+                FROM vtiger_products INNER JOIN vtiger_crmentity vc on vtiger_products.productid = vc.crmid
+                INNER JOIN vtiger_inventoryproductrel vi on vc.crmid = vi.productid
+                INNER JOIN vtiger_salesorder vs on vi.id = vs.salesorderid
+                WHERE vc.deleted = 0 and vs.accountid = ?
+                and vtiger_products.start_date <= ?
+                and vtiger_products.expiry_date >= ?";
+        $result = $adb->pquery($sql, [$accountId, $startDate, $endDate]);
+        $return = [];
+        while ($row = $adb->fetchByAssoc($result)) {
+            $dateTime = new DateTimeField($row['createdtime']);
+            $row['createdtime'] = $dateTime->getDisplayDate();
+            $return[] = $row;
+        }
+
+        return $return;
+    }
 }

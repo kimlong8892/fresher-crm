@@ -44,7 +44,7 @@ jQuery(function ($) {
             app.helper.showErrorNotification({'message': errorMsg});
             return false;
         }
-        url_open = "?module=Reports&action=ExportExcelBestSeller&start_date="+start_date+"&end_date="+end_date;
+        url_open = "?module=Reports&action=ExportExcelSummaryByCustomer&start_date="+start_date+"&end_date="+end_date;
         window.open(url_open);
     });
 
