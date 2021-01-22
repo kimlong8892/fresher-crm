@@ -699,8 +699,10 @@ class Products_Record_Model extends Vtiger_Record_Model
         }
     }
 
-    static function getToTotalAmountInOrderByProductCategory($productCategory){
+    static function getReportBestSellers($startDate, $endDate){
         global $adb;
+        $startDate = date("Y-m-d", strtotime($startDate));
+        $endDate = date("Y-m-d", strtotime($endDate));
         $sql = "select vtiger_products.productcategory,
                 sum(vtiger_inventoryproductreltmpProducts.quantity) as total_quantity ,
                 sum(vtiger_inventoryproductreltmpProducts.margin) as total_money
@@ -717,11 +719,15 @@ class Products_Record_Model extends Vtiger_Record_Model
                 and vtiger_crmentityProducts.deleted=0 where vtiger_crmentity.deleted=0
                 and vtiger_products.productcategory <> ''
                 and vtiger_crmentity.setype = 'SalesOrder'
-                and vtiger_products.productcategory = ?
+                and vtiger_products.start_date <= ?
+                and vtiger_products.expiry_date >= ?
                 group by productcategory";
-        $result = $adb->pquery($sql, [$productCategory]);
+        $result = $adb->pquery($sql, [$startDate, $endDate]);
+        $return = [];
         while ($row = $adb->fetchByAssoc($result)) {
-            return $row;
+            $return[] = $row;
         }
+
+        return $return;
     }
 }

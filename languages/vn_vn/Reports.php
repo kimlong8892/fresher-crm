@@ -240,6 +240,14 @@ $languageStrings = array(
 	// Added by Phuc on 2019.10.25 
 	'LBL_DENIED_MOVING_REPORTS_BY_ROLE_MSG' => 'Bạn không có quyền sửa và di chuyển báo cáo',
 	// Ended by Phuc
+
+    'LBL_BTN_REPORT' => 'Báo cáo',
+    'PLACEHOLDER_START_DATE_BEST_SELLERS' => 'Ngày bắt đầu',
+    'PLACEHOLDER_END_DATE_BEST_SELLERS' => 'Ngày kết thúc',
+    'LBL_PRODUCT_CATEGORY_NAME' => 'Loại sản phẩm',
+    'LBL_TOTAL_AMOUNT_NAME' => 'Tổng số lượng',
+    'LBL_TOTAL_MONEY_NAME' => 'Tổng tiền',
+    'LBL_RESULT_EMPTY' => 'Không tìm thấy báo cáo phù hợp',
 );
 $jsLanguageStrings = array(
 	'JS_DUPLICATE_RECORD' => 'Nhân đôi báo cáo',
@@ -252,4 +260,6 @@ $jsLanguageStrings = array(
 	'JSLBL_PIN_CHART_TO_DASHBOARD' => 'Đăng biểu đồ lên bảng thông báo',
 	'JSLBL_UNPIN_CHART_FROM_DASHBOARD' => 'Gỡ biểu đồ khỏi bảng thông báo',
 	'JS_CHART_REMOVED_FROM_DASHBOARD' => 'Đã xóa biểu đồ khỏi bảng thông báo',
+    'JS_FORM_FILTER_DATE_EMPTY' => 'Không thể bỏ trống ngày bắt đầu và kết thúc',
+    'JS_FORM_FILTER_DATE_COMPARE_ERROR' => 'Ngày bắt đầu không thể lớn hơn ngày kết thúc'
 );

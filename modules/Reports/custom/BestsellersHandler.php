@@ -14,35 +14,31 @@ class BestsellersHandler extends CustomReportHandler {
     }
 
     function renderReportResult($filterSql, $showReportName = true, $print = false){
-
-
-
-        $processor = function(&$rowViewer, &$result, $row) {
-            $rowData = Products_Record_Model::getToTotalAmountInOrderByProductCategory($row['products_product_category']);
-            $row['total_quantity'] = $rowData['total_quantity'];
-            $row['total_money'] = $rowData['total_money'];
-
-            $rowViewer->assign('ROW_DATA', $row);
-            $result .= $rowViewer->fetch('modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl');
-        };
-        // Init viewer for main report
         $mainViewer = new Vtiger_Viewer();
         if($showReportName) {
             $mainViewer->assign('REPORT_NAME', $this->reportname);
         }
-        $reportHeader = $this->getReportHeaders();
-        $reportHeader[1] = vtranslate('LBL_TOTAL_AMOUNT', 'SalesOrder');
-        $reportHeader[2] = vtranslate('LBL_TOTAL_MONEY', 'SalesOrder');
-        unset($reportHeader[3]);
-        $mainViewer->assign('REPORT_HEADERS', $reportHeader);
-        $mainViewer->assign('REPORT_RESULT', $this->getReportResult($processor, $filterSql, false, $print));
-        $mainViewer->assign('PRIMARY_MODULE', $this->primarymodule);
-        $mainViewer->assign('PRINT', $print);
-
-//
-//        var_dump($this->_columnslist);
-//        die;
+        // check report after btn report click
+        $result = "";
+        if(isset($_REQUEST['start_date']) || isset($_REQUEST['end_date'])){
+            $startDate = $_REQUEST['start_date'];
+            $startDate = new DateTimeField($startDate);
+            $endDate = $_REQUEST['end_date'];
+            $endDate = new DateTimeField($endDate);
+            $data = Products_Record_Model::getReportBestSellers($startDate->getDBInsertDateValue(), $endDate->getDBInsertDateValue());
+            if(count($data) != 0){
+                foreach($data as $item){
+                    $rowViewer = new Vtiger_Viewer();
+                    $rowViewer->assign('ROW_DATA', $item);
+                    $result .= $rowViewer->fetch('modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl');
+                }
+            } else {
+                $mainViewer->assign('IS_EMPTY_REPORT_RESULT', true);
+            }
+        }
+        $mainViewer->assign('REPORT_RESULT', $result);
         $reportResult = $mainViewer->fetch('modules/Reports/tpls/CustomReportBestsellers.tpl');
+
         return $reportResult;
     }
 
