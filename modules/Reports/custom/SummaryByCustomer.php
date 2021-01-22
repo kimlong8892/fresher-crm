@@ -24,6 +24,7 @@ class SummaryByCustomer extends CustomReportHandler{
             $Accounts = Accounts_Record_Model::getAllAccount();
             $startDateValue = $startDate->getDBInsertDateValue();
             $endDateValue = $endDate->getDBInsertDateValue();
+            $isEmpty = true;
             if(count($Accounts) != 0){
                 foreach($Accounts as $item){
                     $rowViewer = new Vtiger_Viewer();
@@ -33,9 +34,11 @@ class SummaryByCustomer extends CustomReportHandler{
                         $rowViewer->assign('ROW_DATA', $item);
                         $rowViewer->assign('LIST_PRODUCT', $listProductByAccount);
                         $result .= $rowViewer->fetch('modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl');
+                        $isEmpty = false;
                     }
                 }
-            } else {
+            }
+            if($isEmpty){
                 $mainViewer->assign('IS_EMPTY_REPORT_RESULT', true);
             }
         }

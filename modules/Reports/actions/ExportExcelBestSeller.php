@@ -28,6 +28,9 @@ class Reports_ExportExcelBestSeller_Action extends Vtiger_Action_Controller {
         $excel->getActiveSheet()->setCellValue('A1', vtranslate('LBL_PRODUCT_CATEGORY_NAME', 'Reports'));
         $excel->getActiveSheet()->setCellValue('B1', vtranslate('LBL_TOTAL_AMOUNT_NAME', 'Reports'));
         $excel->getActiveSheet()->setCellValue('C1', vtranslate('LBL_TOTAL_MONEY_NAME', 'Reports'));
+        $excel->getActiveSheet()->getColumnDimension('A')->setWidth(40);
+        $excel->getActiveSheet()->getColumnDimension('B')->setWidth(20);
+        $excel->getActiveSheet()->getColumnDimension('C')->setWidth(30);
         $index = 2;
         foreach($data as $item){
             $excel->getActiveSheet()->setCellValue('A'.$index, $item['productcategory']);

@@ -23,7 +23,11 @@ class Products_DeclareAjax_Action extends Vtiger_Action_Controller
             $productName = $request->get('product_name');
             $serialNo = $request->get('serial_no');
             $warrantyStartDate = $request->get('warranty_start_date');
+            $warrantyStartDate = new DateTimeField($warrantyStartDate);
+            $warrantyStartDate = $warrantyStartDate->getDBInsertDateValue();
             $warrantyEndDate = $request->get('warranty_end_date');
+            $warrantyEndDate = new DateTimeField($warrantyEndDate);
+            $warrantyEndDate = $warrantyEndDate->getDBInsertDateValue();
             $existsSerial = Products_Record_Model::checkExistsSerial($serialNo);
             $productId = null;
             if(!$existsSerial){

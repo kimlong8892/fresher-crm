@@ -223,6 +223,9 @@
             $result = $adb->pquery($sql, []);
             $return = [];
             while ($row = $adb->fetchByAssoc($result)) {
+                foreach($row as $key => $value){
+                    $row[$key] = html_entity_decode($row[$key]);
+                }
                 $return[] = $row;
             }
 

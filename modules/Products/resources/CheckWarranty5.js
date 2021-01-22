@@ -46,11 +46,11 @@ CustomView_BaseController_Js('Products_CheckWarranty5_Js', {}, {
                         // Show result
                         var productInfo = data.matched_product;
                         var warrantyStatusClass = (productInfo.warranty_status == 'valid') ? 'label-success' : 'label-danger';
-                        if (productInfo.warranty_status === 'valid') {
-                            $("#btn-warranty-extend").css({display: 'none'});
-                        } else {
-                            $("#btn-warranty-extend").css({display: 'inline'});
-                        }
+                        // if (productInfo.warranty_status === 'valid') {
+                        //     $("#btn-warranty-extend").css({display: 'none'});
+                        // } else {
+                        //     $("#btn-warranty-extend").css({display: 'inline'});
+                        // }
 
                         $('#productName').text(productInfo.productname);
                         $('#serialNo').text(productInfo.serialno);
