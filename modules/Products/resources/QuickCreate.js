@@ -12,7 +12,8 @@ jQuery(function ($) {
             .then(function (error, data) {
                 app.helper.hideProgress();
                 if (data.is_exists) {
-                    alert(app.vtranslate("JS_LBL_ERROR_SERIAL"));
+                    var mgs = app.vtranslate('JS_LBL_ERROR_SERIAL');
+                    app.helper.showErrorNotification({'message': mgs});
                 }
             });
         event.preventDefault();
@@ -29,7 +30,8 @@ jQuery(function ($) {
         app.request.post({data: params})
             .then(function (error, data) {
                 if (data.is_exists) {
-                    alert(app.vtranslate("JS_LBL_ERROR_SERIAL"));
+                    var mgs = app.vtranslate('JS_LBL_ERROR_SERIAL');
+                    app.helper.showErrorNotification({'message': mgs});
                 } else {
                     $("form#QuickCreate").submit();
                 }

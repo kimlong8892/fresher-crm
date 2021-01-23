@@ -2217,4 +2217,6 @@
         // Added by Hieu Nguyen on 2020-05-22
         'JS_COPIED_TO_CLIPBOARD_SUCCESS_MSG' => 'Chuỗi vừa chọn đã được lưu vào clipboard',
         // End Hieu Nguyen
+
+        'JS_LBL_ERROR_SERIAL' => 'Trùng số serial'
     );

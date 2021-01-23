@@ -121,6 +121,6 @@ $jsLanguageStrings = array(
     'JS_LBL_ERROR_SERIAL_OR_EMPTY' => 'Trùng số serial hoặc rỗng',
     'JS_DECLARE_PRODUCT_ERROR_MSG' => 'Lỗi không xác định',
     'JS_DECLARE_PRODUCT_FAIL' => 'Tạo sản phẩm thất bại',
-    'Products Product Category' => 'Loại sản phẩm'
+    'Products Product Category' => 'Loại sản phẩm',
 );
 

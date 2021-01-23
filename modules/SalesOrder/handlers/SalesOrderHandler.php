@@ -23,6 +23,9 @@ class SalesOrderHandler extends VTEventHandler {
 		}
 
 		if ($eventName === 'vtiger.entity.beforedelete') {
+            if($entityData->get('sostatus') == "Delivered"){
+                $this->updateAnnualRevenueAccount($entityData, false);
+            }
 		}
 
 		if ($eventName === 'vtiger.entity.afterdelete') {	
@@ -36,9 +39,9 @@ class SalesOrderHandler extends VTEventHandler {
 	}
 	// Ended by Phuc
 
-    private function updateAnnualRevenueAccount($entityData){
+    private function updateAnnualRevenueAccount($entityData, $add = true){
         $totalOrder = $entityData->get('hdnGrandTotal');
-        Accounts_Record_Model::updateAnnualRevenue($totalOrder, $entityData->get('contact_id'));
+        Accounts_Record_Model::updateAnnualRevenue($totalOrder, $entityData->get('contact_id'), $add);
     }
 }
 

@@ -19,13 +19,23 @@ class Reports_ExportExcelSummaryByCustomer_Action extends Vtiger_Action_Controll
         $excel = new PHPExcel();
         $excel->setActiveSheetIndex(0);
         // get data
-        $startDate = $request->get('start_date');
-        $endDate = $request->get('end_date');
+        $startDate = Accounts_Record_Model::getCreatedFirst();
+        $startDate = new DateTimeField($startDate);
+        $startDate = $startDate->getDisplayDate();
+        if(!empty($_REQUEST['start_date'])){
+            $startDate = $_REQUEST['start_date'];
+        }
+        $endDate = new DateTimeField(date("Y-m-d"));
+        $endDate = $endDate->getDisplayDate();
+        if(!empty($_REQUEST['end_date'])){
+            $endDate = $_REQUEST['end_date'];
+        }
         $startDate = new DateTimeField($startDate);
         $endDate = new DateTimeField($endDate);
         $startDateValue = $startDate->getDBInsertDateValue();
         $endDateValue = $endDate->getDBInsertDateValue();
-        $data = Accounts_Record_Model::getAllAccount();
+        $data = Accounts_Record_Model::getAllAccount($startDateValue, $endDateValue);
+
         // set value for cell
         $excel->getActiveSheet()->setCellValue('A1', vtranslate('LBL_SERIAL_NO', 'Products'));
         $excel->getActiveSheet()->setCellValue('B1', vtranslate('LBL_PRODUCT_NAME', 'Products'));
@@ -37,7 +47,7 @@ class Reports_ExportExcelSummaryByCustomer_Action extends Vtiger_Action_Controll
         $excel->getActiveSheet()->getColumnDimension('C')->setWidth(20);
         $excel->getActiveSheet()->getColumnDimension('D')->setWidth(20);
         foreach($data as $item){
-            $listProductByAccount = Products_Record_Model::getProductInOrderByAccountId($item['accountid'], $startDateValue, $endDateValue);
+            $listProductByAccount = Products_Record_Model::getProductInOrderByAccountId($item['accountid']);
             if(count($listProductByAccount) != 0){
                 $excel->getActiveSheet()->mergeCells('A'.$index.':'.'D'.$index);
                 $excel->getActiveSheet()->setCellValue('A'.$index, $item['accountname']);
@@ -47,11 +57,13 @@ class Reports_ExportExcelSummaryByCustomer_Action extends Vtiger_Action_Controll
                     $excel->getActiveSheet()->setCellValue('B'.$index, $value['productname']);
                     $excel->getActiveSheet()->setCellValue('C'.$index, $value['createdtime']);
                     $excel->getActiveSheet()->setCellValue('D'.$index, $value['unit_price']);
+                    ++$index;
                 }
-                ++$index;
             }
         }
         // end set value for cell
+
+        // output excel download
         header('Content-type: application/vnd.ms-excel');
         header('Content-Disposition: attachment; filename="summary_by_customer.xls"');
         return PHPExcel_IOFactory::createWriter($excel, 'Excel2007')->save('php://output');

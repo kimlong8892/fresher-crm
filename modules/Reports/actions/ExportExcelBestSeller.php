@@ -19,11 +19,23 @@ class Reports_ExportExcelBestSeller_Action extends Vtiger_Action_Controller {
         $excel = new PHPExcel();
         $excel->setActiveSheetIndex(0);
         // get data
-        $startDate = $request->get('start_date');
-        $endDate = $request->get('end_date');
+        $startDate = Products_Record_Model::getCreatedFirst();
+        $startDate = new DateTimeField($startDate);
+        $startDate = $startDate->getDisplayDate();
+        if(!empty($_REQUEST['start_date'])){
+            $startDate = $_REQUEST['start_date'];
+        }
+        $endDate = new DateTimeField(date("Y-m-d"));
+        $endDate = $endDate->getDisplayDate();
+        if(!empty($_REQUEST['end_date'])){
+            $endDate = $_REQUEST['end_date'];
+        }
         $startDate = new DateTimeField($startDate);
         $endDate = new DateTimeField($endDate);
+
+        // get data for report
         $data = Products_Record_Model::getReportBestSellers($startDate->getDBInsertDateValue(), $endDate->getDBInsertDateValue());
+
         // set value for cell
         $excel->getActiveSheet()->setCellValue('A1', vtranslate('LBL_PRODUCT_CATEGORY_NAME', 'Reports'));
         $excel->getActiveSheet()->setCellValue('B1', vtranslate('LBL_TOTAL_AMOUNT_NAME', 'Reports'));
@@ -40,6 +52,7 @@ class Reports_ExportExcelBestSeller_Action extends Vtiger_Action_Controller {
         }
         // end set value for cell
 
+        // output excel download
         header('Content-type: application/vnd.ms-excel');
         header('Content-Disposition: attachment; filename="Bestsellers.xls"');
         return PHPExcel_IOFactory::createWriter($excel, 'Excel2007')->save('php://output');

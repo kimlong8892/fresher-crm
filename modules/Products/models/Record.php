@@ -645,28 +645,25 @@ class Products_Record_Model extends Vtiger_Record_Model
 
     // Implemented by Long Nguyen on 2020-12-24 to update product
     static function updateProduct($productId, $productName, $serial, $warrantyStartDate, $warrantyEndDate) {
+        global $adb;
+
         $warrantyStartDate = date("Y-m-d", strtotime($warrantyStartDate) );
         $warrantyEndDate = date("Y-m-d", strtotime($warrantyEndDate) );
-        try {
-            $db = PearDatabase::getInstance();
-            $sql = "UPDATE vtiger_products SET productname = ?, serialno = ?, start_date = ?, expiry_date = ? WHERE productid = ?";
-            $params = array($productName, $serial, $warrantyStartDate, $warrantyEndDate, $productId);
-            $db->pquery($sql, $params);
-            return true;
-        } catch (Exception $exception){
-            throw $exception;
-        }
+        $sql = "UPDATE vtiger_products SET productname = ?, serialno = ?, start_date = ?, expiry_date = ? WHERE productid = ?";
+        $params = array($productName, $serial, $warrantyStartDate, $warrantyEndDate, $productId);
+        $adb->pquery($sql, $params);
     }
 
     // Implemented by Long Nguyen on 2020-12-25 to extend expiry_date by productid
     static function extendExpiryDateProduct($productId, $dateExtend) {
+        global $adb;
+
         $recordModel = Products_Record_Model::getInstanceById($productId, 'Products');
         $newExpiryDate = date('Y-m-d', strtotime($recordModel->get('expiry_date') . ' + ' . $dateExtend . ' days'));
-        $db = PearDatabase::getInstance();
         $sql = "UPDATE vtiger_products
             SET expiry_date = ? WHERE productid = ?";
         $params = array($newExpiryDate, $productId);
-        $db->pquery($sql, $params);
+        $adb->pquery($sql, $params);
     }
     
     // implement check exists serial by Long Nguyen 15/01/2021
@@ -683,8 +680,8 @@ class Products_Record_Model extends Vtiger_Record_Model
         global $adb;
         $db = PearDatabase::getInstance();
         $sql = "SELECT expiry_date
-            FROM vtiger_products as p
-            INNER JOIN vtiger_crmentity AS e ON (e.crmid = p.productid AND e.deleted = 0)";
+                FROM vtiger_products as p
+                INNER JOIN vtiger_crmentity AS e ON (e.crmid = p.productid AND e.deleted = 0)";
         $result = $db->pquery($sql, []);
         while ($row = $adb->fetchByAssoc($result)) {
             $warrantyStatus = (strtotime($row['expiry_date']) > strtotime(date('Y-m-d'))) ? true : false;
@@ -703,23 +700,27 @@ class Products_Record_Model extends Vtiger_Record_Model
         global $adb;
         $startDate = date("Y-m-d", strtotime($startDate));
         $endDate = date("Y-m-d", strtotime($endDate));
-        $sql = "select vtiger_products.productcategory,
-                sum(vtiger_inventoryproductreltmpProducts.quantity) as total_quantity ,
-                sum(vtiger_inventoryproductreltmpProducts.margin) as total_money
-                from vtiger_salesorder
-                inner join vtiger_crmentity on vtiger_crmentity.crmid=vtiger_salesorder.salesorderid
+        if(strtotime($endDate) == strtotime(date("Y-m-d"))){
+            $endDate .= ' 23:59:59';
+        }
+        $sql = "SELECT vtiger_products.productcategory,
+                        SUM(vtiger_inventoryproductreltmpProducts.quantity) AS total_quantity ,
+                        SUM(vtiger_inventoryproductreltmpProducts.margin) AS total_money
+                FROM vtiger_salesorder
+                INNER JOIN vtiger_crmentity ON vtiger_crmentity.crmid=vtiger_salesorder.salesorderid
+                AND vtiger_crmentity.deleted = 0
                 LEFT JOIN vtiger_inventoryproductrel AS vtiger_inventoryproductreltmpProducts
                 ON (vtiger_salesorder.salesorderid=vtiger_inventoryproductreltmpProducts.id)
-                left join vtiger_products
-                on vtiger_products.productid=vtiger_inventoryproductreltmpProducts.productid
-                left join vtiger_crmentity as vtiger_crmentityProducts
-                on vtiger_crmentityProducts.crmid=vtiger_products.productid
-                and vtiger_crmentityProducts.deleted=0 where vtiger_crmentity.deleted=0
-                and vtiger_products.productcategory <> ''
-                and vtiger_crmentity.setype = 'SalesOrder'
-                and vtiger_crmentity.createdtime >= ?
-                and vtiger_crmentity.createdtime <= ?
-                and vtiger_salesorder.sostatus = 'Delivered'
+                INNER JOIN vtiger_products
+                ON vtiger_products.productid=vtiger_inventoryproductreltmpProducts.productid
+                INNER JOIN vtiger_crmentity AS vtiger_crmentityProducts
+                ON vtiger_crmentityProducts.crmid=vtiger_products.productid
+                AND vtiger_crmentityProducts.createdtime >= ?
+                AND vtiger_crmentityProducts.createdtime <= ?
+                AND vtiger_crmentityProducts.deleted=0
+                WHERE vtiger_products.productcategory <> ''
+                AND vtiger_salesorder.sostatus = 'Delivered'
+                AND vtiger_crmentity.setype = 'SalesOrder'
                 group by productcategory";
         $result = $adb->pquery($sql, [$startDate, $endDate]);
         $return = [];
@@ -730,23 +731,29 @@ class Products_Record_Model extends Vtiger_Record_Model
         return $return;
     }
 
-    static function getProductInOrderByAccountId($accountId, $startDate, $endDate){
+    static function getProductInOrderByAccountId($accountId){
         global $adb;
+
         $sql = "SELECT vtiger_products.serialno,
                         vtiger_products.productname,
                         vc.createdtime,
                         vtiger_products.unit_price
-                FROM vtiger_salesorder INNER JOIN vtiger_crmentity vc on vtiger_salesorder.salesorderid = vc.crmid
-                INNER JOIN vtiger_inventoryproductrel vi on vc.crmid = vi.id
-                INNER JOIN vtiger_products on vi.productid = vtiger_products.productid
-                WHERE vc.deleted = 0 and vtiger_salesorder.accountid = ?
-                and vc.createdtime >= ?
-                and vc.createdtime <= ?";
-        $result = $adb->pquery($sql, [$accountId, $startDate, $endDate]);
+                FROM vtiger_salesorder 
+                INNER JOIN vtiger_crmentity vc ON vtiger_salesorder.salesorderid = vc.crmid
+                AND vc.deleted = 0
+                INNER JOIN vtiger_inventoryproductrel vi ON vc.crmid = vi.id
+                INNER JOIN vtiger_products ON vi.productid = vtiger_products.productid
+                INNER JOIN vtiger_crmentity AS vtiger_crmentityProducts
+                ON vtiger_crmentityProducts.crmid=vtiger_products.productid
+                AND vtiger_crmentityProducts.deleted=0
+                WHERE vtiger_salesorder.accountid = ?";
+
+        $result = $adb->pquery($sql, [$accountId]);
         $return = [];
+
         while ($row = $adb->fetchByAssoc($result)) {
             $dateTime = new DateTimeField($row['createdtime']);
-            $row['createdtime'] = $dateTime->getDisplayDate();
+            $row['createdtime'] = $dateTime->getDisplayDate().' '.$dateTime->getDisplayTime();
             foreach($row as $key => $value){
                 $row[$key] = html_entity_decode($row[$key]);
             }
@@ -754,5 +761,15 @@ class Products_Record_Model extends Vtiger_Record_Model
         }
 
         return $return;
+    }
+
+    static function getCreatedFirst(){
+        global $adb;
+
+        $sql = "SELECT vc.createdtime FROM vtiger_products
+                    INNER JOIN vtiger_crmentity vc on vtiger_products.productid = vc.crmid
+                    AND vc.deleted = 0 ORDER BY vc.createdtime";
+
+        return $adb->getOne($sql, []);
     }
 }

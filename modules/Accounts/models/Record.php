@@ -132,9 +132,8 @@
 			global $adb;
 			
 			$sql = "SELECT 1 FROM vtiger_account AS a
-			INNER JOIN vtiger_crmentity AS e ON (a.accountid = e.crmid AND e.deleted = 0) 
-			WHERE a.accountid = ? AND a.account_no = 'PACC'
-		";
+			        INNER JOIN vtiger_crmentity AS e ON (a.accountid = e.crmid AND e.deleted = 0) 
+			        WHERE a.accountid = ? AND a.account_no = 'PACC'";
 			$result = $adb->pquery($sql, [$recordId]);
 			
 			return $adb->fetchByAssoc($result) ? true : false;
@@ -143,7 +142,7 @@
 		// implement by Long Nguyen 13/01/2021
 		static function queryListAccountCompetior() {
 			global $adb;
-			$sql = "SELECT * FROM vtiger_account WHERE account_type = ?
+			$sql = "SELECT accountid, accountname FROM vtiger_account WHERE account_type = ?
                     INNER JOIN vtiger_crmentity ON (crmid = accountid AND deleted = 0)";
 			$params = array('Competitor');
 			$result = $adb->pquery($sql, $params);
@@ -195,32 +194,39 @@
             }
 		}
 
-		static function updateAnnualRevenue($annualRevenue, $contactId){
+		static function updateAnnualRevenue($annualRevenue, $contactId, $add){
 		    global $adb;
 		    $accountId = Accounts_Record_Model::getAccountIdByContact($contactId);
             $sqlUpdate = "UPDATE vtiger_account SET annualrevenue = (annualrevenue + ?)
                                 WHERE accountid = ?";
+            if(!$add){
+                $sqlUpdate = "UPDATE vtiger_account SET annualrevenue = (annualrevenue - ?)
+                                WHERE accountid = ?";
+            }
             $adb->pquery($sqlUpdate, [$annualRevenue, $accountId]);
         }
 
         static function getAccountIdByContact($contactId){
             global $adb;
-            $sql = "SELECT * FROM vtiger_contactdetails
+
+            $sql = "SELECT accountid FROM vtiger_contactdetails
                     INNER JOIN vtiger_crmentity ON (crmid = contactid AND deleted = 0)
                     WHERE contactid = ?";
-            $result = $adb->pquery($sql, [$contactId]);
-            while($row = $adb->fetchByAssoc($result)){
-                return $row['accountid'];
-            }
-            return null;
+
+            return $adb->getOne($sql, [$contactId]);
         }
 
-        static function getAllAccount(){
+        static function getAllAccount($startDate, $endDate){
             global $adb;
+            if(strtotime($endDate) == strtotime(date("Y-m-d"))){
+                $endDate .= ' 23:59:59';
+            }
             $sql = "SELECT accountid, accountname FROM vtiger_account
                     INNER JOIN vtiger_crmentity vc on vtiger_account.accountid = vc.crmid
+                    AND vc.createdtime >= ?
+                    AND vc.createdtime <= ?
                     where vc.deleted = 0 and vtiger_account.accountname <> '';";
-            $result = $adb->pquery($sql, []);
+            $result = $adb->pquery($sql, [$startDate, $endDate]);
             $return = [];
             while ($row = $adb->fetchByAssoc($result)) {
                 foreach($row as $key => $value){
@@ -230,5 +236,15 @@
             }
 
             return $return;
+        }
+
+        static function getCreatedFirst(){
+            global $adb;
+
+            $sql = "SELECT vc.createdtime FROM vtiger_account
+                    INNER JOIN vtiger_crmentity vc on vtiger_account.accountid = vc.crmid
+                    AND vc.deleted = 0 ORDER BY vc.createdtime";
+
+            return $adb->getOne($sql, []);
         }
 	}

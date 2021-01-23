@@ -14,12 +14,6 @@ jQuery(function ($) {
         start_date = $(this).find("input[name='start_date']").val();
         end_date = $(this).find("input[name='end_date']").val();
         is_go = true;
-        if(start_date == "" && end_date == ""){
-            var errorMsg = app.vtranslate('JS_FORM_FILTER_DATE_EMPTY');
-            app.helper.showErrorNotification({'message': errorMsg});
-            is_go = false;
-            event.preventDefault();
-        }
         if(compareDates(start_date, end_date)){
             var errorMsg = app.vtranslate('JS_FORM_FILTER_DATE_COMPARE_ERROR');
             app.helper.showErrorNotification({'message': errorMsg});
@@ -34,11 +28,6 @@ jQuery(function ($) {
     $("button#btn-export-excel").click(function (){
         start_date = $("form#form-filter-date input[name='start_date']").val();
         end_date = $("form#form-filter-date input[name='end_date']").val();
-        if(start_date == "" && end_date == ""){
-            var errorMsg = app.vtranslate('JS_FORM_FILTER_DATE_EMPTY');
-            app.helper.showErrorNotification({'message': errorMsg});
-            return false;
-        }
         if(compareDates(start_date, end_date)){
             var errorMsg = app.vtranslate('JS_FORM_FILTER_DATE_COMPARE_ERROR');
             app.helper.showErrorNotification({'message': errorMsg});
