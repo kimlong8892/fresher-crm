@@ -48,6 +48,7 @@ class Reports_ExportExcelBestSeller_Action extends Vtiger_Action_Controller {
             $excel->getActiveSheet()->setCellValue('A'.$index, $item['productcategory']);
             $excel->getActiveSheet()->setCellValue('B'.$index, $item['total_quantity']);
             $excel->getActiveSheet()->setCellValue('C'.$index, $item['total_money']);
+            $excel->getActiveSheet()->getStyle('C'.$index)->getNumberFormat()->setFormatCode("0,00");
             ++$index;
         }
         // end set value for cell

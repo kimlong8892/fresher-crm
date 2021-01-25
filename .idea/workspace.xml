@@ -20,41 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9113ee6-ac81-40c3-a8ce-d70636349782" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/EntryPoints/FormRegister.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/EntryPoints/tpls/FormRegister.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Leads/tpls/FormRegister.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Leads/views/FormRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65083316-4a41-482a-910b-4b583a5fa2f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/65083316-4a41-482a-910b-4b583a5fa2f4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f54b3d8e7c2db88a7d0b3845423e7c53a6917927.file.CustomReportRowTemplateSummaryByCustomer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f54b3d8e7c2db88a7d0b3845423e7c53a6917927.file.CustomReportRowTemplateSummaryByCustomer.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Extensions/CustomModules.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/Extensions/CustomModules.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/en_us/CPDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/CPDemo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/en_us/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/Contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/en_us/HelpDesk.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/HelpDesk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/en_us/Leads.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/Leads.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/vn_vn/CPDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/CPDemo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/vn_vn/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/vn_vn/HelpDesk.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/HelpDesk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/vn_vn/Leads.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Leads.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/callcenter.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/callcenter.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/installation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/installation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/migration.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/migration.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/platform.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/platform.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/security.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/security.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/setup_instance.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/setup_instance.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/soap.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/soap.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/sqltime.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sqltime.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/webservice.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/webservice.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/CPDemo/BlocksAndFieldsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/CPDemo/BlocksAndFieldsRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/CPDemo/RelationshipsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/CPDemo/RelationshipsRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Contacts/RelationshipsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Contacts/RelationshipsRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/HelpDesk/BlocksAndFieldsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HelpDesk/BlocksAndFieldsRegister.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Leads/RelationshipsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Leads/RelationshipsRegister.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelBestSeller.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelBestSeller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelSummaryByCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelSummaryByCustomer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parent_tabdata.php" beforeDir="false" afterPath="$PROJECT_DIR$/parent_tabdata.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabdata.php" beforeDir="false" afterPath="$PROJECT_DIR$/tabdata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +137,8 @@
       <workItem from="1611547461455" duration="13019000" />
       <workItem from="1611569340533" duration="67000" />
       <workItem from="1611571272061" duration="1089000" />
-      <workItem from="1611572367219" duration="158000" />
+      <workItem from="1611572367219" duration="218000" />
+      <workItem from="1611579684723" duration="215000" />
     </task>
     <servers />
   </component>
