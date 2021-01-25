@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2020-07-10 12:00:48 pm.  */
+/* System auto-generated on 2021-01-25 04:38:24 pm.  */
 
 $languageStrings = array(
     'Leads' => 'Đầu mối',
@@ -66,7 +66,9 @@ $languageStrings = array(
     'potential' => 'Tiềm năng',
     'low potential' => 'Tiềm năng thấp',
     'Not Potential' => 'Không tiềm năng',
-    'Rating' => 'Đánh giá tiềm năng'
+    'Rating' => 'Đánh giá tiềm năng',
+    'LBL_HELPDESK_LIST' => 'HelpDesk',
+    'LBL_CPDEMO_LIST' => 'CPDemo'
 );
 
 $jsLanguageStrings = array(

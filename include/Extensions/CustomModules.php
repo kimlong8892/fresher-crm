@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2020-12-25 03:39:45 pm.  */
+/* System auto-generated on 2021-01-25 03:31:06 pm.  */
 
 $customModules = array(
     'CPSMSTemplate' => array(
@@ -132,6 +132,14 @@ $customModules = array(
         'displayNameEn' => 'Demo',
         'displayNameVn' => 'Demo',
         'menu' => 'MARKETING',
+        'hasActivities' => true,
+        'isExtension' => false
+    ),
+    'CPTicker' => array(
+        'moduleName' => 'CPTicker',
+        'displayNameEn' => 'Ticket',
+        'displayNameVn' => 'Ticket',
+        'menu' => 'SALES',
         'hasActivities' => true,
         'isExtension' => false
     )

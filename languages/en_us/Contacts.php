@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2021-01-07 11:49:18 am.  */
+/* System auto-generated on 2021-01-25 04:39:29 pm.  */
 
 $languageStrings = array(
     'Contacts' => 'Contacts',
@@ -59,7 +59,8 @@ $languageStrings = array(
     'LBL_CPPAYMENT_LIST' => 'Payments',
     'LBL_CPMAUTICCONTACTHISTORY_LIST' => 'Mautic History',
     'LBL_LAST_SYNCED_MAUTIC_HISTORY_TIME' => 'Last synced Mautic history times',
-    'LBL_AGE' => 'Age'
+    'LBL_AGE' => 'Age',
+    'LBL_HELPDESK_LIST' => 'HelpDesk'
 );
 
 $jsLanguageStrings = array(

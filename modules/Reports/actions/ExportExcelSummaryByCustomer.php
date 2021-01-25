@@ -22,13 +22,13 @@ class Reports_ExportExcelSummaryByCustomer_Action extends Vtiger_Action_Controll
         $startDate = Accounts_Record_Model::getCreatedFirst();
         $startDate = new DateTimeField($startDate);
         $startDate = $startDate->getDisplayDate();
-        if(!empty($_REQUEST['start_date'])){
-            $startDate = $_REQUEST['start_date'];
+        if($request->has('start_date')){
+            $startDate = $request->get('start_date');;
         }
         $endDate = new DateTimeField(date("Y-m-d"));
         $endDate = $endDate->getDisplayDate();
-        if(!empty($_REQUEST['end_date'])){
-            $endDate = $_REQUEST['end_date'];
+        if($request->has('end_date')){
+            $endDate = $request->get('end_date');
         }
         $startDate = new DateTimeField($startDate);
         $endDate = new DateTimeField($endDate);
@@ -57,6 +57,7 @@ class Reports_ExportExcelSummaryByCustomer_Action extends Vtiger_Action_Controll
                     $excel->getActiveSheet()->setCellValue('B'.$index, $value['productname']);
                     $excel->getActiveSheet()->setCellValue('C'.$index, $value['createdtime']);
                     $excel->getActiveSheet()->setCellValue('D'.$index, $value['unit_price']);
+                    $excel->getActiveSheet()->getStyle('D'.$index)->getNumberFormat()->setFormatCode("0,00");
                     ++$index;
                 }
             }

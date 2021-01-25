@@ -22,13 +22,13 @@ class Reports_ExportExcelBestSeller_Action extends Vtiger_Action_Controller {
         $startDate = Products_Record_Model::getCreatedFirst();
         $startDate = new DateTimeField($startDate);
         $startDate = $startDate->getDisplayDate();
-        if(!empty($_REQUEST['start_date'])){
-            $startDate = $_REQUEST['start_date'];
+        if($request->has('start_date')){
+            $startDate = $request->get('start_date');;
         }
         $endDate = new DateTimeField(date("Y-m-d"));
         $endDate = $endDate->getDisplayDate();
-        if(!empty($_REQUEST['end_date'])){
-            $endDate = $_REQUEST['end_date'];
+        if($request->has('end_date')){
+            $endDate = $request->get('end_date');
         }
         $startDate = new DateTimeField($startDate);
         $endDate = new DateTimeField($endDate);

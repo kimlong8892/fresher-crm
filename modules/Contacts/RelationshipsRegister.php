@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2019-08-15 09:00:51 am.  */
+/* System auto-generated on 2021-01-25 04:39:29 pm.  */
 
 $relationships = array(
     array(
@@ -69,10 +69,47 @@ $relationships = array(
         'relationshipType' => '1:N',
         'relationshipName' => 'LBL_CPMAUTICCONTACTHISTORY_LIST',
         'enabledActions' => array(
+
         ),
         'listingFunctionName' => 'get_dependents_list',
         'leftSideReferenceFieldName' => null,
         'rightSideReferenceFieldName' => 'related_id'
+    ),
+    array(
+        'leftSideModule' => 'Contacts',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_contact'
+    ),
+    array(
+        'leftSideModule' => 'Contacts',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_contact'
+    ),
+    array(
+        'leftSideModule' => 'Contacts',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_contact'
     )
 );
 

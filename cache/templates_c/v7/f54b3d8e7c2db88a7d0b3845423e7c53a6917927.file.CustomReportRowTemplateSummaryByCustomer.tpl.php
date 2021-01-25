@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-22 15:45:01
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-25 10:35:19
          compiled from "modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1583729579600a80dc2eff53-44203554%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f54b3d8e7c2db88a7d0b3845423e7c53a6917927' => 
     array (
       0 => 'modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl',
-      1 => 1611305072,
+      1 => 1611545684,
       2 => 'file',
     ),
   ),
@@ -44,5 +44,5 @@ $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->_loop = true;
 ?><tr><td <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['serialno'];?>
 </td><td <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['productname'];?>
 </td><td style="text-align: right !important;" <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['createdtime'];?>
-</td><td style="text-align: right !important;" <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['unit_price'];?>
+</td><td style="text-align: right !important;" <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo number_format($_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['unit_price'],0,'',',');?>
 </td></tr><?php } ?><?php }} ?>

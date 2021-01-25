@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2020-07-10 12:00:48 pm.  */
+/* System auto-generated on 2021-01-25 04:38:24 pm.  */
 
 $languageStrings = array(
     'Leads' => 'Leads',
@@ -70,7 +70,9 @@ $languageStrings = array(
     'potential' => 'Potential',
     'low potential' => 'Low Potential',
     'Not Potential' => 'Not potential',
-    'Rating' => 'Rating'
+    'Rating' => 'Rating',
+    'LBL_HELPDESK_LIST' => 'HelpDesk',
+    'LBL_CPDEMO_LIST' => 'CPDemo'
 );
 
 $jsLanguageStrings = array(

@@ -12,7 +12,7 @@
             <td {if !$PRINT}nowrap{/if}>{$VALUE_PRODUCT['serialno']}</td>
             <td {if !$PRINT}nowrap{/if}>{$VALUE_PRODUCT['productname']}</td>
             <td style="text-align: right !important;" {if !$PRINT}nowrap{/if}>{$VALUE_PRODUCT['createdtime']}</td>
-            <td style="text-align: right !important;" {if !$PRINT}nowrap{/if}>{$VALUE_PRODUCT['unit_price']}</td>
+            <td style="text-align: right !important;" {if !$PRINT}nowrap{/if}>{number_format($VALUE_PRODUCT['unit_price'], 0, '', ',')}</td>
         </tr>
     {/foreach}
 

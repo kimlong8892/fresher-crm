@@ -1,13 +1,13 @@
 <?php
 
-/* System auto-generated on 2021-01-25 04:06:12 pm.  */
+/* System auto-generated on 2021-01-25 05:50:55 pm.  */
 
 $languageStrings = array(
-    'CPDemo' => 'Demo',
-    'SINGLE_CPDemo' => 'Demo',
-    'ModuleName ID' => 'Demo ID',
-    'LBL_ADD_RECORD' => 'Add Demo',
-    'LBL_RECORDS_LIST' => 'Demo List',
+    'CPTicker' => 'Ticket',
+    'SINGLE_CPTicker' => 'Ticket',
+    'ModuleName ID' => 'Ticket ID',
+    'LBL_ADD_RECORD' => 'Add Ticket',
+    'LBL_RECORDS_LIST' => 'Ticket List',
     'LBL_TRACKING_INFOMATION' => 'Description Details',
     'LBL_GENERAL_INFORMATION' => 'General Information',
     'LBL_NAME' => 'Name',
@@ -18,7 +18,6 @@ $languageStrings = array(
     'LBL_SOURCE_INPUT' => 'starred',
     'LBL_STARRED' => 'starred',
     'LBL_TAGS' => 'tags',
-    'LBL_ACCOUNT_LIST' => 'Accounts',
     'LBL_HELPDESK_LIST' => 'HelpDesk'
 );
 

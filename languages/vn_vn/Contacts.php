@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2021-01-07 11:49:18 am.  */
+/* System auto-generated on 2021-01-25 04:39:29 pm.  */
 
 $languageStrings = array(
     'Contacts' => 'Người liên hệ',
@@ -55,7 +55,8 @@ $languageStrings = array(
     'LBL_CPPAYMENT_LIST' => 'Phiếu chi',
     'LBL_CPMAUTICCONTACTHISTORY_LIST' => 'Lịch sử Mautic',
     'LBL_LAST_SYNCED_MAUTIC_HISTORY_TIME' => 'Lần cuối đồng bộ lịch sử Mautic',
-    'LBL_AGE' => 'Độ tuổi'
+    'LBL_AGE' => 'Độ tuổi',
+    'LBL_HELPDESK_LIST' => 'HelpDesk'
 );
 
 $jsLanguageStrings = array(

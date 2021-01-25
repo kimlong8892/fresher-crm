@@ -1,13 +1,13 @@
 <?php
 
-/* System auto-generated on 2021-01-25 04:06:12 pm.  */
+/* System auto-generated on 2021-01-25 05:50:55 pm.  */
 
 $languageStrings = array(
-    'CPDemo' => 'Demo',
-    'SINGLE_CPDemo' => 'Demo',
-    'ModuleName ID' => 'Demo ID',
-    'LBL_ADD_RECORD' => 'Thêm Demo',
-    'LBL_RECORDS_LIST' => 'Danh sách Demo',
+    'CPTicker' => 'Ticket',
+    'SINGLE_CPTicker' => 'Ticket',
+    'ModuleName ID' => 'Ticket ID',
+    'LBL_ADD_RECORD' => 'Thêm Ticket',
+    'LBL_RECORDS_LIST' => 'Danh sách Ticket',
     'LBL_GENERAL_INFORMATION' => 'Thông tin chung',
     'LBL_TRACKING_INFOMATION' => 'Thông tin mô tả',
     'LBL_NAME' => 'Tên',
@@ -18,10 +18,6 @@ $languageStrings = array(
     'LBL_SOURCE_INPUT' => 'Nguồn input',
     'LBL_STARRED' => 'Theo dõi',
     'LBL_TAGS' => 'Tags',
-    'LBL_DEMO_HEADER_BASIC_BUTTON' => 'Demo Header Basic',
-    'LBL_DEMO_HEADER_SETTING_BUTTON' => 'Demo Header Setting',
-    'LBL_ACCOUNT_LIST' => 'Accounts',
-    'LBL_DEMO_DETAILVIEW_BASIC_BUTTON' => 'Demo',
     'LBL_HELPDESK_LIST' => 'HelpDesk'
 );
 
