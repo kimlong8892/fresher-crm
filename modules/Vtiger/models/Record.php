@@ -766,35 +766,79 @@ class Vtiger_Record_Model extends Vtiger_Base_Model {
 	}
 
     // count record module relate by Long Nguyen 13/01/2021
-    function countRelate($relateName, $id = null) {
+    function countRelateEmail($id = null) {
         global $adb;
 
         if (empty($id)) {
             $id = $this->getId();
         }
 
-        $query = 'SELECT count(*) FROM vtiger_account as a INNER JOIN vtiger_crmentity as e ON(a.accountid = e.crmid)
-                  INNER JOIN vtiger_crmentityrel as vc ON (e.crmid = vc.crmid)
-                  WHERE e.deleted = 0 and a.accountid = ? and vc.relmodule = ? GROUP BY accountid';
-        $count = $adb->getOne($query, array($id, $relateName));
-        if(empty($count)){
+        $query = 'SELECT COUNT(email.emailid) FROM vtiger_account AS a
+                INNER JOIN vtiger_crmentity AS e ON (a.accountid = e.crmid AND e.deleted = 0)
+                INNER JOIN vtiger_crmentityrel AS vc ON (e.crmid = vc.crmid)
+                INNER JOIN vtiger_emaildetails AS email ON (email.emailid = vc.relcrmid AND e.deleted = 0)
+                WHERE a.accountid = ? AND vc.relmodule = "Emails" GROUP BY accountid';
+        $count = $adb->getOne($query, array($id));
+        if (empty($count)) {
             $count = 0;
         }
         return $count;
     }
 
-    // count record for this Account by Long Nguyen 13/01/2021
-    function countDocs($id = null) {
+    function countRelateHelpDesk($id = null) {
         global $adb;
+
         if (empty($id)) {
             $id = $this->getId();
         }
-        $query = 'SELECT count(*) FROM vtiger_account as a INNER JOIN vtiger_crmentity as e ON(a.accountid = e.crmid)
-                  INNER JOIN vtiger_senotesrel as vc ON (e.crmid = vc.crmid)
-                  WHERE e.deleted = 0 and a.accountid = ? GROUP BY a.accountid';
+
+        $query = 'SELECT COUNT(ticket.ticketid) FROM vtiger_account AS a
+                INNER JOIN vtiger_crmentity AS e ON (a.accountid = e.crmid AND e.deleted = 0)
+                INNER JOIN vtiger_crmentityrel AS vc ON (e.crmid = vc.crmid)
+                INNER JOIN vtiger_troubletickets AS ticket ON (ticket.ticketid = vc.relcrmid AND e.deleted = 0)
+                WHERE a.accountid = ? AND vc.relmodule = "HelpDesk" GROUP BY accountid';
+        $count = $adb->getOne($query, array($id));
+        if (empty($count)) {
+            $count = 0;
+        }
+        return $count;
+    }
+
+    function countRelateCalendar($id = null) {
+        global $adb;
+
+        if (empty($id)) {
+            $id = $this->getId();
+        }
+
+        $query = 'SELECT COUNT(activity.activityid) FROM vtiger_account as a
+                INNER JOIN vtiger_crmentity AS e ON (a.accountid = e.crmid AND e.deleted = 0)
+                INNER JOIN vtiger_crmentityrel as vc ON (e.crmid = vc.crmid)
+                INNER JOIN vtiger_activity as activity ON (activity.activityid = vc.relcrmid and e.deleted = 0)
+                WHERE a.accountid = ? AND vc.relmodule = "Calendar" GROUP BY accountid';
+        $count = $adb->getOne($query, array($id));
+        if (empty($count)) {
+            $count = 0;
+        }
+        return $count;
+    }
+
+
+
+    // count record for this Account by Long Nguyen 13/01/2021
+    function countDocs($id = null) {
+        global $adb;
+
+        if (empty($id)) {
+            $id = $this->getId();
+        }
+        $query = 'SELECT COUNT(*) FROM vtiger_account AS a 
+                  INNER JOIN vtiger_crmentity AS e ON(a.accountid = e.crmid)
+                  INNER JOIN vtiger_senotesrel AS vc ON (e.crmid = vc.crmid)
+                  WHERE e.deleted = 0 AND a.accountid = ? GROUP BY a.accountid';
         $count = $adb->getOne($query, array($id));
 
-        if(empty($count)){
+        if (empty($count)) {
             $count = 0;
         }
 

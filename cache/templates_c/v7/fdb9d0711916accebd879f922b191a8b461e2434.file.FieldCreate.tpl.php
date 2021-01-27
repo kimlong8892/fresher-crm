@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:50
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:55:13
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Settings/LayoutEditor/FieldCreate.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:20688458085fe300ee2f1005-63573316%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:444750547600f8491643bb4-24280357%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '20688458085fe300ee2f1005-63573316',
+  'nocache_hash' => '444750547600f8491643bb4-24280357',
   'function' => 
   array (
   ),
@@ -42,9 +42,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300ee455ae',
+  'unifunc' => 'content_600f84917b72d',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300ee455ae')) {function content_5fe300ee455ae($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84917b72d')) {function content_600f84917b72d($_smarty_tpl) {?>
 
 <div class="modal-dialog createFieldModal modelContainer <?php if (!$_smarty_tpl->tpl_vars['IS_FIELD_EDIT_MODE']->value){?>hide<?php }?>"><?php if (!$_smarty_tpl->tpl_vars['IS_FIELD_EDIT_MODE']->value){?><?php ob_start();?><?php echo vtranslate('LBL_CREATE_CUSTOM_FIELD',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 <?php $_tmp1=ob_get_clean();?><?php $_smarty_tpl->tpl_vars['TITLE'] = new Smarty_variable($_tmp1, null, 0);?><?php }else{ ?><?php ob_start();?><?php echo vtranslate('LBL_EDIT_FIELD',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value,vtranslate($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->get('label'),$_smarty_tpl->tpl_vars['SELECTED_MODULE_NAME']->value));?>

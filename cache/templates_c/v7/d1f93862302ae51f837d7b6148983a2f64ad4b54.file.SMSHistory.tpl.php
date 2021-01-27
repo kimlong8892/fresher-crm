@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:37:16
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:09:40
          compiled from "layouts/v7/modules/SMSNotifier/SMSHistory.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:14014205505fe301bc938118-52173927%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1914383939600f87f4dec870-66064697%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14014205505fe301bc938118-52173927',
+  'nocache_hash' => '1914383939600f87f4dec870-66064697',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe301bc951c9',
+  'unifunc' => 'content_600f87f4e0231',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe301bc951c9')) {function content_5fe301bc951c9($_smarty_tpl) {?> 
+<?php if ($_valid && !is_callable('content_600f87f4e0231')) {function content_600f87f4e0231($_smarty_tpl) {?> 
 
 <link type="text/css" rel="stylesheet" href="<?php echo vresource_url("layouts/v7/modules/SMSNotifier/resources/SMSHistory.css");?>
 "><script type="text/javascript" src="<?php echo vresource_url("layouts/v7/modules/SMSNotifier/resources/SMSHistory.js");?>

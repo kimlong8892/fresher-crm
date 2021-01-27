@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-21 08:35:05
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 11:28:25
          compiled from "modules/Products/tpls/CheckWarranty5.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:17329645735fe56d3f2e7d71-82067071%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:93041664600f9a6956c0b6-15939750%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17329645735fe56d3f2e7d71-82067071',
+  'nocache_hash' => '93041664600f9a6956c0b6-15939750',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe56d3f39c81',
   'variables' => 
   array (
     'MODULE' => 0,
@@ -25,8 +23,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'USER_MODEL' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_600f9a695ed48',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe56d3f39c81')) {function content_5fe56d3f39c81($_smarty_tpl) {?><div id="checkWarranty"><h4><?php echo vtranslate('LBL_CHECK_WARRANTY_TITLE','Products');?>
+<?php if ($_valid && !is_callable('content_600f9a695ed48')) {function content_600f9a695ed48($_smarty_tpl) {?><div id="checkWarranty"><h4><?php echo vtranslate('LBL_CHECK_WARRANTY_TITLE','Products');?>
 </h4><form id="checkWarrantyForm" method="post" action=""><input type="text"name="serial"value="<?php echo $_POST['seral'];?>
 "placeholder="<?php echo vtranslate('LBL_CHECK_WARRANTY_SERIAL_PLACEHOLDER','Products');?>
 ">&nbsp;<button id="btnCheck" class="btn btn-primary"><?php echo vtranslate('LBL_CHECK_WARRANTY_SUBMIT_BTN','Products');?>

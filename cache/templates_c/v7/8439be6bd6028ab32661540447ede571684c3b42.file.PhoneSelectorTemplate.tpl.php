@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-06 08:35:15
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:09:40
          compiled from "modules/PBXManager/tpls/PhoneSelectorTemplate.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:9608197725ff513d33dd375-73820605%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:260411023600f87f461c424-80199415%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '9608197725ff513d33dd375-73820605',
+  'nocache_hash' => '260411023600f87f461c424-80199415',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5ff513d33ea98',
+  'unifunc' => 'content_600f87f463544',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5ff513d33ea98')) {function content_5ff513d33ea98($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f87f463544')) {function content_600f87f463544($_smarty_tpl) {?>
 
 <div id="phone-selector-template" data-title="<?php echo vtranslate('LBL_PLANNED_CALL_WIDGET_PHONE_SELECTOR_TITLE','PBXManager');?>
 " data-hint="<?php echo vtranslate('LBL_PLANNED_CALL_WIDGET_PHONE_SELECTOR_HINT','PBXManager');?>

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:40
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:55:04
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Settings/Vtiger/Sidebar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:4766749615fe300e4b242f8-90769140%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:62961715600f8488275f01-24488679%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4766749615fe300e4b242f8-90769140',
+  'nocache_hash' => '62961715600f8488275f01-24488679',
   'function' => 
   array (
   ),
@@ -33,9 +33,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300e4bca03',
+  'unifunc' => 'content_600f84883237d',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300e4bca03')) {function content_5fe300e4bca03($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84883237d')) {function content_600f84883237d($_smarty_tpl) {?>
 <?php if ($_smarty_tpl->tpl_vars['USER_MODEL']->value->isAdminUser()){?><?php $_smarty_tpl->tpl_vars['SETTINGS_MODULE_MODEL'] = new Smarty_variable(Settings_Vtiger_Module_Model::getInstance(), null, 0);?><?php $_smarty_tpl->tpl_vars['SETTINGS_MENUS'] = new Smarty_variable($_smarty_tpl->tpl_vars['SETTINGS_MODULE_MODEL']->value->getMenus(), null, 0);?><div class="settingsgroup"><div><input type="text" placeholder="<?php echo vtranslate('LBL_SEARCH_FOR_SETTINGS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 " class="search-list col-lg-8" id='settingsMenuSearch'></div><br><br><div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"><?php  $_smarty_tpl->tpl_vars['BLOCK_MENUS'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['BLOCK_MENUS']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['SETTINGS_MENUS']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}

@@ -23,7 +23,6 @@ class AccountHandler extends VTEventHandler {
 		if($eventName === 'vtiger.entity.aftersave') {
 			// Add handler functions here
 			$this->removeDocs($entityData);
-			
 		}
 
 		if($eventName === 'vtiger.entity.beforedelete') {

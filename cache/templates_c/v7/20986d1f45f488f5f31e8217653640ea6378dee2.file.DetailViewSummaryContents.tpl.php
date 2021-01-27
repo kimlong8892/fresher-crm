@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-25 16:01:37
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:26:29
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/HelpDesk/DetailViewSummaryContents.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2128253948600e88f1144f76-00605932%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:523444285600f8be5f305a8-53911551%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2128253948600e88f1144f76-00605932',
+  'nocache_hash' => '523444285600f8be5f305a8-53911551',
   'function' => 
   array (
   ),
@@ -21,8 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_600e88f115381',
+  'unifunc' => 'content_600f8be5f39aa',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_600e88f115381')) {function content_600e88f115381($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8be5f39aa')) {function content_600f8be5f39aa($_smarty_tpl) {?>
 <form id="detailView" method="POST"><?php echo $_smarty_tpl->getSubTemplate (vtemplate_path('SummaryViewWidgets.tpl',$_smarty_tpl->tpl_vars['MODULE_NAME']->value), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 </form><?php }} ?>

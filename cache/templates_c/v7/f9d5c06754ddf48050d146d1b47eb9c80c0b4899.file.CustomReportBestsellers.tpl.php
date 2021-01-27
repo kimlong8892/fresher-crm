@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-23 17:33:57
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:56:59
          compiled from "modules/Reports/tpls/CustomReportBestsellers.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:206635621060024475ea30e9-06947396%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:843441495600f84fb49ace1-67531598%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '206635621060024475ea30e9-06947396',
+  'nocache_hash' => '843441495600f84fb49ace1-67531598',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_60024475efa16',
   'variables' => 
   array (
     'PRINT' => 0,
@@ -28,8 +26,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'REPORT_RESULT' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_600f84fb4e593',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60024475efa16')) {function content_60024475efa16($_smarty_tpl) {?><style>form#detailView{display: none !important;}</style><script src="<?php echo vresource_url('modules/Reports/resources/BestsellersHandler.js');?>
+<?php if ($_valid && !is_callable('content_600f84fb4e593')) {function content_600f84fb4e593($_smarty_tpl) {?><style>form#detailView{display: none !important;}</style><script src="<?php echo vresource_url('modules/Reports/resources/BestsellersHandler.js');?>
 "></script><div <?php if ($_smarty_tpl->tpl_vars['PRINT']->value){?>style="width:80%; margin:auto"<?php }?>><h2 style="text-align: center;"><?php echo $_smarty_tpl->tpl_vars['REPORT_NAME']->value;?>
 </h2><form id="form-filter-date" action="" method="post"><div class="form-group" style="display: flex;"><div style="width: 30%;"><label for="start_date"><?php echo vtranslate('PLACEHOLDER_START_DATE_BEST_SELLERS','Reports');?>
 </label><div class="input-group inputElement col-sm-4"><input type="text" name="start_date"data-fieldtype="date"class="form-control datePicker"autocomplete="off"placeholder="<?php echo vtranslate('PLACEHOLDER_START_DATE_BEST_SELLERS','Reports');?>

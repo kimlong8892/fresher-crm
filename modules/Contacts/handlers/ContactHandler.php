@@ -10,11 +10,9 @@
 	Note: REMOVE this comment on the file you create youself to avoid messing comments
 */
 
-class ContactHandler extends VTEventHandler
-{
+class ContactHandler extends VTEventHandler {
 
-    function handleEvent($eventName, $entityData)
-    {
+    function handleEvent($eventName, $entityData) {
         if ($eventName === "vtiger.entity.beforesave") {
             // add handler functions here
             $this->caculateAge($entityData);
@@ -58,13 +56,11 @@ class ContactHandler extends VTEventHandler
     }
 
     // Handle process_records event
-    static function processRecords(&$recordModel)
-    {
+    static function processRecords(&$recordModel) {
         // $recordModel->set('accountname', 'Foo bar');
     }
 
-    function caculateAge(&$entityData)
-    {
+    function caculateAge(&$entityData) {
         require_once('include/fields/DateTimeField.php');
         // Calculate age only when the birthday is specified
         if ($entityData->get('birthday')) {
@@ -76,8 +72,7 @@ class ContactHandler extends VTEventHandler
             $entityData->set('age', 0);
         }}
 
-    function demoAfterSave(&$entityData)
-    {
+    function demoAfterSave(&$entityData) {
     
     }
 }

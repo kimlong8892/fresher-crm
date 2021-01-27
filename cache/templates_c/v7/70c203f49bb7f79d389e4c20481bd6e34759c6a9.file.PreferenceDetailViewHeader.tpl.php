@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-22 17:22:11
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 15:33:16
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Users/PreferenceDetailViewHeader.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:963080315600aa75376bdc3-99561127%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1724712836600fd3cc2013d3-67954856%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '963080315600aa75376bdc3-99561127',
+  'nocache_hash' => '1724712836600fd3cc2013d3-67954856',
   'function' => 
   array (
   ),
@@ -31,9 +31,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_600aa7538205c',
+  'unifunc' => 'content_600fd3cc2bad5',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_600aa7538205c')) {function content_600aa7538205c($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600fd3cc2bad5')) {function content_600fd3cc2bad5($_smarty_tpl) {?>
 <?php if ($_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['form']&&$_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['form']['hiddenFields']!=null){?><?php $_template = new Smarty_Internal_Template('eval:'.$_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['form']['hiddenFields'], $_smarty_tpl->smarty, $_smarty_tpl);echo $_template->fetch(); ?><?php }?><?php if ($_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['scripts']!=null){?><?php $_template = new Smarty_Internal_Template('eval:'.$_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['scripts'], $_smarty_tpl->smarty, $_smarty_tpl);echo $_template->fetch(); ?><?php }?><?php $_smarty_tpl->tpl_vars["MODULE_NAME"] = new Smarty_variable($_smarty_tpl->tpl_vars['MODULE_MODEL']->value->get('name'), null, 0);?><input id="recordId" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['RECORD']->value->getId();?>
 " /><div class="detailViewContainer"><div class="detailViewTitle" id="prefPageHeader"><div class="col-lg-12 col-sm-12 col-xs-12"><div class="col-xs-8"><?php $_smarty_tpl->tpl_vars['IMAGE_DETAILS'] = new Smarty_variable($_smarty_tpl->tpl_vars['RECORD']->value->getImageDetails(), null, 0);?><?php  $_smarty_tpl->tpl_vars['IMAGE_INFO'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['IMAGE_INFO']->_loop = false;
  $_smarty_tpl->tpl_vars['ITER'] = new Smarty_Variable;

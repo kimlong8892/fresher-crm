@@ -1,8 +1,7 @@
 <?php
 
 
-class CPDemo_Module_Model extends Vtiger_Module_Model
-{
+class CPDemo_Module_Model extends Vtiger_Module_Model {
     public function getModuleBasicLinks() {
         $basicLinks = parent::getModuleBasicLinks();
 

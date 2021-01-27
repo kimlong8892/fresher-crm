@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-25 10:35:19
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 17:17:22
          compiled from "modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1583729579600a80dc2eff53-44203554%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1224132326600f869d8a6d17-58902271%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'f54b3d8e7c2db88a7d0b3845423e7c53a6917927' => 
     array (
       0 => 'modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl',
-      1 => 1611545684,
+      1 => 1611656238,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1583729579600a80dc2eff53-44203554',
+  'nocache_hash' => '1224132326600f869d8a6d17-58902271',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_600a80dc37935',
+  'unifunc' => 'content_600f869d9616f',
   'variables' => 
   array (
     'ROW_DATA' => 0,
@@ -28,7 +28,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_600a80dc37935')) {function content_600a80dc37935($_smarty_tpl) {?><tr style="background: black; color: white;"><?php  $_smarty_tpl->tpl_vars['VALUE'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['VALUE']->_loop = false;
+<?php if ($_valid && !is_callable('content_600f869d9616f')) {function content_600f869d9616f($_smarty_tpl) {?><tr style="background: black; color: white;"><?php  $_smarty_tpl->tpl_vars['VALUE'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['VALUE']->_loop = false;
  $_smarty_tpl->tpl_vars['KEY'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['ROW_DATA']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['VALUE']->key => $_smarty_tpl->tpl_vars['VALUE']->value){
@@ -44,5 +44,5 @@ $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->_loop = true;
 ?><tr><td <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['serialno'];?>
 </td><td <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['productname'];?>
 </td><td style="text-align: right !important;" <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo $_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['createdtime'];?>
-</td><td style="text-align: right !important;" <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo number_format($_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['unit_price'],0,'',',');?>
+</td><td style="text-align: right !important;" <?php if (!$_smarty_tpl->tpl_vars['PRINT']->value){?>nowrap<?php }?>><?php echo number_format($_smarty_tpl->tpl_vars['VALUE_PRODUCT']->value['total_money'],0,'',',');?>
 </td></tr><?php } ?><?php }} ?>

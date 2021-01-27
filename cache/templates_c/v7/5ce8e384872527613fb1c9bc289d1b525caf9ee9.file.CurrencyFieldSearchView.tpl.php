@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:36:17
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:43:50
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/uitypes/CurrencyFieldSearchView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16953105425fe301819d4353-32453347%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:597730480600f8ff6757bc4-78708855%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '16953105425fe301819d4353-32453347',
+  'nocache_hash' => '597730480600f8ff6757bc4-78708855',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe301819f2c4',
+  'unifunc' => 'content_600f8ff676bae',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe301819f2c4')) {function content_5fe301819f2c4($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8ff676bae')) {function content_600f8ff676bae($_smarty_tpl) {?>
 
 <?php $_smarty_tpl->tpl_vars["FIELD_INFO"] = new Smarty_variable(Zend_Json::encode($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getFieldInfo()), null, 0);?><div class="" ><input type="text" name="<?php echo $_smarty_tpl->tpl_vars['FIELD_MODEL']->value->get('name');?>
 " class="listSearchContributor inputElement" onkeyup="formatNumber (this, 'float')" value="<?php echo $_smarty_tpl->tpl_vars['SEARCH_INFO']->value['searchValue'];?>

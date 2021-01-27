@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:11
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:09:35
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/partials/Menubar.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2313420405fe300c7ab7536-44337413%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:373679905600f87efe671c4-35003056%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2313420405fe300c7ab7536-44337413',
+  'nocache_hash' => '373679905600f87efe671c4-35003056',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300c7ae00d',
+  'unifunc' => 'content_600f87efe9a00',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300c7ae00d')) {function content_5fe300c7ae00d($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f87efe9a00')) {function content_600f87efe9a00($_smarty_tpl) {?>
 
 <?php if ($_smarty_tpl->tpl_vars['MENU_STRUCTURE']->value){?>
 <?php $_smarty_tpl->tpl_vars["topMenus"] = new Smarty_variable($_smarty_tpl->tpl_vars['MENU_STRUCTURE']->value->getTop(), null, 0);?>

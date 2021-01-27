@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:12
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 11:47:26
          compiled from "modules/Accounts/tpls/AccountsTypeEditView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:14298494785fe300c821fe87-46512145%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1057051336600f9ede9fb498-79632838%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14298494785fe300c821fe87-46512145',
+  'nocache_hash' => '1057051336600f9ede9fb498-79632838',
   'function' => 
   array (
   ),
@@ -22,8 +22,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300c8238e0',
+  'unifunc' => 'content_600f9edea23e3',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300c8238e0')) {function content_5fe300c8238e0($_smarty_tpl) {?><label><input type="radio" name="accounts_type" value="B2B" <?php if (($_smarty_tpl->tpl_vars['RECORD']->value&&$_smarty_tpl->tpl_vars['RECORD']->value->get('accounts_type')=="B2B")||($_smarty_tpl->tpl_vars['RECORD']->value->get('accounts_type')=='')){?>checked<?php }?>><span><?php echo vtranslate("LBL_ACCOUNTS_TYPE_B2B",$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+<?php if ($_valid && !is_callable('content_600f9edea23e3')) {function content_600f9edea23e3($_smarty_tpl) {?><label><input type="radio" name="accounts_type" value="B2B" <?php if (($_smarty_tpl->tpl_vars['RECORD']->value&&$_smarty_tpl->tpl_vars['RECORD']->value->get('accounts_type')=="B2B")||($_smarty_tpl->tpl_vars['RECORD']->value->get('accounts_type')=='')){?>checked<?php }?>><span><?php echo vtranslate("LBL_ACCOUNTS_TYPE_B2B",$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </span></label>&nbsp;<label><input type="radio" name="accounts_type" value="B2C" <?php if ($_smarty_tpl->tpl_vars['RECORD']->value&&$_smarty_tpl->tpl_vars['RECORD']->value->get('accounts_type')=="B2C"){?>checked<?php }?>><span><?php echo vtranslate("LBL_ACCOUNTS_TYPE_B2C",$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </span></label><?php }} ?>

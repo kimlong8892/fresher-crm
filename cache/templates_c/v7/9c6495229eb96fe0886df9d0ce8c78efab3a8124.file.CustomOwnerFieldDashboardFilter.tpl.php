@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 17:00:37
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:54:59
          compiled from "modules/Vtiger/tpls/CustomOwnerFieldDashboardFilter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:11420994325fe315450725b3-02834586%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:564820862600f8483dc8557-42598376%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11420994325fe315450725b3-02834586',
+  'nocache_hash' => '564820862600f8483dc8557-42598376',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe315450e44d',
+  'unifunc' => 'content_600f8483e2659',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe315450e44d')) {function content_5fe315450e44d($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8483e2659')) {function content_600f8483e2659($_smarty_tpl) {?>
 
 <?php if (!isset($_smarty_tpl->tpl_vars['USER_ONLY']->value)){?> <?php $_smarty_tpl->tpl_vars['USER_ONLY'] = new Smarty_variable(false, null, 0);?> <?php }?><?php if (!isset($_smarty_tpl->tpl_vars['OPTIONAL_FILTER']->value)){?> <?php $_smarty_tpl->tpl_vars['OPTIONAL_FILTER'] = new Smarty_variable(false, null, 0);?> <?php }?><?php if (!isset($_smarty_tpl->tpl_vars['FIELD_NAME']->value)){?> <?php $_smarty_tpl->tpl_vars['FIELD_NAME'] = new Smarty_variable("assigned_user_id", null, 0);?> <?php }?><?php if (!isset($_smarty_tpl->tpl_vars['VALIDATE']->value)){?> <?php $_smarty_tpl->tpl_vars['VALIDATE'] = new Smarty_variable(false, null, 0);?> <?php }?><div class="user-list"><?php if ($_smarty_tpl->tpl_vars['OPTIONAL_FILTER']->value){?> <div class="user-list_optional"><label><?php echo vtranslate('LBL_MINE','Vtiger');?>
  <input type="checkbox" name="optional_filter_mine" rel="optional_filter" value="mine" checked/></label><label><?php echo vtranslate('LBL_ALL','Vtiger');?>

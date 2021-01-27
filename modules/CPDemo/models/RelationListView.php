@@ -1,9 +1,7 @@
 <?php
 
-class CPDemo_RelationListView_Model extends Vtiger_RelationListView_Model
-{
-    public function getLinks()
-    {
+class CPDemo_RelationListView_Model extends Vtiger_RelationListView_Model {
+    public function getLinks() {
         $parentModel = $this->getParentRecordModel();
         $relationModel = $this->getRelationModel();
 

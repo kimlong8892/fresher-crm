@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-15 17:46:17
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:38:05
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/uitypes/MultiPicklist.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13987595206001727936aa80-14128672%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:862730376600f8e9d65ee67-63073129%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13987595206001727936aa80-14128672',
+  'nocache_hash' => '862730376600f8e9d65ee67-63073129',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_6001727947e35',
+  'unifunc' => 'content_600f8e9d6eade',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_6001727947e35')) {function content_6001727947e35($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/var/www/html/crm-fresher/libraries/Smarty/libs/plugins/modifier.replace.php';
+<?php if ($_valid && !is_callable('content_600f8e9d6eade')) {function content_600f8e9d6eade($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/var/www/html/crm-fresher/libraries/Smarty/libs/plugins/modifier.replace.php';
 ?>
 <?php $_smarty_tpl->tpl_vars["FIELD_INFO"] = new Smarty_variable($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getFieldInfo(), null, 0);?><?php $_smarty_tpl->tpl_vars["SPECIAL_VALIDATOR"] = new Smarty_variable($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getValidator(), null, 0);?><?php $_smarty_tpl->tpl_vars["FIELD_VALUE_LIST"] = new Smarty_variable(explode(' |##| ',$_smarty_tpl->tpl_vars['FIELD_MODEL']->value->get('fieldvalue')), null, 0);?><?php $_smarty_tpl->tpl_vars['PICKLIST_VALUES'] = new Smarty_variable($_smarty_tpl->tpl_vars['FIELD_INFO']->value['picklistvalues'], null, 0);?><?php $_smarty_tpl->tpl_vars['PICKLIST_COLORS'] = new Smarty_variable($_smarty_tpl->tpl_vars['FIELD_INFO']->value['picklistColors'], null, 0);?><input type="hidden" name="<?php echo $_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getFieldName();?>
 " value=""  data-fieldtype="multipicklist"/><select id="<?php echo $_smarty_tpl->tpl_vars['MODULE']->value;?>

@@ -8,8 +8,7 @@
  * All Rights Reserved.
  *************************************************************************************/
 
-class Products_Record_Model extends Vtiger_Record_Model
-{
+class Products_Record_Model extends Vtiger_Record_Model{
 
     /**
      * Function to get Taxes Url
@@ -60,8 +59,7 @@ class Products_Record_Model extends Vtiger_Record_Model
      * Function to get values of more currencies listprice
      * @return <Array> of listprice values
      */
-    static function getListPriceValues($id)
-    {
+    static function getListPriceValues($id){
         $db = PearDatabase::getInstance();
         $listPrice = $db->pquery('SELECT * FROM vtiger_productcurrencyrel WHERE productid	= ?', array($id));
         $listpriceValues = array();
@@ -448,11 +446,11 @@ class Products_Record_Model extends Vtiger_Record_Model
         if ($module !== false) {
             $query .= ' AND setype = ?';
             if ($module == 'Products') {
-                $query = 'SELECT label, crmid, setype, createdtime FROM vtiger_crmentity INNER JOIN vtiger_products ON 
+                $query = 'SELECT label, crmid, setype, createdtime FROM vtiger_crmentity INNER JOIN vtiger_products ON
 							vtiger_products.productid = vtiger_crmentity.crmid WHERE label LIKE ? AND vtiger_crmentity.deleted = 0 
 							AND vtiger_products.active = 1 AND setype = ?';
             } else if ($module == 'Services') {
-                $query = 'SELECT label, crmid, setype, createdtime FROM vtiger_crmentity INNER JOIN vtiger_service ON 
+                $query = 'SELECT label, crmid, setype, createdtime FROM vtiger_crmentity INNER JOIN vtiger_service ON
 							vtiger_service.serviceid = vtiger_crmentity.crmid WHERE label LIKE ? AND vtiger_crmentity.deleted = 0 
 							AND vtiger_service.active = 1 AND setype = ?';
             }
@@ -538,7 +536,7 @@ class Products_Record_Model extends Vtiger_Record_Model
     public function isBundle() {
         $db = PearDatabase::getInstance();
 
-        $query = 'SELECT 1 FROM vtiger_seproductsrel INNER JOIN vtiger_crmentity 
+        $query = 'SELECT 1 FROM vtiger_seproductsrel INNER JOIN vtiger_crmentity
 					ON vtiger_seproductsrel.crmid = vtiger_crmentity.crmid AND vtiger_crmentity.deleted = 0 AND vtiger_seproductsrel.setype=? 
 					WHERE vtiger_seproductsrel.productid = ?';
         $result = $db->pquery($query, array($this->getModuleName(), $this->getId()));
@@ -617,6 +615,7 @@ class Products_Record_Model extends Vtiger_Record_Model
     // Implemented by Long Nguyen on 2020-12-23 to retrieve a product by its serial
     static function getInstanceBySerial($serial) {
         $db = PearDatabase::getInstance();
+        
         $sql = "SELECT p.productid, p.serialno, p.productname, p.start_date, p.expiry_date
             FROM vtiger_products as p
             INNER JOIN vtiger_crmentity AS e ON (e.crmid = p.productid AND e.deleted = 0 AND e.setype = 'Products')
@@ -678,50 +677,35 @@ class Products_Record_Model extends Vtiger_Record_Model
     // implement update status warranty auto for cron task by Long Nguyen 20/01/2021
     static function updateStatusWarranty(){
         global $adb;
-        $db = PearDatabase::getInstance();
-        $sql = "SELECT expiry_date
-                FROM vtiger_products as p
-                INNER JOIN vtiger_crmentity AS e ON (e.crmid = p.productid AND e.deleted = 0)";
-        $result = $db->pquery($sql, []);
-        while ($row = $adb->fetchByAssoc($result)) {
-            $warrantyStatus = (strtotime($row['expiry_date']) > strtotime(date('Y-m-d'))) ? true : false;
-            $strStatus = "";
-            if($warrantyStatus){
-                $strStatus = vtranslate('LBL_WARRANT_VALID', 'Products');
-            } else {
-                $strStatus = vtranslate('LBL_WARRANT_ENDED', 'Products');
-            }
-            $sqlUpdate = "UPDATE vtiger_products set status_warranty = ? WHERE productid = ?";
-            $db->pquery($sqlUpdate, [$strStatus, $row['productid']]);
-        }
+
+        $sqlUpdateVaild = "UPDATE vtiger_products SET products_status_warranty = 'valid'
+                           WHERE expiry_date >= CURDATE() AND products_status_warranty <> 'valid'";
+        $adb->pquery($sqlUpdateVaild, []);
+
+        $sqlUpdateEnded = "UPDATE vtiger_products set products_status_warranty = 'ended'
+                           WHERE expiry_date < DATE(NOW()) AND products_status_warranty <> 'ended'";
+        $adb->pquery($sqlUpdateEnded, []);
+
+        return true;
     }
 
     static function getReportBestSellers($startDate, $endDate){
         global $adb;
-        $startDate = date("Y-m-d", strtotime($startDate));
-        $endDate = date("Y-m-d", strtotime($endDate));
-        if(strtotime($endDate) == strtotime(date("Y-m-d"))){
-            $endDate .= ' 23:59:59';
-        }
-        $sql = "SELECT vtiger_products.productcategory,
+
+        $sql = "SELECT  vtiger_products.productcategory,
                         SUM(vtiger_inventoryproductreltmpProducts.quantity) AS total_quantity ,
                         SUM(vtiger_inventoryproductreltmpProducts.margin) AS total_money
-                FROM vtiger_salesorder
-                INNER JOIN vtiger_crmentity ON vtiger_crmentity.crmid=vtiger_salesorder.salesorderid
-                AND vtiger_crmentity.deleted = 0
-                LEFT JOIN vtiger_inventoryproductrel AS vtiger_inventoryproductreltmpProducts
-                ON (vtiger_salesorder.salesorderid=vtiger_inventoryproductreltmpProducts.id)
-                INNER JOIN vtiger_products
-                ON vtiger_products.productid=vtiger_inventoryproductreltmpProducts.productid
-                INNER JOIN vtiger_crmentity AS vtiger_crmentityProducts
-                ON vtiger_crmentityProducts.crmid=vtiger_products.productid
-                AND vtiger_crmentityProducts.createdtime >= ?
-                AND vtiger_crmentityProducts.createdtime <= ?
-                AND vtiger_crmentityProducts.deleted=0
-                WHERE vtiger_products.productcategory <> ''
-                AND vtiger_salesorder.sostatus = 'Delivered'
-                AND vtiger_crmentity.setype = 'SalesOrder'
-                group by productcategory";
+                        FROM vtiger_salesorder
+                        INNER JOIN vtiger_crmentity as e_order ON (e_order.crmid=vtiger_salesorder.salesorderid AND e_order.deleted = 0)
+                        LEFT JOIN vtiger_inventoryproductrel AS inventoryrel (vtiger_salesorder.salesorderid=inventoryrel.id)
+                        INNER JOIN vtiger_products ON (vtiger_products.productid=vtiger_inventoryproductreltmpProducts.productid)
+                        INNER JOIN vtiger_crmentity AS vtiger_crmentityProducts ON (vtiger_crmentityProducts.crmid=vtiger_products.productid AND vtiger_crmentityProducts.deleted=0) 
+                        WHERE vtiger_salesorder.sostatus = 'Delivered'
+                        AND vtiger_crmentity.setype = 'SalesOrder'
+                        AND DATE(e_order.createdtime) >= ? 
+                        AND DATE(e_order.createdtime) <= ?
+                        GROUP BY productcategory";
+
         $result = $adb->pquery($sql, [$startDate, $endDate]);
         $return = [];
         while ($row = $adb->fetchByAssoc($result)) {
@@ -731,24 +715,23 @@ class Products_Record_Model extends Vtiger_Record_Model
         return $return;
     }
 
-    static function getProductInOrderByAccountId($accountId){
+    static function getProductInOrderByAccountId($accountId, $startDate, $endDate){
         global $adb;
 
         $sql = "SELECT vtiger_products.serialno,
-                        vtiger_products.productname,
-                        vc.createdtime,
-                        vtiger_products.unit_price
-                FROM vtiger_salesorder 
-                INNER JOIN vtiger_crmentity vc ON vtiger_salesorder.salesorderid = vc.crmid
-                AND vc.deleted = 0
-                INNER JOIN vtiger_inventoryproductrel vi ON vc.crmid = vi.id
-                INNER JOIN vtiger_products ON vi.productid = vtiger_products.productid
-                INNER JOIN vtiger_crmentity AS vtiger_crmentityProducts
-                ON vtiger_crmentityProducts.crmid=vtiger_products.productid
-                AND vtiger_crmentityProducts.deleted=0
-                WHERE vtiger_salesorder.accountid = ?";
+                       vtiger_products.productname,
+                       v_order.createdtime,
+                       vtiger_salesorder.total as total_money
+                FROM vtiger_salesorder
+                INNER JOIN vtiger_crmentity AS v_order ON (vtiger_salesorder.salesorderid = v_order.crmid  AND v_order.deleted = 0)
+                INNER JOIN vtiger_inventoryproductrel AS vi ON (v_order.crmid = vi.id)
+                INNER JOIN vtiger_products ON (vi.productid = vtiger_products.productid)
+                INNER JOIN vtiger_crmentity AS v_product ON (v_product.crmid=vtiger_products.productid AND v_product.deleted=0) 
+                WHERE vtiger_salesorder.accountid = ?
+                AND DATE(v_order.createdtime) >= ? 
+                AND DATE(v_order.createdtime) <= ?";
 
-        $result = $adb->pquery($sql, [$accountId]);
+        $result = $adb->pquery($sql, [$accountId, $startDate, $endDate]);
         $return = [];
 
         while ($row = $adb->fetchByAssoc($result)) {
@@ -771,5 +754,25 @@ class Products_Record_Model extends Vtiger_Record_Model
                     AND vc.deleted = 0 ORDER BY vc.createdtime";
 
         return $adb->getOne($sql, []);
+    }
+
+    static function getAllProduct(){
+        global $adb;
+
+        $sql = "SELECT productid, productname FROM vtiger_products
+                INNER JOIN vtiger_crmentity vc on vtiger_products.productid = vc.crmid
+                AND vc.deleted = 0; ";
+
+        $result = $adb->pquery($sql, []);
+        $return = [];
+
+        while ($row = $adb->fetchByAssoc($result)) {
+            foreach($row as $key => $value){
+                $row[$key] = html_entity_decode($row[$key]);
+            }
+            $return[] = $row;
+        }
+
+        return $return;
     }
 }

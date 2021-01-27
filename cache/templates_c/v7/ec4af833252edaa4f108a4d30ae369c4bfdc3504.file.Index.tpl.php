@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:49
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:55:12
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Settings/LayoutEditor/Index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13941312675fe300ed7bf6a7-03763967%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1799239095600f84908d3f79-94675686%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13941312675fe300ed7bf6a7-03763967',
+  'nocache_hash' => '1799239095600f84908d3f79-94675686',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300ed8ce8a',
+  'unifunc' => 'content_600f84909c7ea',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300ed8ce8a')) {function content_5fe300ed8ce8a($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84909c7ea')) {function content_600f84909c7ea($_smarty_tpl) {?>
 
 
 <div class="container-fluid main-scroll" id="layoutEditorContainer"><input id="selectedModuleName" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['SELECTED_MODULE_NAME']->value;?>

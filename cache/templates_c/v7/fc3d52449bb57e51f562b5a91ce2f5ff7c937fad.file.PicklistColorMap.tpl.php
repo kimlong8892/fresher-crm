@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:36:17
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:09:36
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/PicklistColorMap.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:4297707625fe301815e41a9-62623791%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1248075682600f87f05e63e0-30282462%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4297707625fe301815e41a9-62623791',
+  'nocache_hash' => '1248075682600f87f05e63e0-30282462',
   'function' => 
   array (
   ),
@@ -34,9 +34,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe30181651a3',
+  'unifunc' => 'content_600f87f066899',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe30181651a3')) {function content_5fe30181651a3($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f87f066899')) {function content_600f87f066899($_smarty_tpl) {?>
 
 <style type="text/css">
     <?php  $_smarty_tpl->tpl_vars['FIELD_MODEL'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['FIELD_MODEL']->_loop = false;

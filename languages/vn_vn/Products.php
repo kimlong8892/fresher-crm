@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2021-01-20 09:16:47 am.  */
+/* System auto-generated on 2021-01-26 12:34:24 pm.  */
 
 $languageStrings = array(
     'Products' => 'Sản phẩm',
@@ -105,6 +105,7 @@ $languageStrings = array(
     'LBL_ERROR_SERIAL' => 'Trùng số serial',
     'LBL_DATE_SELL' => 'Ngày bán',
     'LBL_MONEY_SELL' => 'Số tiền bán',
+    'LBL_PRODUCTS_STATUS_WARRANTY' => 'Trạng thái bảo hành'
 );
 
 $jsLanguageStrings = array(
@@ -121,6 +122,6 @@ $jsLanguageStrings = array(
     'JS_LBL_ERROR_SERIAL_OR_EMPTY' => 'Trùng số serial hoặc rỗng',
     'JS_DECLARE_PRODUCT_ERROR_MSG' => 'Lỗi không xác định',
     'JS_DECLARE_PRODUCT_FAIL' => 'Tạo sản phẩm thất bại',
-    'Products Product Category' => 'Loại sản phẩm',
+    'Products Product Category' => 'Loại sản phẩm'
 );
 

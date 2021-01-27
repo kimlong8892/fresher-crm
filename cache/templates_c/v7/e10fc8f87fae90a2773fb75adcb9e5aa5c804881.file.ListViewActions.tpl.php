@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-14 11:20:47
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:56:54
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Reports/ListViewActions.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:4353848875fffc69f8a1810-61713677%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1897210936600f84f626a216-74514273%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4353848875fffc69f8a1810-61713677',
+  'nocache_hash' => '1897210936600f84f626a216-74514273',
   'function' => 
   array (
   ),
@@ -31,9 +31,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fffc69f96baa',
+  'unifunc' => 'content_600f84f63a504',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fffc69f96baa')) {function content_5fffc69f96baa($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84f63a504')) {function content_600f84f63a504($_smarty_tpl) {?>
 
 <?php $_smarty_tpl->tpl_vars['LISTVIEW_MASSACTIONS_1'] = new Smarty_variable(array(), null, 0);?><div id="listview-actions" class="listview-actions-container"><?php  $_smarty_tpl->tpl_vars['LIST_MASSACTION'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['LIST_MASSACTION']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['LISTVIEW_MASSACTIONS']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}

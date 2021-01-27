@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-14 11:36:36
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:56:58
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Reports/ReportHeader.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:10618355725fffca54037e33-51725648%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1532170416600f84faaafb18-18989502%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10618355725fffca54037e33-51725648',
+  'nocache_hash' => '1532170416600f84faaafb18-18989502',
   'function' => 
   array (
   ),
@@ -37,9 +37,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fffca5419b38',
+  'unifunc' => 'content_600f84fab692b',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fffca5419b38')) {function content_5fffca5419b38($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84fab692b')) {function content_600f84fab692b($_smarty_tpl) {?>
 
 
 

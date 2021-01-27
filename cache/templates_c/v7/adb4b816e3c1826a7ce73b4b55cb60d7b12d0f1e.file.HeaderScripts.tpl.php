@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:11
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:54:55
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/HeaderScripts.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:17533640045fe300c740df44-58253586%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16183764600f847f0ac671-76507650%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17533640045fe300c740df44-58253586',
+  'nocache_hash' => '16183764600f847f0ac671-76507650',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300c749380',
+  'unifunc' => 'content_600f847f13b1f',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300c749380')) {function content_5fe300c749380($_smarty_tpl) {?><?php $_smarty_tpl->tpl_vars['VALIDATION_CONFIG'] = new Smarty_variable(getGlobalVariable('validationConfig'), null, 3);
+<?php if ($_valid && !is_callable('content_600f847f13b1f')) {function content_600f847f13b1f($_smarty_tpl) {?><?php $_smarty_tpl->tpl_vars['VALIDATION_CONFIG'] = new Smarty_variable(getGlobalVariable('validationConfig'), null, 3);
 $_ptr = $_smarty_tpl->parent; while ($_ptr != null) {$_ptr->tpl_vars['VALIDATION_CONFIG'] = clone $_smarty_tpl->tpl_vars['VALIDATION_CONFIG']; $_ptr = $_ptr->parent; }
 Smarty::$global_tpl_vars['VALIDATION_CONFIG'] = clone $_smarty_tpl->tpl_vars['VALIDATION_CONFIG'];?><script>var _VALIDATION_CONFIG = <?php echo json_encode($_smarty_tpl->tpl_vars['VALIDATION_CONFIG']->value);?>
 ;</script><?php $_smarty_tpl->tpl_vars['CALENDAR_USER_SETTINGS'] = new Smarty_variable(Calendar_Settings_Model::getUserSettings(), null, 3);

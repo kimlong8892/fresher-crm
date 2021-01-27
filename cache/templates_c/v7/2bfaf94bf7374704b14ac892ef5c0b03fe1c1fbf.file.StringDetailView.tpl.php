@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:37:23
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:36:30
          compiled from "layouts/v7/modules/Vtiger/uitypes/StringDetailView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7997505665fe301c3a84a77-30591020%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:757480882600f8e3ed30078-33377401%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7997505665fe301c3a84a77-30591020',
+  'nocache_hash' => '757480882600f8e3ed30078-33377401',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe301c3b05a6',
+  'unifunc' => 'content_600f8e3edf1ef',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe301c3b05a6')) {function content_5fe301c3b05a6($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8e3edf1ef')) {function content_600f8e3edf1ef($_smarty_tpl) {?>
 
 
 <?php if ($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getFieldDataType()=='picklist'&&$_smarty_tpl->tpl_vars['MODULE']->value!='Users'){?>

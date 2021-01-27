@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-14 11:34:35
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:58:47
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Reports/step2.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:11321307065fffc9db5559d5-53297116%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:946131520600f85679c4862-26468990%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11321307065fffc9db5559d5-53297116',
+  'nocache_hash' => '946131520600f85679c4862-26468990',
   'function' => 
   array (
   ),
@@ -52,9 +52,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fffc9db80925',
+  'unifunc' => 'content_600f8567b8fea',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fffc9db80925')) {function content_5fffc9db80925($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8567b8fea')) {function content_600f8567b8fea($_smarty_tpl) {?>
 <form class="form-horizontal recordEditView" id="report_step2" method="post" action="index.php"><input type="hidden" name="module" value="<?php echo $_smarty_tpl->tpl_vars['MODULE']->value;?>
 " /><input type="hidden" name="view" value="Edit" /><input type="hidden" name="mode" value="step3" /><input type="hidden" name="record" value="<?php echo $_smarty_tpl->tpl_vars['RECORD_ID']->value;?>
 " /><input type="hidden" name="reportname" value="<?php echo $_smarty_tpl->tpl_vars['REPORT_MODEL']->value->get('reportname');?>

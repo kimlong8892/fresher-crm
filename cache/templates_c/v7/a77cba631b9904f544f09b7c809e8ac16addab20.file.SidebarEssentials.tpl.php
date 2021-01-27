@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-14 11:20:47
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:56:53
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Reports/partials/SidebarEssentials.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2343501775fffc69f5af5a5-10069893%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:430976028600f84f5eb71a2-69126280%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2343501775fffc69f5af5a5-10069893',
+  'nocache_hash' => '430976028600f84f5eb71a2-69126280',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fffc69f612e7',
+  'unifunc' => 'content_600f84f5f28e0',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fffc69f612e7')) {function content_5fffc69f612e7($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84f5f28e0')) {function content_600f84f5f28e0($_smarty_tpl) {?>
 
 <div class="sidebar-menu sidebar-menu-full"><div class="module-filters" id="module-filters"><div class="sidebar-container lists-menu-container"><div class="sidebar-header clearfix"><h5 class="pull-left"><?php echo vtranslate('LBL_FOLDERS',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </h5><button id="createFilter" onclick='Reports_List_Js.triggerAddFolder("index.php?module=Reports&view=EditFolder");' class="btn btn-default pull-right sidebar-btn" title="<?php echo vtranslate('LBL_ADD_NEW_FOLDER',$_smarty_tpl->tpl_vars['MODULE']->value);?>

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-25 15:36:08
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:38:05
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Leads/ConvertLead.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:537360981600e82f8d381f2-74665223%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1389095026600f8e9d47aec2-81050338%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '537360981600e82f8d381f2-74665223',
+  'nocache_hash' => '1389095026600f8e9d47aec2-81050338',
   'function' => 
   array (
   ),
@@ -34,9 +34,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_600e82f8ef38c',
+  'unifunc' => 'content_600f8e9d6391c',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_600e82f8ef38c')) {function content_600e82f8ef38c($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8e9d6391c')) {function content_600f8e9d6391c($_smarty_tpl) {?>
 <div class="modal-dialog"><div id="convertLeadContainer" class='modelContainer modal-content'><?php if (!$_smarty_tpl->tpl_vars['CONVERT_LEAD_FIELDS']->value['Accounts']&&!$_smarty_tpl->tpl_vars['CONVERT_LEAD_FIELDS']->value['Contacts']){?><input type="hidden" id="convertLeadErrorTitle" value="<?php echo vtranslate('LBL_CONVERT_ERROR_TITLE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 "/><input id="convertLeadError" class="convertLeadError" type="hidden" value="<?php echo vtranslate('LBL_CONVERT_LEAD_ERROR',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 "/><?php }else{ ?><?php ob_start();?><?php echo vtranslate('LBL_CONVERT_LEAD',$_smarty_tpl->tpl_vars['MODULE']->value);?>

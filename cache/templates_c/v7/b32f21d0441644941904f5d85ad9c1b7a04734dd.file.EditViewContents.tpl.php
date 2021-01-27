@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:11
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:18:44
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/partials/EditViewContents.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15306852735fe300c7aef027-02013250%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1126503086600f8a147c5165-68571358%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15306852735fe300c7aef027-02013250',
+  'nocache_hash' => '1126503086600f8a147c5165-68571358',
   'function' => 
   array (
   ),
@@ -42,9 +42,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300c7c24f5',
+  'unifunc' => 'content_600f8a1491698',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300c7c24f5')) {function content_5fe300c7c24f5($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8a1491698')) {function content_600f8a1491698($_smarty_tpl) {?>
 <?php if (!empty($_smarty_tpl->tpl_vars['PICKIST_DEPENDENCY_DATASOURCE']->value)){?><input type="hidden" name="picklistDependency" value='<?php echo Vtiger_Util_Helper::toSafeHTML($_smarty_tpl->tpl_vars['PICKIST_DEPENDENCY_DATASOURCE']->value);?>
 ' /><?php }?><?php if (!$_smarty_tpl->tpl_vars['RECORD']->value&&$_smarty_tpl->tpl_vars['RECORD_STRUCTURE_MODEL']->value){?><?php $_smarty_tpl->tpl_vars["RECORD"] = new Smarty_variable($_smarty_tpl->tpl_vars['RECORD_STRUCTURE_MODEL']->value->getRecord(), null, 0);?><?php }?><input type="hidden" name="main_owner_id" value="<?php if ($_smarty_tpl->tpl_vars['RECORD']->value){?><?php echo $_smarty_tpl->tpl_vars['RECORD']->value->fetchedRow['main_owner_id'];?>
 <?php }?>"/><?php if ($_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['form']&&$_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['form']['hiddenFields']){?><?php $_template = new Smarty_Internal_Template('eval:'.$_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['form']['hiddenFields'], $_smarty_tpl->smarty, $_smarty_tpl);echo $_template->fetch(); ?><?php }?><?php if ($_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['scripts']!=null){?><?php $_template = new Smarty_Internal_Template('eval:'.$_smarty_tpl->tpl_vars['DISPLAY_PARAMS']->value['scripts'], $_smarty_tpl->smarty, $_smarty_tpl);echo $_template->fetch(); ?><?php }?><div name='editContent'><?php if ($_smarty_tpl->tpl_vars['DUPLICATE_RECORDS']->value){?><div class="fieldBlockContainer duplicationMessageContainer"><div class="duplicationMessageHeader"><b><?php echo vtranslate('LBL_DUPLICATES_DETECTED',$_smarty_tpl->tpl_vars['MODULE']->value);?>

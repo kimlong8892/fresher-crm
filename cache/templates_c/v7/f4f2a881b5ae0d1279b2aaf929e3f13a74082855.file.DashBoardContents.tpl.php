@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 17:00:33
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:54:55
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/dashboards/DashBoardContents.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:8330576435fe315416ca516-20252486%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:361790811600f847f7a6186-57544400%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '8330576435fe315416ca516-20252486',
+  'nocache_hash' => '361790811600f847f7a6186-57544400',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe3154174e13',
+  'unifunc' => 'content_600f847f7fc49',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe3154174e13')) {function content_5fe3154174e13($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f847f7fc49')) {function content_600f847f7fc49($_smarty_tpl) {?>
 
     
 <div class="dashBoardContainer clearfix"><div class="tabContainer"><ul class="nav nav-tabs tabs sortable container-fluid"><?php  $_smarty_tpl->tpl_vars['TAB_DATA'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['TAB_DATA']->_loop = false;

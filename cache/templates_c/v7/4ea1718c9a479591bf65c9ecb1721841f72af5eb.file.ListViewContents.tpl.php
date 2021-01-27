@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-14 11:20:47
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:56:53
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Reports/ListViewContents.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15008481345fffc69f637957-17159465%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1583405193600f84f6002fb3-07212511%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15008481345fffc69f637957-17159465',
+  'nocache_hash' => '1583405193600f84f6002fb3-07212511',
   'function' => 
   array (
   ),
@@ -64,9 +64,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fffc69f85149',
+  'unifunc' => 'content_600f84f62599e',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fffc69f85149')) {function content_5fffc69f85149($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84f62599e')) {function content_600f84f62599e($_smarty_tpl) {?>
 
 <div class="col-sm-12 col-xs-12 "><?php $_smarty_tpl->tpl_vars['LEFTPANELHIDE'] = new Smarty_variable($_smarty_tpl->tpl_vars['CURRENT_USER_MODEL']->value->get('leftpanelhide'), null, 0);?><div class="essentials-toggle" title="<?php echo vtranslate('LBL_LEFT_PANEL_SHOW_HIDE','Vtiger');?>
 "><span class="essentials-toggle-marker fa <?php if ($_smarty_tpl->tpl_vars['LEFTPANELHIDE']->value=='1'){?>fa-chevron-right<?php }else{ ?>fa-chevron-left<?php }?> cursorPointer"></span></div><input type="hidden" name="view" id="view" value="<?php echo $_smarty_tpl->tpl_vars['VIEW']->value;?>

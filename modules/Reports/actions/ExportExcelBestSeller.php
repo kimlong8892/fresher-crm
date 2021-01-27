@@ -1,5 +1,6 @@
 <?php
 require_once('libraries/PHPExcel/PHPExcel.php');
+require_once('include/fields/DateTimeField.php');
 
 class Reports_ExportExcelBestSeller_Action extends Vtiger_Action_Controller {
     public function checkPermission(Vtiger_Request $request) {
@@ -16,15 +17,16 @@ class Reports_ExportExcelBestSeller_Action extends Vtiger_Action_Controller {
     }
 
     public function process(Vtiger_Request $request) {
-        $excel = new PHPExcel();
-        $excel->setActiveSheetIndex(0);
-        // get data
+        // default start date
         $startDate = Products_Record_Model::getCreatedFirst();
         $startDate = new DateTimeField($startDate);
         $startDate = $startDate->getDisplayDate();
+        
         if($request->has('start_date')){
             $startDate = $request->get('start_date');;
         }
+        
+        // default end date
         $endDate = new DateTimeField(date("Y-m-d"));
         $endDate = $endDate->getDisplayDate();
         if($request->has('end_date')){
@@ -36,6 +38,8 @@ class Reports_ExportExcelBestSeller_Action extends Vtiger_Action_Controller {
         // get data for report
         $data = Products_Record_Model::getReportBestSellers($startDate->getDBInsertDateValue(), $endDate->getDBInsertDateValue());
 
+        $excel = new PHPExcel();
+        $excel->setActiveSheetIndex(0);
         // set value for cell
         $excel->getActiveSheet()->setCellValue('A1', vtranslate('LBL_PRODUCT_CATEGORY_NAME', 'Reports'));
         $excel->getActiveSheet()->setCellValue('B1', vtranslate('LBL_TOTAL_AMOUNT_NAME', 'Reports'));

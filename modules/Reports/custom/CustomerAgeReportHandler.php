@@ -15,8 +15,6 @@ class CustomerAgeReportHandler extends CustomReportHandler{
     }
     
     function renderReportResult($filterSql, $showReportName = false, $print = false) {
-        var_dump($this);
-        die;
         $processor = function(&$rowViewer, &$result, $row) {
             $rowViewer->assign('ROW_DATA', $row);
             $result .= $rowViewer->fetch('modules/Reports/tpls/CustomReportRowTemplateCustom.tpl');

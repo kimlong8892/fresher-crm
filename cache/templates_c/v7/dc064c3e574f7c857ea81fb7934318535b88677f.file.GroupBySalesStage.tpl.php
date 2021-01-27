@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 17:00:36
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:54:59
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Potentials/dashboards/GroupBySalesStage.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13100574575fe31544eff719-05101730%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1657882874600f8483d110e9-74732597%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13100574575fe31544eff719-05101730',
+  'nocache_hash' => '1657882874600f8483d110e9-74732597',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe3154505fb2',
+  'unifunc' => 'content_600f8483dafa7',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe3154505fb2')) {function content_5fe3154505fb2($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8483dafa7')) {function content_600f8483dafa7($_smarty_tpl) {?>
 <script type="text/javascript">
 	Vtiger_Funnel_Widget_Js('Vtiger_GroupedBySalesStage_Widget_Js',{},{});
 </script>

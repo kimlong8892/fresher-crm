@@ -1,9 +1,7 @@
 <?php
 
-class Products_DeclareAjax_Action extends Vtiger_Action_Controller
-{
-    public function checkPermission(Vtiger_Request $request)
-    {
+class Products_DeclareAjax_Action extends Vtiger_Action_Controller {
+    public function checkPermission(Vtiger_Request $request) {
         $moduleName = $request->getModule();
         $moduleModel = Vtiger_Module_Model::getInstance($moduleName);
         $currentUserPriviligesModel = Users_Privileges_Model::getCurrentUserPrivilegesModel();
@@ -16,8 +14,7 @@ class Products_DeclareAjax_Action extends Vtiger_Action_Controller
         }
     }
 
-    public function process(Vtiger_Request $request)
-    {
+    public function process(Vtiger_Request $request) {
         if ($request->isAjax()) {
             // Handle request
             $productName = $request->get('product_name');

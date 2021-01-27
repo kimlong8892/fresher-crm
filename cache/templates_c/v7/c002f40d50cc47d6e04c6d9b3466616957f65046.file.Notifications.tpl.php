@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:11
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:54:55
          compiled from "modules/CPNotifications/tpls/Notifications.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16263857595fe300c76c5896-29843488%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1729955867600f847f47e211-47353737%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '16263857595fe300c76c5896-29843488',
+  'nocache_hash' => '1729955867600f847f47e211-47353737',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300c772d39',
+  'unifunc' => 'content_600f847f4ea80',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300c772d39')) {function content_5fe300c772d39($_smarty_tpl) {?><?php $_smarty_tpl->tpl_vars['USER_NOTIFICATIONS_PREFERENCE'] = new Smarty_variable(CPNotifications_Data_Model::loadUserConfig('notification_config'), null, 0);?><?php $_smarty_tpl->tpl_vars['MODULES_TRANSLATED_SINGLE_LABEL'] = new Smarty_variable(getModulesTranslatedSingleLabel(), null, 0);?><script>window._RELATED_TABS_INFO = {modules: JSON.parse('<?php echo json_encode($_smarty_tpl->tpl_vars['MODULES_TRANSLATED_SINGLE_LABEL']->value);?>
+<?php if ($_valid && !is_callable('content_600f847f4ea80')) {function content_600f847f4ea80($_smarty_tpl) {?><?php $_smarty_tpl->tpl_vars['USER_NOTIFICATIONS_PREFERENCE'] = new Smarty_variable(CPNotifications_Data_Model::loadUserConfig('notification_config'), null, 0);?><?php $_smarty_tpl->tpl_vars['MODULES_TRANSLATED_SINGLE_LABEL'] = new Smarty_variable(getModulesTranslatedSingleLabel(), null, 0);?><script>window._RELATED_TABS_INFO = {modules: JSON.parse('<?php echo json_encode($_smarty_tpl->tpl_vars['MODULES_TRANSLATED_SINGLE_LABEL']->value);?>
 '),tabs: {detail: '<?php echo vtranslate("LBL_DETAILS","Vtiger");?>
 ',update: '<?php echo vtranslate("LBL_UPDATES","Vtiger");?>
 '}}</script><?php if ($_smarty_tpl->tpl_vars['USER_NOTIFICATIONS_PREFERENCE']->value!=null&&$_smarty_tpl->tpl_vars['USER_NOTIFICATIONS_PREFERENCE']->value->receive_notifications==1){?><div id="notification" class="notification rel"><a href="javascript: void(0)" id="notification_popover-tigger" class="fa fa-bell notification_popover-tigger rel" data-for="#notification_popover" aria-hidden="true" title="Notifications"><div id="notification_counter" class="inline counter notification_counter" style="display: none"></div></a><div id="notification_popover" class="popover fade bottom in" role="tooltip" style="display: none"><div class="arrow" style="left: auto;"></div><div class="popover-content"><div class="notification_container notify-tabs"><ul class="nav nav-tabs tabs-type notification_tabs" role="tablist"><li class="nav-item rel" title="<?php echo vtranslate('LBL_TITLE_NOTIFICATION','CPNotifications');?>

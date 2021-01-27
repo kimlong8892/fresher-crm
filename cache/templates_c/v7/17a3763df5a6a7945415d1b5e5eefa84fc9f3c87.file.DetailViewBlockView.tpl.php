@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-22 17:22:11
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 15:33:16
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Users/DetailViewBlockView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:236344243600aa753929018-98322943%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1966336711600fd3cc39af78-41146788%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '236344243600aa753929018-98322943',
+  'nocache_hash' => '1966336711600fd3cc39af78-41146788',
   'function' => 
   array (
   ),
@@ -44,9 +44,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_600aa753b4ee1',
+  'unifunc' => 'content_600fd3cc5878c',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_600aa753b4ee1')) {function content_600aa753b4ee1($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600fd3cc5878c')) {function content_600fd3cc5878c($_smarty_tpl) {?>
 
 <input type=hidden name="timeFormatOptions" data-value='<?php echo $_smarty_tpl->tpl_vars['DAY_STARTS']->value;?>
 ' /><?php  $_smarty_tpl->tpl_vars['FIELD_MODEL_LIST'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['FIELD_MODEL_LIST']->_loop = false;

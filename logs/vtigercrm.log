@@ -673,3 +673,21 @@ Thu Jan 14 11:15:04 2021,900 [1036] INFO SETUP_NEW_INSTANCE - [CRON] SETUP INSTA
 Thu Jan 14 11:15:04 2021,915 [1036] INFO SETUP_NEW_INSTANCE - [CRON] SETUP INSTANCE - callDeploymentApi - Start
 Thu Jan 14 11:17:15 2021,949 [1036] INFO SETUP_NEW_INSTANCE - [CRON] SETUP INSTANCE - callDeploymentApi - End
 Thu Jan 14 11:17:15 2021,956 [1036] ERROR SETUP_NEW_INSTANCE - [CRON] SETUP INSTANCE - check InstanceInfo: Not Existed Instance
+Tue Jan 26 15:49:04 2021,880 [2776] INFO WEBSERVICE - Lead Capture Log: Request params - [IP: 127.0.0.1]
+Data: {"name":"LeadCapture","data":{"full_name":"nguyen kim long","phone":"0939657348","email":"long1@gmail.com","description":"Test ticket new","product_id":"700"},"input_source":"Website","simple_params":"1","access_key":"wbBP9ACJt6KrWpzq1"}
+==============================
+Tue Jan 26 15:49:35 2021,642 [2760] INFO WEBSERVICE - Lead Capture Log: Request params - [IP: 127.0.0.1]
+Data: {"name":"LeadCapture","data":{"full_name":"nguyen kim long","phone":"0939657349","email":"kimlong2@gmail.com","description":"11111111112","product_id":"697"},"input_source":"Website","simple_params":"1","access_key":"wbBP9ACJt6KrWpzq"}
+==============================
+Tue Jan 26 15:49:36 2021,434 [2760] INFO WEBSERVICE - Lead Capture Log: Success. Lead ID: 1832 - [IP: 127.0.0.1]
+==============================
+Tue Jan 26 15:50:35 2021,584 [56635] INFO WEBSERVICE - Lead Capture Log: Request params - [IP: 127.0.0.1]
+Data: {"name":"LeadCapture","data":{"firstname":"LongKim","mobile":"3423423423","email":"kimlong2@gmail.com","description":"11111111112","product_id":"701"},"input_source":"Website","simple_params":"1","access_key":"wbBP9ACJt6KrWpzq"}
+==============================
+Tue Jan 26 15:50:36 2021,489 [56635] INFO WEBSERVICE - Lead Capture Log: Success. Lead ID: 1833 - [IP: 127.0.0.1]
+==============================
+Tue Jan 26 15:54:13 2021,802 [41904] INFO WEBSERVICE - Lead Capture Log: Request params - [IP: 127.0.0.1]
+Data: {"name":"LeadCapture","data":{"firstname":"LongKim2423423","mobile":"3423423423","email":"kimlong2@gmail.com","description":"11111111112","product_id":"699"},"input_source":"Website","simple_params":"1","access_key":"wbBP9ACJt6KrWpzq"}
+==============================
+Tue Jan 26 15:54:14 2021,426 [41904] INFO WEBSERVICE - Lead Capture Log: Success. Lead ID: 1834 - [IP: 127.0.0.1]
+==============================

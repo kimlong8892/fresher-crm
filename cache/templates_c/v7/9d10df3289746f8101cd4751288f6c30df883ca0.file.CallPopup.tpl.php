@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:12
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:54:55
          compiled from "modules/PBXManager/tpls/CallPopup.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:4166573555fe300c8362f02-82751366%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1230419578600f847fa2ad82-76263367%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4166573555fe300c8362f02-82751366',
+  'nocache_hash' => '1230419578600f847fa2ad82-76263367',
   'function' => 
   array (
   ),
@@ -36,9 +36,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300c84c003',
+  'unifunc' => 'content_600f847fbb25b',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300c84c003')) {function content_5fe300c84c003($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f847fbb25b')) {function content_600f847fbb25b($_smarty_tpl) {?>
 
 <?php $_smarty_tpl->tpl_vars['CALL_CENTER_CONFIG'] = new Smarty_variable(getGlobalVariable('callCenterConfig'), null, 0);?><?php ob_start();?><?php if ($_smarty_tpl->tpl_vars['CALL_CENTER_CONFIG']->value['bridge_server_ssl']){?><?php echo "https";?><?php }else{ ?><?php echo "http";?><?php }?><?php $_tmp1=ob_get_clean();?><?php $_smarty_tpl->tpl_vars['CALL_CENTER_BRIDGE_SERVER_PROTOCOL'] = new Smarty_variable($_tmp1, null, 0);?><?php $_smarty_tpl->tpl_vars['CALL_CENTER_BRIDGE_SERVER_URL'] = new Smarty_variable(($_smarty_tpl->tpl_vars['CALL_CENTER_BRIDGE_SERVER_PROTOCOL']->value)."://".($_smarty_tpl->tpl_vars['CALL_CENTER_CONFIG']->value['bridge_server_name']).":".($_smarty_tpl->tpl_vars['CALL_CENTER_CONFIG']->value['bridge_server_port']), null, 0);?><?php if (!isForbiddenFeature('CallCenterIntegration')&&$_smarty_tpl->tpl_vars['CALL_CENTER_CONFIG']->value['enable']==true){?><?php $_smarty_tpl->tpl_vars['CURRENT_USER'] = new Smarty_variable(vglobal('current_user'), null, 0);?><?php $_smarty_tpl->tpl_vars['CURRENT_USER_ID'] = new Smarty_variable($_smarty_tpl->tpl_vars['CURRENT_USER']->value->id, null, 0);?><div id="callCenterPackage"><div id="callCenterTemplate" style="display: none"><div id="callTemplate" class="call-popup"><div class="call-header"><div class="customer-avatar"><img class="cir-ava fa-ava fa-to-phone fa-fix" src="resources/images/no_ava.png" data-ui="customer_avatar"/><div class="abs-animate"><i class="cc-animate border-bound animate-cir"></i></div></div><div class="customer-summary"><h3 class="info-name" data-ui="customer_name" data-ui-title="true"></h3><h4 class="info-company close-stage" data-ui="account_name" data-ui-title="true"></h4><h3 class="info-title" data-ui="subject" data-parser="callTitleParser" data-ui-title="true"></h3><h4 class="info-number" data-ui="customer_number" data-ui-title="true"></h4><h5 class="info-call-direction" data-ui="direction"></h5><h4 class="info-company" data-ui="account_name" data-ui-title="true"></h4><div class="assign"><i class="fa fa-user" aria-hidden="true"></i><span> </span><span class="assign-name" data-ui="assigned_user_name" data-ui-title="true"></span><span> </span><span class="ext-num" data-ui="assigned_user_ext"></span></div></div><div class="call-status"><div class="popup-actions"><button name="restore"><i class="fa fa-external-link-square" aria-hidden="true"></i></button><button name="minimize"><i class="fa fa-window-minimize" aria-hidden="true"></i></button><button name="maximize"><i class="fa fa-window-maximize" aria-hidden="true"></i></button><button name="normalmize"><i class="fa fa-window-restore" aria-hidden="true"></i></button><button name="close"><i class="fa fa-times" aria-hidden="true"></i></button></div><div class="call-direction-wraper"><h4 class="call-direction" data-ui="direction"></h4></div><div class="timer"><div class="time"><div class="durHour" data-ui="duration" data-parser="callDurationHours">00</div><div class="durMin" data-ui="duration" data-parser="callDurationMinutes">00</div><div class="durSec" data-ui="duration" data-parser="callDurationSeconds">00</div></div><div class="time-description"><div class="hour"><?php echo vtranslate('LBL_CALL_POPUP_HOURS','PBXManager');?>
 </div><div class="min"><?php echo vtranslate('LBL_CALL_POPUP_MINUTES','PBXManager');?>

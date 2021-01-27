@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-06 14:36:17
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 13:00:30
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/ComposeEmailForm.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5899669525ff56871b817e7-24486918%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1903007549600faffe2ffee4-16952647%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '5899669525ff56871b817e7-24486918',
+  'nocache_hash' => '1903007549600faffe2ffee4-16952647',
   'function' => 
   array (
   ),
@@ -52,9 +52,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5ff56871d0765',
+  'unifunc' => 'content_600faffe466d0',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5ff56871d0765')) {function content_5ff56871d0765($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600faffe466d0')) {function content_600faffe466d0($_smarty_tpl) {?>
 
 
 <div class="SendEmailFormStep2 modal-dialog modal-lg" id="composeEmailContainer"><div class="modal-content"><form class="form-horizontal" id="massEmailForm" method="post" action="index.php" enctype="multipart/form-data" name="massEmailForm"><?php ob_start();?><?php echo vtranslate('LBL_COMPOSE_EMAIL',$_smarty_tpl->tpl_vars['MODULE']->value);?>

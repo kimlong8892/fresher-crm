@@ -20,9 +20,374 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9113ee6-ac81-40c3-a8ce-d70636349782" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65083316-4a41-482a-910b-4b583a5fa2f4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65083316-4a41-482a-910b-4b583a5fa2f4/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/000c6780716c8cc8c4d1daa23653e7b8873deb76.file.IndexViewPreProcess.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/022d6249e8a5adb2f007ea93f2739dda180614bc.file.SidebarHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/022d6249e8a5adb2f007ea93f2739dda180614bc.file.SidebarHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/04443724033bf8d20af4d7b616960feff8c7d7af.file.DetailViewSummaryContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/04825b591784c0fbedc9d694f1f19eda2b114dfc.file.ModuleHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/04825b591784c0fbedc9d694f1f19eda2b114dfc.file.ModuleHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/052a59f5c5a819460078168ecef9ed79f738befd.file.Currency.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/052a59f5c5a819460078168ecef9ed79f738befd.file.Currency.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/0707d57da969c79764e1796f0e318cc8f830cd9a.file.EmailPreview.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/07086143c588bc381eed3e1aef8223e11b2a6a36.file.DefaultContentForTemplates.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/072dc7f5a4fdc9730560e967d669e45fe6ab4a99.file.CurrencyList.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/07a44b9a1fd42e6f1fded2ca13be4717d125594a.file.RecentComments.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/089d149fdb662101fae68f84503de8abbe7e5df3.file.ListViewPostProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/089d149fdb662101fae68f84503de8abbe7e5df3.file.ListViewPostProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/08b1195239d89a2dae1ea272980ba01f95bb4f1c.file.QuickCreate.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/08b1195239d89a2dae1ea272980ba01f95bb4f1c.file.QuickCreate.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/09a4040b1a294061cfc1d3e26fa02759de678261.file.WidgetHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/09a4040b1a294061cfc1d3e26fa02759de678261.file.WidgetHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/09ccc449d70833117c25b797bdf38cd1c3ecfdb5.file.DetailViewFullContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/0bb3b90fc15a8ba54e9c43f7a0539f680a8716b5.file.IndexPostProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/0bb3b90fc15a8ba54e9c43f7a0539f680a8716b5.file.IndexPostProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/0c06f75af357920e308f559a8e2c85fd3c4b6ed3.file.Email.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/0c06f75af357920e308f559a8e2c85fd3c4b6ed3.file.Email.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/0e928f5968d41fb32df1e05c4d3ec9ad2bacb4a0.file.CheckWarranty5.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/0e928f5968d41fb32df1e05c4d3ec9ad2bacb4a0.file.CheckWarranty5.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/113e594c5f8f8db8b770615aba86acdcb36419a1.file.DetailViewFullContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/113e594c5f8f8db8b770615aba86acdcb36419a1.file.DetailViewFullContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1184b241b8e376497a380952bbdf66f438a3b2e4.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/1184b241b8e376497a380952bbdf66f438a3b2e4.file.DetailViewHeaderTitle.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1193035879c3322f780e7665b1e005dab896a237.file.DateFieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/1193035879c3322f780e7665b1e005dab896a237.file.DateFieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/12e9436ac0b551df14e0f9d5f82d6dc0ccd47655.file.ShowAllComments.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1321c3bf68fa08e02b71dbc0a28e88965972450b.file.SendEmailResult.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/1321c3bf68fa08e02b71dbc0a28e88965972450b.file.SendEmailResult.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/13af8c1333041617873601447de542b60d662873.file.Reminder.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/14c38dd8b3de712bf3fb79adef73467b6a1d71f4.file.OutgoingServerDetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/15b175914fd47ba0e58493c9f7cdd759387e3319.file.DetailViewSummaryContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/15b175914fd47ba0e58493c9f7cdd759387e3319.file.DetailViewSummaryContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/16c087fc0abab06e8dd8ee9bc62f19fa0e0f1f46.file.ModuleHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/16c087fc0abab06e8dd8ee9bc62f19fa0e0f1f46.file.ModuleHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1743575e73f772f9f966bcdd6f40008aa13c4c20.file.Sidebar.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/1743575e73f772f9f966bcdd6f40008aa13c4c20.file.Sidebar.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/175eef1eb4ed156bdc8cb2a3c0157fd3d9a0610c.file.CustomRecordNumbering.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/17a3763df5a6a7945415d1b5e5eefa84fc9f3c87.file.DetailViewBlockView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/17a3763df5a6a7945415d1b5e5eefa84fc9f3c87.file.DetailViewBlockView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/17c11b63ebda39cee0e9d54e1283788a694fe0e7.file.BlockFormFields.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/17c11b63ebda39cee0e9d54e1283788a694fe0e7.file.BlockFormFields.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/18c2c3983bc9b83bc3f447df5a1d5232edb7e9e3.file.CustomOwnerFieldListView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/18c2c3983bc9b83bc3f447df5a1d5232edb7e9e3.file.CustomOwnerFieldListView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/19f88c6611cf2dade837221605ddf11bdc8008ea.file.Picklist.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1a1d4b3a17bd65e09fd6384f217c4c2aafdf17ec.file.ListViewRecordActions.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1b50e04c87a0145b8f5b2170c10d11b779b481f5.file.PopupAndRelationListLayout.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1bea7c8cddf93d6cf2b3d6adf34c28a6617384c6.file.DetailViewPreProcess.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1c4919c7b1b758d5ca31266cda9c0c2598b9006c.file.CheckWarranty2.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1c510bc0ff89b802a0b298ffdc5268e2fe393002.file.RecentActivities.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1d568b3088e056c1a38ef9e6625590bfd1a68ed5.file.SummaryViewWidgets.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/1d568b3088e056c1a38ef9e6625590bfd1a68ed5.file.SummaryViewWidgets.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1d93da2f7243f05f229e25b05e0f820223bc245f.file.ListViewActions.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1e5a795569aefc57ff0029ce56f64ae619716afa.file.ModuleHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/1e5a795569aefc57ff0029ce56f64ae619716afa.file.ModuleHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/1ee4fd2ec1521ec0e04e2622b1a716a515981a33.file.ComposeEmailForm.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/1ee4fd2ec1521ec0e04e2622b1a716a515981a33.file.ComposeEmailForm.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/20986d1f45f488f5f31e8217653640ea6378dee2.file.DetailViewSummaryContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/20986d1f45f488f5f31e8217653640ea6378dee2.file.DetailViewSummaryContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/20b707df8a71dbc8afa0391ef69f1caf69165ed8.file.SidebarHeader.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2212c123ce52ee604aa996a23738e5b747d2cc2c.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/237a823979afd6ee9b2623317e10ae0cf0f553da.file.ListViewQuickPreviewHeaderTitle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2501f2feeea7b41d5556341937dc7bfc1611275a.file.ListViewContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/26d7479dfec678a4aa1272cf0618e34a8e36a013.file.ListViewContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/26d7479dfec678a4aa1272cf0618e34a8e36a013.file.ListViewContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/279afad98c7f8c6ae8d28865e74bafe2e646f7e9.file.DetailViewBlockView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/279afad98c7f8c6ae8d28865e74bafe2e646f7e9.file.DetailViewBlockView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/27a91f306d31a91834f6d8f24cd64650ec922caa.file.PopupNavigation.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/27a91f306d31a91834f6d8f24cd64650ec922caa.file.PopupNavigation.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2b4a0bd6eed22fa1ddc64fd3543c7dc4c0c8ccb4.file.AccountsTypeDetailView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2b77186348a83884580e4426f990e9dce9f3ddb4.file.index.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2b7d2c5f2b57481540af3b21bca3ebd42169491c.file.CustomReportRowTemplate.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2bfaf94bf7374704b14ac892ef5c0b03fe1c1fbf.file.StringDetailView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/2bfaf94bf7374704b14ac892ef5c0b03fe1c1fbf.file.StringDetailView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2c344854845286ac13058d8197b8f86cbe03b3fd.file.ListViewActions.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/2c344854845286ac13058d8197b8f86cbe03b3fd.file.ListViewActions.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2c55cdbac610d06653018501ee2887836dc5e7a2.file.Footer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/2c55cdbac610d06653018501ee2887836dc5e7a2.file.Footer.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2cff14c5dbc1cb61080f72c113adb71dec59c5f3.file.MultiPicklist.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/2cff14c5dbc1cb61080f72c113adb71dec59c5f3.file.MultiPicklist.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2fa8cce5db3c297a55d12d701800e17e89b7447d.file.TopPotentialsContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/2ffaf285e98fc8b0de7491652b8296b4c23d9805.file.BooleanFieldSearchView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/30a7a05fd19d6e433d23ba807eba88f60b0b700b.file.CustomReportRowTemplateCustom.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/30a7a05fd19d6e433d23ba807eba88f60b0b700b.file.CustomReportRowTemplateCustom.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3238c08ca0be8c4530e4b3997a9a690313f0ed0e.file.SummaryViewWidgets.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/336dcefd59390022b6947346cdf02b59895a24b9.file.IndexViewPreProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/336dcefd59390022b6947346cdf02b59895a24b9.file.IndexViewPreProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/338b3bb75ee27b3b2641706f396b95a26fa24d68.file.SidebarAppMenu.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/338b3bb75ee27b3b2641706f396b95a26fa24d68.file.SidebarAppMenu.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/33c729e62a94adfcbb9a948a147bba36ba07c5ad.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/343d83d1852cd693c526191ffdb2e6adb50e9050.file.SidebarHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/343d83d1852cd693c526191ffdb2e6adb50e9050.file.SidebarHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/344317ad9449d9f5003dc3a52f7de629539efceb.file.ModuleRelatedTabs.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/344317ad9449d9f5003dc3a52f7de629539efceb.file.ModuleRelatedTabs.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/356710b6198bbeeb6a74e83e70d6a4b6a304cf25.file.IndexViewPreProcess.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/360793725c1689579ad1f5373883957c4649a6b1.file.ListViewPostProcess.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3743c6cc5cf7353b7aeb75347fc632d253f6b7a5.file.ConvertLead.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/3743c6cc5cf7353b7aeb75347fc632d253f6b7a5.file.ConvertLead.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/387f79afcada4df355bc0138accf9c1459bbf28f.file.OperationNotPermitted.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/387f79afcada4df355bc0138accf9c1459bbf28f.file.OperationNotPermitted.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/38bd90baddfe1cc5fedd452898fb7eb29ca4bf35.file.DetailViewActions.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/38bd90baddfe1cc5fedd452898fb7eb29ca4bf35.file.DetailViewActions.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/39e0c83848cc59713259f7152dda7f1a01ffe6bf.file.Boolean.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/39e0c83848cc59713259f7152dda7f1a01ffe6bf.file.Boolean.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/39f63878c376bd9f01a8432a20ce14d2361123ce.file.DetailViewSummaryContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/39f63878c376bd9f01a8432a20ce14d2361123ce.file.DetailViewSummaryContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3acde26b884ab8208bd77133168479a50da16aca.file.ListViewHeader.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3acdeaabfe50e5464d4986f8e3ecb5b03ae93aca.file.ListViewPreProcess.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3b9c773d553e42be3835adfa1daf3227116b0fc3.file.Time.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3bb39ccddee5d1d99c25c9a85399bf0eaa5b075b.file.Phone.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/3bb39ccddee5d1d99c25c9a85399bf0eaa5b075b.file.Phone.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3bbd7d96df7367f82d378a8041d0237cb148e0c8.file.Header.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/3bbd7d96df7367f82d378a8041d0237cb148e0c8.file.Header.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3c7e442f610331a0626c40bc3db01f63a21f0d3a.file.DetailViewSummaryContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3d41191f20f39f7e340743ab28573423b0d38e2b.file.ModuleSummaryView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/3d41191f20f39f7e340743ab28573423b0d38e2b.file.ModuleSummaryView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3d411ec600dee42252b60c4b7c95e93039a21c05.file.RelatedActivities.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/3d411ec600dee42252b60c4b7c95e93039a21c05.file.RelatedActivities.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3dde46a4e08682dd46e1d880e93826a2ebf8f625.file.CheckWarrantyResult.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3e60f20ea5ab6e117dd5c224659b1d3a0476d726.file.KeyMetricsContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3ea64d559fe0341a349922f077698156dbf4610d.file.Image.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/3ea64d559fe0341a349922f077698156dbf4610d.file.Image.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/3fc15fb2f28bb0971dc86360c4db05446017625b.file.SummaryViewContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/3fc15fb2f28bb0971dc86360c4db05446017625b.file.SummaryViewContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/406c4aca3880af9e134821bbdde929cb515bae5b.file.SettingsMenuEnd.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/406c4aca3880af9e134821bbdde929cb515bae5b.file.SettingsMenuEnd.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/407207602fb44a522f855b8c060f36368473a468.file.SummaryViewWidgets.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/412d502aeb79efb09065a72cbf3e64172ec42ed4.file.RelatedList.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/412d502aeb79efb09065a72cbf3e64172ec42ed4.file.RelatedList.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4157d7f3a34be56355b1e515f67a0bb428187222.file.SummaryViewWidgets.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4157d7f3a34be56355b1e515f67a0bb428187222.file.SummaryViewWidgets.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/41c5678c0395f75edcf4aee77f01d71fe3808658.file.BreadCrumbs.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/41c5678c0395f75edcf4aee77f01d71fe3808658.file.BreadCrumbs.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/44708fb93d968dc2ca78df3d7d71a6c80ff8fa45.file.History.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4628141a80e610e33383efc090eb40b3eeef1fc1.file.EditView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/46f7af6e7227eac0710fea9a251b653e41d7c3a7.file.ListViewQuickPreviewSectionHeader.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/46fccc1c9ed7ec35ca42e81134c6dc321f62012d.file.Owner.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/46fccc1c9ed7ec35ca42e81134c6dc321f62012d.file.Owner.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4725b318db08e9ae56fd1ce83d1e20b164bc6eff.file.FormRegister.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4725b318db08e9ae56fd1ce83d1e20b164bc6eff.file.FormRegister.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/48314e9af81d6a94b01a66a67ef4c6b37278d058.file.EditHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/48314e9af81d6a94b01a66a67ef4c6b37278d058.file.EditHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/486868ce447542b53fb68d7c505f86c53b3b1b3d.file.DefaultValueUi.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/486868ce447542b53fb68d7c505f86c53b3b1b3d.file.DefaultValueUi.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/48b997083de7e1f883525e1fdb00cea9fe20a0d4.file.Pagination.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/48b997083de7e1f883525e1fdb00cea9fe20a0d4.file.Pagination.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4919b59c9020b947a3a9837e17d61c3740611a76.file.DetailViewTagList.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4919b59c9020b947a3a9837e17d61c3740611a76.file.DetailViewTagList.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/495915b16dc8f580bbfa8566456430408d1c05cb.file.DocumentsRelatedList.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/495915b16dc8f580bbfa8566456430408d1c05cb.file.DocumentsRelatedList.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4993fa9130151e94cf080b8072742412645d5d3c.file.SummaryWidgets.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4993fa9130151e94cf080b8072742412645d5d3c.file.SummaryWidgets.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4a1fb026927fd34ce6b6b0482e2749332790b45d.file.CustomViewPreProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4a1fb026927fd34ce6b6b0482e2749332790b45d.file.CustomViewPreProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4aca4508f634743d5ab2e80a76792b62d7a1556b.file.Login.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4aca4508f634743d5ab2e80a76792b62d7a1556b.file.Login.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4bbd0fa89f3a8476603ec7c807d321618ea3ab0e.file.EditView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4cb43e4451d06c534a52b04ee8817a44f6b777c4.file.PhoneDetailView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4d290b2f4fd67c7f53b5ca35377d90d4109d20b4.file.UserInviteesFieldQuickCreateView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4ea1718c9a479591bf65c9ecb1721841f72af5eb.file.ListViewContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4ea1718c9a479591bf65c9ecb1721841f72af5eb.file.ListViewContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4f19391fd3126a86ec6e015f3c776bd7daf826e2.file.ModuleSummaryView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4fc7e41d0a5f907124fe19dd7076f4a430278f8a.file.PopupContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4fc7e41d0a5f907124fe19dd7076f4a430278f8a.file.PopupContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/4fed3752c30d4a4f3844d85e68446372e7bf50d6.file.SummaryViewWidgets.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/4fed3752c30d4a4f3844d85e68446372e7bf50d6.file.SummaryViewWidgets.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5298837aee1fa4021406044d6582dc1d0da101ba.file.DashBoardHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5298837aee1fa4021406044d6582dc1d0da101ba.file.DashBoardHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5482317969e770a20aabdf2d3bcfd870838d99e8.file.ModalHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5482317969e770a20aabdf2d3bcfd870838d99e8.file.ModalHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/559c4dcbc3e9f38dfcc3995747a91da324de7e2b.file.TopPotentials.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/569712484ee4788e796c66aa2b11b8765abb3bf0.file.AccountsTypeQuickCreate.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/56e3d511995193be0a0088297bd741c6f2832f82.file.JSResources.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/56e3d511995193be0a0088297bd741c6f2832f82.file.JSResources.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/58221316d59133a2270c53cfee18a6b0d8668bc3.file.Menubar.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/58ada4b1c2a3f80ef08a1f3b77ce83be9e96f45b.file.Salutation.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/58ada4b1c2a3f80ef08a1f3b77ce83be9e96f45b.file.Salutation.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5b7f2c329c19af82137849531f7645a84dab4a0b.file.CustomOwnerField.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5bb2a178a7fe59b3ab827608902e8497bbda5c21.file.ListContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5bb2a178a7fe59b3ab827608902e8497bbda5c21.file.ListContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5bcf60e171bae7925d75f2dc2bc89dbaa978f0c2.file.DetailViewPostProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5bcf60e171bae7925d75f2dc2bc89dbaa978f0c2.file.DetailViewPostProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5c60a2c171942e7391fc1348f6f42d17ef6c8823.file.ListViewRecordActions.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5c60a2c171942e7391fc1348f6f42d17ef6c8823.file.ListViewRecordActions.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5c9b717a7245baa67ec5f3d1b48aaa6d1051f3c7.file.LineItemsDetail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5ce8e384872527613fb1c9bc289d1b525caf9ee9.file.CurrencyFieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5ce8e384872527613fb1c9bc289d1b525caf9ee9.file.CurrencyFieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5d3922b46f87c2bddb43ae366c9ad6ea95e02ed3.file.PreferenceDetailViewPreProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5d3922b46f87c2bddb43ae366c9ad6ea95e02ed3.file.PreferenceDetailViewPreProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5ddffc1871dc06ee87170b9a6f8945a315653e6b.file.CustomPrintReport.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5e40c995f1aec2e749a17e1254cf79007a3c30f5.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5e40c995f1aec2e749a17e1254cf79007a3c30f5.file.DetailViewHeaderTitle.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5ea7e1866fb4c0289cfaff19f563d6ed5c8a678b.file.ListViewFooter.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/5eaed485b4bf291aa21642e6e4f1c99f8f0633cb.file.FieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/5eaed485b4bf291aa21642e6e4f1c99f8f0633cb.file.FieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/60dc9d4c4ec9d1e8a245545482eadb67f7639584.file.UserNotifications.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/62b1e9bae92d11e2f5733a29a62a4dceace43a78.file.AddTagUI.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/62b1e9bae92d11e2f5733a29a62a4dceace43a78.file.AddTagUI.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/62d47d6b47769b817fd593f52a4324e37f607aca.file.DetailViewSummaryContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/631f0b4f0966da724542e6aa5f1d4c17a661c0b3.file.AdvanceFilter.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/631f0b4f0966da724542e6aa5f1d4c17a661c0b3.file.AdvanceFilter.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/637edca862f1b02954a025e5789e367022a0a5dc.file.LineItemsSectionContent.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/63c2d3d30ca30fc949b5b31ac5e7c4c0ef5cb581.file.SidebarEssentials.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/63c2d3d30ca30fc949b5b31ac5e7c4c0ef5cb581.file.SidebarEssentials.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/64940e51e1008949887d8fa88ca1f5fc9238fad3.file.String.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/64940e51e1008949887d8fa88ca1f5fc9238fad3.file.String.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/65a800daac0e2bcbfbd37bf5abe3a00ea487ddf9.file.FilelocationtypeFieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/65a800daac0e2bcbfbd37bf5abe3a00ea487ddf9.file.FilelocationtypeFieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/65dbad90d5aa774ac01181eea2df753f5fdf5c6c.file.RelatedListCustomRowActions.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/67b250292f62beb28aa8ea65744bb532eaecc16f.file.Topbar.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/67b250292f62beb28aa8ea65744bb532eaecc16f.file.Topbar.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/67c1814c5e16ff8533237937d4c09a4e7719b90f.file.QuickAdminLinks.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/67c1814c5e16ff8533237937d4c09a4e7719b90f.file.QuickAdminLinks.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/687acefd5e4e59dc2518b7fc9e97e3d231e0e73d.file.CustomOwnerFieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/687acefd5e4e59dc2518b7fc9e97e3d231e0e73d.file.CustomOwnerFieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/68fe58f0b9ad3af484c03512c45b37b79e231134.file.CustomReportContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/68fe58f0b9ad3af484c03512c45b37b79e231134.file.CustomReportContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/6931d31c187a951b2f8bd63e0237fa87a5988230.file.UserRoleFieldSearchView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/69f14e21221acd58a0ffb6fafe9d84e02a62253a.file.HistoryContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/6a505fe4572e04a52fe73fc14c5cb3832a1d80ac.file.ListViewHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/6a505fe4572e04a52fe73fc14c5cb3832a1d80ac.file.ListViewHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/6c318592bb08e75fe11e831f8d4e8edea4fcf919.file.DocumentsFolderFieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/6c318592bb08e75fe11e831f8d4e8edea4fcf919.file.DocumentsFolderFieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/6df20c89564113b407d6d23c9e33b3c1187e2cdb.file.EditViewContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/6e447d62acbd4215244c9d24f812d6bb9da6c99b.file.CustomOwnerFieldQuickEdit.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/6e447d62acbd4215244c9d24f812d6bb9da6c99b.file.CustomOwnerFieldQuickEdit.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/6e98f96e4ed5b75dbe3cf4dc9115fd545b08c6e8.file.DateTime.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/6eea4e5ee3106e63c89306b4687c7089615a4a80.file.ContactInviteesFieldEditView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/6fac2408db201435a0ca170bc2cf33e2fd73e9de.file.PopupEntries.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/70c203f49bb7f79d389e4c20481bd6e34759c6a9.file.PreferenceDetailViewHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/70c203f49bb7f79d389e4c20481bd6e34759c6a9.file.PreferenceDetailViewHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/715296fb5be6f3da50d2b7ba9260fdc1becae4f4.file.CheckWarranty.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/739df28ff8b84f817c4d20bdad017dff3bd7ba90.file.TranslationEditor.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/73d5d7aa0f59559c61a43cbde085ead8a898221e.file.DetailViewFullContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/73d5d7aa0f59559c61a43cbde085ead8a898221e.file.DetailViewFullContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/75f09faf467d18361acc5b6a9431f693b2d5e544.file.ShowLicense.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/763f4ba65f52a5f186e628d53487e6fc1e8f793b.file.ExtraSummaryView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/763f4ba65f52a5f186e628d53487e6fc1e8f793b.file.ExtraSummaryView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/76ce2a37685ae573437e638af14654e43e4674a5.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/76ce2a37685ae573437e638af14654e43e4674a5.file.DetailViewHeaderTitle.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/7815f4d92ca9efee362ee19911ced406cb1379c6.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/7815f4d92ca9efee362ee19911ced406cb1379c6.file.DetailViewHeaderTitle.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/78daaa00f08792a0ddc9517725415ddc4182b496.file.Index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/78daaa00f08792a0ddc9517725415ddc4182b496.file.Index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/79904e62027077bc083969f0cd45ab7984e6a3e2.file.Tag.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/79904e62027077bc083969f0cd45ab7984e6a3e2.file.Tag.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/7ae0b92124779b355eb85b2508d35ae24c713840.file.DashBoardTabContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/7ae0b92124779b355eb85b2508d35ae24c713840.file.DashBoardTabContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/7bcca5e51b74f83a05f0026fad8052b6b57cb6aa.file.CommentsList.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/7dd74e9cf60bcd70da8acd008a35eddb909766e8.file.ListViewFooter.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/7dd74e9cf60bcd70da8acd008a35eddb909766e8.file.ListViewFooter.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/7f1a0694ca0b1fab7ce0b8e205dd75bcf3cfd279.file.Number.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/7f1a0694ca0b1fab7ce0b8e205dd75bcf3cfd279.file.Number.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/7f7ab51ef29f8b6decfae628ea6ca639ad8bd14d.file.CheckWarranty4.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/802f0ac6f13d6492afc1bc72c98199a3d7252ac8.file.OpenTickets.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/83bb5a1044bd9eb64373085af66adf1c5a7e392a.file.ModuleHeader.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/83fdca3a528327289fb7d296a826953ef51b95d8.file.step3.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/83fdca3a528327289fb7d296a826953ef51b95d8.file.step3.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/841a2be40c83c58a04f461ed7b64e60cc51ff1b8.file.DetailViewSummaryContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/841a2be40c83c58a04f461ed7b64e60cc51ff1b8.file.DetailViewSummaryContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/842bb2ac242c906c56c5f4b658306d3967bc9d96.file.Reference.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/842bb2ac242c906c56c5f4b658306d3967bc9d96.file.Reference.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8439be6bd6028ab32661540447ede571684c3b42.file.PhoneSelectorTemplate.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/8439be6bd6028ab32661540447ede571684c3b42.file.PhoneSelectorTemplate.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/853d31db230f17c552190a1667230eaa7e558161.file.ModuleSummaryView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/858bfb0ebc58b6a37315ec4bf00161e1474dd13d.file.MoreCurrenciesList.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/858bfb0ebc58b6a37315ec4bf00161e1474dd13d.file.MoreCurrenciesList.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/865d2b3c876d96bed679955a658fdf4b44c7b03e.file.ProductTax.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/865d2b3c876d96bed679955a658fdf4b44c7b03e.file.ProductTax.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/88f9f81700a22f47cedb2f06c131f7caeda7003e.file.Picklist.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/88f9f81700a22f47cedb2f06c131f7caeda7003e.file.Picklist.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/891ba0024d20451ec334051b32a9731bc3b0364e.file.check_warranty.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/896580bb3e86b3fcc6d3b89bdb4ef0c37ff625ae.file.Date.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/896580bb3e86b3fcc6d3b89bdb4ef0c37ff625ae.file.Date.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/89ec625f062b2632edf20d16d13bdb36056a2731.file.SelectEmailFields.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/89ec625f062b2632edf20d16d13bdb36056a2731.file.SelectEmailFields.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8a8d9fd1e8e8c898b0fc05c99e4ced9d4a33623e.file.DashBoardPreProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/8a8d9fd1e8e8c898b0fc05c99e4ced9d4a33623e.file.DashBoardPreProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8b08be78f110122066ed1f9e472aee17ec0f62fe.file.lineItemTabContent.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8b7fd1b58a00e1e1b0744ee2a2172fbf3a67fb8b.file.Text.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8bdee1385cc65d32733bc1c20e42ebbdfce58dfc.file.ListViewPreProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/8bdee1385cc65d32733bc1c20e42ebbdfce58dfc.file.ListViewPreProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8c47d4a46b9e514db5048ec10468c6fca1016631.file.ModuleSummaryView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8d2dda8836f43270ff21d8fee03904e4842bfaaa.file.ListViewRecordActions.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/8d2dda8836f43270ff21d8fee03904e4842bfaaa.file.ListViewRecordActions.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8e92f714a0c636e47e56539dbca1a163e4a43cfa.file.DetailViewPreProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/8e92f714a0c636e47e56539dbca1a163e4a43cfa.file.DetailViewPreProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/8f292486f2a550cdfad333ca3e905a5120814351.file.UserRole.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/908d0801b6c5129ca2efe1e10fb807e9955e2435.file.Percentage.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/908d0801b6c5129ca2efe1e10fb807e9955e2435.file.Percentage.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/9192c11150a3911b18262da6eaa7e1e3ef664657.file.ActivityPicklistFieldSearchView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/91ca5626f13df9ff9d8dbd97b1078c47b0947e0d.file.StringDetailView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/91ca5626f13df9ff9d8dbd97b1078c47b0947e0d.file.StringDetailView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/93ac84576c9d3b48005eb76927d9f19483f0d48b.file.ProjectTaskSummaryWidgetContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/941dd3f05bb2dac8d5581a372719da99296cc263.file.PhoneDetailView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/941dd3f05bb2dac8d5581a372719da99296cc263.file.PhoneDetailView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/943ef9ac6f7ccaf5a831c33c700660b56dc837f4.file.DetailViewFullContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/95b0692f325a045e91f3cfc5481a5a25a0d926bc.file.CustomReportSummaryByCustomer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/95b0692f325a045e91f3cfc5481a5a25a0d926bc.file.CustomReportSummaryByCustomer.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/96f04b026078f43022f114509f08bbeaa7fa862c.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/992d231a3d793c62ca0c9e4aed3e7e7ac02be447.file.DocumentsFolder.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/9acf6a7f57d95980578feaf965996a3037971d11.file.Text.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/9acf6a7f57d95980578feaf965996a3037971d11.file.Text.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/9c6495229eb96fe0886df9d0ce8c78efab3a8124.file.CustomOwnerFieldDashboardFilter.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/9c6495229eb96fe0886df9d0ce8c78efab3a8124.file.CustomOwnerFieldDashboardFilter.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/9c7422de76150edfeb64dd88c12bee496bed39bf.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/9c7422de76150edfeb64dd88c12bee496bed39bf.file.DetailViewHeaderTitle.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/9d10df3289746f8101cd4751288f6c30df883ca0.file.CallPopup.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/9d10df3289746f8101cd4751288f6c30df883ca0.file.CallPopup.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/9d30736f193db988c41dbaca43719e67c34cae8f.file.DashboardFooterIcons.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/9d30736f193db988c41dbaca43719e67c34cae8f.file.DashboardFooterIcons.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/9dcfd0b9734a4f0d18a1aef2a984d2718c7cfdb0.file.DashBoardWidgetContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/9dcfd0b9734a4f0d18a1aef2a984d2718c7cfdb0.file.DashBoardWidgetContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/9f29abbc94ad9670046ddc20e116778c710a4ce0.file.ListViewPreProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/9f29abbc94ad9670046ddc20e116778c710a4ce0.file.ListViewPreProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a07134b757ecef27efd85b6cdc5ce5c83e788cdd.file.DocumentsFileUpload.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a199682a846b76f1ca9a2b9df26e9da9f47394c8.file.ModalFooter.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/a199682a846b76f1ca9a2b9df26e9da9f47394c8.file.ModalFooter.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a2bb6e73e51004795c6169e887ec2bc30234eb34.file.Menubar.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/a2bb6e73e51004795c6169e887ec2bc30234eb34.file.Menubar.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a482d6aeff9bbdaacdd112576144c06fd4f3c486.file.SettingsMenuStart.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/a482d6aeff9bbdaacdd112576144c06fd4f3c486.file.SettingsMenuStart.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a6ef877e7e8ad1d430dd3bb341aee42769db8193.file.QuickViewCommentsList.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a77cba631b9904f544f09b7c809e8ac16addab20.file.SidebarEssentials.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/a77cba631b9904f544f09b7c809e8ac16addab20.file.SidebarEssentials.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a7eb50959106f86e8b865bb709a2066802b71303.file.OverlayEditView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a8500f30c6be3998bcbffc1ea979bdd40ec2a28d.file.FieldsList.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/a8500f30c6be3998bcbffc1ea979bdd40ec2a28d.file.FieldsList.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/a899f4edf0dac950a60eca16040402ad2b2c62f2.file.TestUiComponent.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/aa911fdb7d95bdb35e5f36bc801d128f9be2537f.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/abfc484c806d5380e1aa6822d5dfb2087975104b.file.DocumentsSummaryWidgetContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/abfc484c806d5380e1aa6822d5dfb2087975104b.file.DocumentsSummaryWidgetContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/ac394131e845465bb0f280eb3b8242f6619223b3.file.ModuleSummaryView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/ac394131e845465bb0f280eb3b8242f6619223b3.file.ModuleSummaryView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/adb4b816e3c1826a7ce73b4b55cb60d7b12d0f1e.file.HeaderScripts.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/adb4b816e3c1826a7ce73b4b55cb60d7b12d0f1e.file.HeaderScripts.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/aeb2c13c15a91b94e4017c75aad6b922417d8f95.file.ReportHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/aeb2c13c15a91b94e4017c75aad6b922417d8f95.file.ReportHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/afebc1f3847eeca815aedd1c15c8649a2d7e7bcf.file.CompanyDetails.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b0118a65c80c06211ae0fd4d16b3c5cafcb26271.file.SummaryViewWidgets.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b138ea23c38c9ac9cebf5c7007de30b6424586ac.file.SidebarHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/b138ea23c38c9ac9cebf5c7007de30b6424586ac.file.SidebarHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b1c1cc30f464496be3be62b55ba0bbd1f68bf30b.file.SummaryWidgets.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b22dbb9bb84b6fa9afc0bc64154a9242dab6440c.file.DetailViewFullContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b30edd539febb6de50aa71a39a6d39f5eb877c23.file.DetailViewActions.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b32f21d0441644941904f5d85ad9c1b7a04734dd.file.EditViewContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/b32f21d0441644941904f5d85ad9c1b7a04734dd.file.EditViewContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b4ce71b1b6b1b64ba926e99aa81a6a40fe7399bc.file.KeyMetrics.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b63afbcbef76a278d4d1cbd3e73cab6ff6a4cb14.file.DetailViewSummaryContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b651e70ce688caf51dfb5d006a70406677172deb.file.EditView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/b651e70ce688caf51dfb5d006a70406677172deb.file.EditView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b6a39885318405d9956fabbf8cb7bf485ac77687.file.UserEditViewPreProcess.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b8501794ce5631f99ac4e2cba9a9f5ba966b1372.file.Url.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/b8501794ce5631f99ac4e2cba9a9f5ba966b1372.file.Url.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/b9d2ed28bf68799a2b184b5bddc74bf5f314aacb.file.DateTime.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/babcf97114874c738d2955a130083d4c825ba08d.file.AccountsTypeEditView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/babcf97114874c738d2955a130083d4c825ba08d.file.AccountsTypeEditView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/bb8d13e3816614a3d8f47081ecfff2f071b62a10.file.EmailRelatedList.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/bb8d13e3816614a3d8f47081ecfff2f071b62a10.file.EmailRelatedList.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/bc02ec32fed7684077c82dece9c673f7f789d2b9.file.PickListFieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/bc02ec32fed7684077c82dece9c673f7f789d2b9.file.PickListFieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/bcef149572cf988b62de9f7bb6fe3430ce9960ef.file.ModuleSummaryView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/bcef149572cf988b62de9f7bb6fe3430ce9960ef.file.ModuleSummaryView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/bd20d30cc03a5c244c566b0761cea7399e4b4328.file.ListViewFooter.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/bd9c41feb8b5610145f69d23dadd9b3a4679d61a.file.ModuleSummaryView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/bf8e7e3f79e1c58af8743f3f30e85fc62ccfa5ec.file.CustomViewPostProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/bf8e7e3f79e1c58af8743f3f30e85fc62ccfa5ec.file.CustomViewPostProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c002f40d50cc47d6e04c6d9b3466616957f65046.file.Notifications.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/c002f40d50cc47d6e04c6d9b3466616957f65046.file.Notifications.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c04b62b813b116b91a5efeec53737c479af58308.file.ModuleSummaryView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/c04b62b813b116b91a5efeec53737c479af58308.file.ModuleSummaryView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c054b9050d8d62e2fc9957daa2197d316d3213ed.file.ListViewQuickPreview.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c18c90f7b07922df224cf519aacdc6643957dd88.file.SidebarHeader.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c1b0de6d2954e4814b87edd25fb1ac793710f138.file.QuickCreate.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c29684f70da602414a44c598118f355836537c55.file.OverlayDetailView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c4d2a828a33c529ec54bf156bd94255be43ca64b.file.EditView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c6fab79c398888776f80bc8de768e0ffa5742f59.file.FunnelAmount.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/c6fab79c398888776f80bc8de768e0ffa5742f59.file.FunnelAmount.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c779a894846e0254aa36a1402a7a4bbfbf7fdc5f.file.NoComments.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c82092618306598a260a5a287703cb54b0663161.file.FolderList.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/c86bdc5f33cf1baf5610f9715432c712bc779cf7.file.step2.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/c86bdc5f33cf1baf5610f9715432c712bc779cf7.file.step2.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/cb227683baa7d20c217dd0c2cfbc46330ae2fabc.file.TestDynamicTable.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/cc38d93cff22987ebefd84a186523a32ca398e39.file.DetailViewActions.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/cc38d93cff22987ebefd84a186523a32ca398e39.file.DetailViewActions.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/ce26b3d48b1a8c31c86eb2cb2eeeb2caf04a5222.file.Index.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/cf7c2b43a73f33cba05dbf0549a177cf7536625b.file.EditViewContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d0fc44408e9c2198ea1d4b5a7d8276507eb03153.file.UserViewHeader.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d10aed9107361cdd860fa7f057030516f670b8f2.file.SystemNotifications.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d1173dbcc226ab6bc85eae42817a692376d40a61.file.DetailViewHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/d1173dbcc226ab6bc85eae42817a692376d40a61.file.DetailViewHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d1a62cfd3c74a430a98a2798e9c7c7ced8ee2d95.file.CustomReportCustom.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/d1a62cfd3c74a430a98a2798e9c7c7ced8ee2d95.file.CustomReportCustom.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d1f93862302ae51f837d7b6148983a2f64ad4b54.file.SMSHistory.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/d1f93862302ae51f837d7b6148983a2f64ad4b54.file.SMSHistory.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d42b49fe3629030c5f3998104e6f39f681ccf211.file.ReminderFieldTimeSelector.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d459b7561a0b5d354ff2905eb436a7231ad8dc50.file.ReportContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d59e2d6137324aa90800522bfb9de52dc2047791.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d6f8a40ebaaf0a689cc796d75959a4d99ccd2244.file.SettingsShortCut.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/d6f8a40ebaaf0a689cc796d75959a4d99ccd2244.file.SettingsShortCut.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d70d550a527453b7b0755f6f1db86f2d0b51c38a.file.ListViewHeader.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d77d5b5cd61fd95af123864ca28b20017ebe1e73.file.Popup.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/d77d5b5cd61fd95af123864ca28b20017ebe1e73.file.Popup.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d7ade570f333a58f0c573219cc7ff86c8e3277c4.file.SettingsMenuEnd.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d7c719a50ebe33ce663519fd105645b6fa5a5f16.file.ProjectMilestoneSummaryWidgetContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d8cf862dae297a2eb2e236296455ba65cd31f9d0.file.AdvanceFilterCondition.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/d8cf862dae297a2eb2e236296455ba65cd31f9d0.file.AdvanceFilterCondition.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d8f81206d293f329faabcbe80be7be3a1585202d.file.RelatedFields.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/d8f81206d293f329faabcbe80be7be3a1585202d.file.RelatedFields.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/d922af9ef2788ae9877f15c6d9a7f59aabcc3124.file.Text.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/d922af9ef2788ae9877f15c6d9a7f59aabcc3124.file.Text.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/dc064c3e574f7c857ea81fb7934318535b88677f.file.GroupBySalesStage.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/dc064c3e574f7c857ea81fb7934318535b88677f.file.GroupBySalesStage.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/dc25cd28012d6a79fb337699cf5ece8de4b9739f.file.CustomOwnerField.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/dc25cd28012d6a79fb337699cf5ece8de4b9739f.file.CustomOwnerField.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/dd0d88d2abad46bf185854ddd1ced6aa32666743.file.GroupBySalesPerson.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/dd0d88d2abad46bf185854ddd1ced6aa32666743.file.GroupBySalesPerson.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/df22b047f85e67da01a48a2dc0edc2ab8b71cf72.file.CheckWarranty3.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/dfa0ed2330e392bbbbab37839439c7cfe57c0bb1.file.LineItemsEdit.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e0f1409733bbe5dd4f261ad89b7918c8f4ab082d.file.ScheduleReport.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/e0f1409733bbe5dd4f261ad89b7918c8f4ab082d.file.ScheduleReport.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e10fc8f87fae90a2773fb75adcb9e5aa5c804881.file.ListViewActions.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/e10fc8f87fae90a2773fb75adcb9e5aa5c804881.file.ListViewActions.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e1343acbfcb25af19d9496800d922dee6d6274a6.file.Owner.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e245090b820547d2b2a57833dd57fa7689d4306d.file.NumberFieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/e245090b820547d2b2a57833dd57fa7689d4306d.file.NumberFieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e2878d8b69245e7285ec899a35be35d7a9ec4df0.file.RedirectToEditView.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e5634f0d9cdfb3618f12ac01864b0c3173d10a33.file.MultiPicklistFormatedValue.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e6bc8717aaeac6868730b45c6f114bd0f51975ac.file.LineItemsContent.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e90b10f2b4f9e77170bc844c276990f6ce879a16.file.DetailViewHeaderFieldsView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/e90b10f2b4f9e77170bc844c276990f6ce879a16.file.DetailViewHeaderFieldsView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/e957aa39a0ad0474c043d9bc6b168e0af2490cd3.file.RelatedListHeader.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/e957aa39a0ad0474c043d9bc6b168e0af2490cd3.file.RelatedListHeader.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/eb4df8dcfaef32c6f740e0832d8c9acd9cc67d03.file.RelatedListCustomRowActions.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/ec4af833252edaa4f108a4d30ae369c4bfdc3504.file.Index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/ec4af833252edaa4f108a4d30ae369c4bfdc3504.file.Index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/ee079fac1e8f6e0403af06b2ef3b91d8797e7d4a.file.TotalRevenuePerSalesPerson.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/ee079fac1e8f6e0403af06b2ef3b91d8797e7d4a.file.TotalRevenuePerSalesPerson.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/eec6ff9cf2215468bf6d1e7917423f7a0c392e11.file.ListViewPostProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/eec6ff9cf2215468bf6d1e7917423f7a0c392e11.file.ListViewPostProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f0330a45d3e717d727e05fafc55bdb67919d9e69.file.ListViewRecordActions.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f10b49cb3345db67ffb75ab45663e1ee227b9fc3.file.CustomReportRowTemplateBestsellers.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f10b49cb3345db67ffb75ab45663e1ee227b9fc3.file.CustomReportRowTemplateBestsellers.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f3401d7272fe16ff661efcb157dcc30edeec9545.file.Index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f3401d7272fe16ff661efcb157dcc30edeec9545.file.Index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f40c5e81f27cd39c587b9cc9c454e29714dae8e0.file.BooleanFieldSearchView.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f40c5e81f27cd39c587b9cc9c454e29714dae8e0.file.BooleanFieldSearchView.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f4752b6da00a6605351078a5804bb38d8b9ff522.file.SummaryViewWidgets.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f4752b6da00a6605351078a5804bb38d8b9ff522.file.SummaryViewWidgets.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f4e99c4766fe6c769f2d0021953acbc05f25e52b.file.FileLocationType.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f4f2a881b5ae0d1279b2aaf929e3f13a74082855.file.DashBoardContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f4f2a881b5ae0d1279b2aaf929e3f13a74082855.file.DashBoardContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f54b3d8e7c2db88a7d0b3845423e7c53a6917927.file.CustomReportRowTemplateSummaryByCustomer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f54b3d8e7c2db88a7d0b3845423e7c53a6917927.file.CustomReportRowTemplateSummaryByCustomer.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f5cdf60c9ad8cfdcc0fde36a944e0f9029a6e928.file.EditViewContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f6d9cfed2d0bc9edc260823c53df7f82a226fb4c.file.RelatedList.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f6d9cfed2d0bc9edc260823c53df7f82a226fb4c.file.RelatedList.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f84409f32960cffe8f2c69740a9962e5a354c188.file.ListViewRecordActions.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f9be3055d9d7e72e083f3ff9a8f70a77625e3ab3.file.DuplicateHandling.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/f9d5c06754ddf48050d146d1b47eb9c80c0b4899.file.CustomReportBestsellers.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/f9d5c06754ddf48050d146d1b47eb9c80c0b4899.file.CustomReportBestsellers.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fa9423f4812556a765cd684435fe74951f3baec5.file.ListViewRecordActions.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fb181897095252159ccab87c5e6d683f523092fc.file.File.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fc1a2863553252acc55a4d06c0d14760da23f594.file.CustomReport.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fc3d52449bb57e51f562b5a91ce2f5ff7c937fad.file.PicklistColorMap.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/fc3d52449bb57e51f562b5a91ce2f5ff7c937fad.file.PicklistColorMap.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fd8d75b45b15d960b84c98a5c78a54715b5e706e.file.DetailViewHeaderTitle.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fdb9d0711916accebd879f922b191a8b461e2434.file.FieldCreate.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/fdb9d0711916accebd879f922b191a8b461e2434.file.FieldCreate.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fed11446322a5a97ff2514793bae3c56b4dd5f74.file.Step1.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/fed11446322a5a97ff2514793bae3c56b4dd5f74.file.Step1.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fedf40d818e76f40e7a71a1e765cd72a3c6d6958.file.PipelinedAmountPerSalesPerson.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/fee1f0fb1184d300b78ed50a39e9326ef1afce29.file.PopupContents.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/ff489071fc964122cf674025dc1a71f1ad6a40c1.file.ListViewContents.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/ff489071fc964122cf674025dc1a71f1ad6a40c1.file.ListViewContents.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/ff76077e92a66d1f36818303b9e4cfc9f3a19dd8.file.QuickCreate.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/ffcf19c8a24ee6021da2f9758273201b19e06d3c.file.IndexViewPreProcess.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/cache/templates_c/v7/ffcf19c8a24ee6021da2f9758273201b19e06d3c.file.IndexViewPreProcess.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/wrt600114fadebc5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/wrt6001150453b37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/wrt6001150ec58f1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/wrt6001153960b1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/wrt600a81a0b533f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/wrt600a81aa5ee20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/wrt600a81b22b04c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/templates_c/v7/wrt600e85dcad752" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cron/modules/Products/CheckWarrantyMsg.php" beforeDir="false" afterPath="$PROJECT_DIR$/cron/modules/Products/CheckWarrantyMsg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/EntryPoints/FormRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/EntryPoints/FormRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/EntryPoints/tpls/FormRegister.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/include/EntryPoints/tpls/FormRegister.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/en_us/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/Contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/en_us/Leads.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/Leads.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/en_us/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_us/Products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/vn_vn/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/vn_vn/Leads.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Leads.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/vn_vn/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/vn_vn/Products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/callcenter.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/callcenter.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/installation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/installation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/migration.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/migration.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/platform.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/platform.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/security.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/security.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/setup_instance.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/setup_instance.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/soap.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/soap.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/sqltime.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sqltime.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/vtigercrm.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/vtigercrm.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/webservice.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/webservice.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Accounts/BlocksAndFieldsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/BlocksAndFieldsRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Accounts/handlers/AccountHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/handlers/AccountHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Accounts/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/models/Record.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Accounts/views/Detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Accounts/views/Detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/CPDemo/models/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/CPDemo/models/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/CPDemo/models/RelationListView.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/CPDemo/models/RelationListView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Contacts/RelationshipsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Contacts/RelationshipsRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Contacts/handlers/ContactHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Contacts/handlers/ContactHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/HelpDesk/BlocksAndFieldsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/HelpDesk/BlocksAndFieldsRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Leads/RelationshipsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Leads/RelationshipsRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/BlocksAndFieldsRegister.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/BlocksAndFieldsRegister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/actions/CheckSerialAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/actions/CheckSerialAjax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/actions/CheckWarrantyAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/actions/CheckWarrantyAjax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/actions/DeclareAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/actions/DeclareAjax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/custom/EditView.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/custom/EditView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/models/Record.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Products/models/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Products/models/Service.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelBestSeller.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelBestSeller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelSummaryByCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/actions/ExportExcelSummaryByCustomer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Reports/custom/BestsellersHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/custom/BestsellersHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Reports/custom/CustomerAgeReportHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/custom/CustomerAgeReportHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Reports/custom/SummaryByCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/custom/SummaryByCustomer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateBestsellers.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Reports/tpls/CustomReportRowTemplateSummaryByCustomer.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Vtiger/models/Record.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Vtiger/models/Record.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent_tabdata.php" beforeDir="false" afterPath="$PROJECT_DIR$/parent_tabdata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabdata.php" beforeDir="false" afterPath="$PROJECT_DIR$/tabdata.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +446,7 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="settings.editor.splitter.proportion" value="0.23657718" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -139,6 +504,8 @@
       <workItem from="1611571272061" duration="1089000" />
       <workItem from="1611572367219" duration="218000" />
       <workItem from="1611579684723" duration="215000" />
+      <workItem from="1611624995654" duration="30701000" />
+      <workItem from="1611711069985" duration="512000" />
     </task>
     <servers />
   </component>
@@ -166,11 +533,6 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/CPDemo/models/RelationListView.php</url>
-          <line>6</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/modules/Settings/Vtiger/actions/SaveUserNotificationsConfig.php</url>
           <line>12</line>
           <option name="timeStamp" value="76" />
@@ -184,11 +546,6 @@
           <url>file://$PROJECT_DIR$/modules/Products/views/TestUiComponent.php</url>
           <line>26</line>
           <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Accounts/handlers/AccountHandler.php</url>
-          <line>50</line>
-          <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/cron/modules/Products/CheckWarrantyMsg.php</url>
@@ -211,24 +568,14 @@
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Products/actions/CheckWarrantyAjax.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="176" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/modules/Products/actions/DeclareAjax.php</url>
-          <line>30</line>
+          <line>27</line>
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Reports/custom/BestsellersHandler.php</url>
-          <line>34</line>
-          <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/Reports/custom/SummaryByCustomer.php</url>
-          <line>11</line>
-          <option name="timeStamp" value="192" />
+          <url>file://$PROJECT_DIR$/modules/Products/models/Record.php</url>
+          <line>720</line>
+          <option name="timeStamp" value="203" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

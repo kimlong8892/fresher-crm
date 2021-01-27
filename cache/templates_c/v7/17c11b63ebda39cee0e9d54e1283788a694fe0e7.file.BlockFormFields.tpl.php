@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:50
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:55:13
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Settings/LayoutEditor/BlockFormFields.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:14738075275fe300ee2d0c89-40889637%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1969888287600f8491619e23-09945956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14738075275fe300ee2d0c89-40889637',
+  'nocache_hash' => '1969888287600f8491619e23-09945956',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300ee2dc9c',
+  'unifunc' => 'content_600f84916279e',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300ee2dc9c')) {function content_5fe300ee2dc9c($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84916279e')) {function content_600f84916279e($_smarty_tpl) {?>
 <div class="form-group">
     <label class="control-label fieldLabel col-sm-5">
         <span><?php echo vtranslate('LBL_BLOCK_LABEL_DISPLAY_NAME_VN',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-14 11:35:45
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:56:58
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/AdvanceFilter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13392574115fffca214ba992-63450469%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1699671972600f84fac141c9-25043993%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13392574115fffca214ba992-63450469',
+  'nocache_hash' => '1699671972600f84fac141c9-25043993',
   'function' => 
   array (
   ),
@@ -33,9 +33,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fffca2156d93',
+  'unifunc' => 'content_600f84facc746',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fffca2156d93')) {function content_5fffca2156d93($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84facc746')) {function content_600f84facc746($_smarty_tpl) {?>
 <?php $_smarty_tpl->tpl_vars['ALL_CONDITION_CRITERIA'] = new Smarty_variable($_smarty_tpl->tpl_vars['ADVANCE_CRITERIA']->value[1], null, 0);?><?php $_smarty_tpl->tpl_vars['ANY_CONDITION_CRITERIA'] = new Smarty_variable($_smarty_tpl->tpl_vars['ADVANCE_CRITERIA']->value[2], null, 0);?><?php if (empty($_smarty_tpl->tpl_vars['ALL_CONDITION_CRITERIA']->value)){?><?php $_smarty_tpl->tpl_vars['ALL_CONDITION_CRITERIA'] = new Smarty_variable(array(), null, 0);?><?php }?><?php if (empty($_smarty_tpl->tpl_vars['ANY_CONDITION_CRITERIA']->value)){?><?php $_smarty_tpl->tpl_vars['ANY_CONDITION_CRITERIA'] = new Smarty_variable(array(), null, 0);?><?php }?><div class="filterContainer filterElements well filterConditionContainer filterConditionsDiv"><input type="hidden" name="date_filters" data-value='<?php echo Vtiger_Util_Helper::toSafeHTML(ZEND_JSON::encode($_smarty_tpl->tpl_vars['DATE_FILTERS']->value));?>
 ' /><input type=hidden name="advanceFilterOpsByFieldType" data-value='<?php echo ZEND_JSON::encode($_smarty_tpl->tpl_vars['ADVANCED_FILTER_OPTIONS_BY_TYPE']->value);?>
 ' /><?php  $_smarty_tpl->tpl_vars['ADVANCE_FILTER_OPTION'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['ADVANCE_FILTER_OPTION']->_loop = false;

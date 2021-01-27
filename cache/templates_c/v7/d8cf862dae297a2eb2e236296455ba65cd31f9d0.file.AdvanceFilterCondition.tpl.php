@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-14 11:35:45
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:56:58
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/AdvanceFilterCondition.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:20094605735fffca2157c4e0-36071333%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1949719034600f84facd9a94-01509891%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '20094605735fffca2157c4e0-36071333',
+  'nocache_hash' => '1949719034600f84facd9a94-01509891',
   'function' => 
   array (
   ),
@@ -50,9 +50,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fffca21770c9',
+  'unifunc' => 'content_600f84faea31e',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fffca21770c9')) {function content_5fffca21770c9($_smarty_tpl) {?>	
+<?php if ($_valid && !is_callable('content_600f84faea31e')) {function content_600f84faea31e($_smarty_tpl) {?>	
 <div class="row conditionRow"><div class="col-lg-4 col-md-4 col-sm-4"><select class="<?php if (empty($_smarty_tpl->tpl_vars['NOCHOSEN']->value)){?>select2<?php }?> col-lg-12" name="columnname"><option value="none"><?php echo vtranslate('LBL_SELECT_FIELD',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </option><?php  $_smarty_tpl->tpl_vars['BLOCK_FIELDS'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['BLOCK_FIELDS']->_loop = false;
  $_smarty_tpl->tpl_vars['BLOCK_LABEL'] = new Smarty_Variable;

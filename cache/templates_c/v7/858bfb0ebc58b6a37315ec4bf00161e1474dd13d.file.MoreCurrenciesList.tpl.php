@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:59:20
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 12:36:58
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Products/MoreCurrenciesList.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1917412505fe306e82a7f58-06498301%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1764267487600faa7ab7ba43-50242370%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1917412505fe306e82a7f58-06498301',
+  'nocache_hash' => '1764267487600faa7ab7ba43-50242370',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe306e8504a8',
+  'unifunc' => 'content_600faa7ad4cd6',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe306e8504a8')) {function content_5fe306e8504a8($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600faa7ad4cd6')) {function content_600faa7ad4cd6($_smarty_tpl) {?>
 
 
 <div id="currency_class" class="multiCurrencyEditUI modelContainer">

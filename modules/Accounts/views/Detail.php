@@ -89,10 +89,10 @@ class Accounts_Detail_View extends Vtiger_Detail_View
         $viewer->assign('MODULE_NAME', $moduleName);
 
 
-        $countEmail = $recordModel->countRelate("Emails");
+        $countEmail = $recordModel->countRelateEmail();
         $countDocs = $recordModel->countDocs();
-        $countSP = $recordModel->countRelate("HelpDesk");
-        $countCalendar = $recordModel->countRelate("Calendar");
+        $countSP = $recordModel->countRelateHelpDesk();
+        $countCalendar = $recordModel->countRelateCalendar();
 
 
 

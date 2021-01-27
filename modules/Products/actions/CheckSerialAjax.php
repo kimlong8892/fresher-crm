@@ -15,8 +15,7 @@ class Products_CheckSerialAjax_Action extends Vtiger_Action_Controller {
         }
     }
 
-    public function process(Vtiger_Request $request)
-    {
+    public function process(Vtiger_Request $request) {
         $isExists = Products_Record_Model::checkExistsSerial($request->get('serial'), $request->get('record_id'));
         $result = array('is_exists' => $isExists);
         $response = new Vtiger_Response();

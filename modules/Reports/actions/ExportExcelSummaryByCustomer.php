@@ -1,5 +1,6 @@
 <?php
 require_once('libraries/PHPExcel/PHPExcel.php');
+require_once('include/fields/DateTimeField.php');
 
 class Reports_ExportExcelSummaryByCustomer_Action extends Vtiger_Action_Controller {
     public function checkPermission(Vtiger_Request $request) {
@@ -16,27 +17,33 @@ class Reports_ExportExcelSummaryByCustomer_Action extends Vtiger_Action_Controll
     }
 
     public function process(Vtiger_Request $request) {
-        $excel = new PHPExcel();
-        $excel->setActiveSheetIndex(0);
-        // get data
+        // set default start date
         $startDate = Accounts_Record_Model::getCreatedFirst();
         $startDate = new DateTimeField($startDate);
         $startDate = $startDate->getDisplayDate();
-        if($request->has('start_date')){
+
+        if ($request->has('start_date')) {
             $startDate = $request->get('start_date');;
         }
+
+        // set default end date
         $endDate = new DateTimeField(date("Y-m-d"));
         $endDate = $endDate->getDisplayDate();
-        if($request->has('end_date')){
+        if ($request->has('end_date')) {
             $endDate = $request->get('end_date');
         }
         $startDate = new DateTimeField($startDate);
         $endDate = new DateTimeField($endDate);
         $startDateValue = $startDate->getDBInsertDateValue();
         $endDateValue = $endDate->getDBInsertDateValue();
-        $data = Accounts_Record_Model::getAllAccount($startDateValue, $endDateValue);
 
-        // set value for cell
+        // query data
+        $data = $Accounts = Accounts_Record_Model::getReportSumaryAccount($startDateValue, $endDateValue);
+
+        $excel = new PHPExcel();
+        $excel->setActiveSheetIndex(0);
+        
+        // set value title for cell
         $excel->getActiveSheet()->setCellValue('A1', vtranslate('LBL_SERIAL_NO', 'Products'));
         $excel->getActiveSheet()->setCellValue('B1', vtranslate('LBL_PRODUCT_NAME', 'Products'));
         $excel->getActiveSheet()->setCellValue('C1', vtranslate('LBL_DATE_SELL', 'Products'));
@@ -46,18 +53,19 @@ class Reports_ExportExcelSummaryByCustomer_Action extends Vtiger_Action_Controll
         $excel->getActiveSheet()->getColumnDimension('B')->setWidth(80);
         $excel->getActiveSheet()->getColumnDimension('C')->setWidth(20);
         $excel->getActiveSheet()->getColumnDimension('D')->setWidth(20);
-        foreach($data as $item){
-            $listProductByAccount = Products_Record_Model::getProductInOrderByAccountId($item['accountid']);
-            if(count($listProductByAccount) != 0){
-                $excel->getActiveSheet()->mergeCells('A'.$index.':'.'D'.$index);
-                $excel->getActiveSheet()->setCellValue('A'.$index, $item['accountname']);
+        foreach ($data as $item) {
+            $listProductByAccount = $item['products'];
+            if (count($listProductByAccount) != 0) {
+                $excel->getActiveSheet()->mergeCells('A' . $index . ':' . 'D' . $index);
+                $excel->getActiveSheet()->setCellValue('A' . $index, $item['accountname']);
                 ++$index;
-                foreach($listProductByAccount as $value){
-                    $excel->getActiveSheet()->setCellValue('A'.$index, $value['serialno']);
-                    $excel->getActiveSheet()->setCellValue('B'.$index, $value['productname']);
-                    $excel->getActiveSheet()->setCellValue('C'.$index, $value['createdtime']);
-                    $excel->getActiveSheet()->setCellValue('D'.$index, $value['unit_price']);
-                    $excel->getActiveSheet()->getStyle('D'.$index)->getNumberFormat()->setFormatCode("0,00");
+                foreach ($listProductByAccount as $value) {
+                    // set data for cell
+                    $excel->getActiveSheet()->setCellValue('A' . $index, $value['serialno']);
+                    $excel->getActiveSheet()->setCellValue('B' . $index, $value['productname']);
+                    $excel->getActiveSheet()->setCellValue('C' . $index, $value['createdtime']);
+                    $excel->getActiveSheet()->setCellValue('D' . $index, $value['total_money']);
+                    $excel->getActiveSheet()->getStyle('D' . $index)->getNumberFormat()->setFormatCode("0,00");
                     ++$index;
                 }
             }

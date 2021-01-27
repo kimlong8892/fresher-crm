@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2021-01-25 04:39:29 pm.  */
+/* System auto-generated on 2021-01-26 10:30:16 am.  */
 
 $relationships = array(
     array(
@@ -74,6 +74,30 @@ $relationships = array(
         'listingFunctionName' => 'get_dependents_list',
         'leftSideReferenceFieldName' => null,
         'rightSideReferenceFieldName' => 'related_id'
+    ),
+    array(
+        'leftSideModule' => 'Contacts',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_contact'
+    ),
+    array(
+        'leftSideModule' => 'Contacts',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_contact'
     ),
     array(
         'leftSideModule' => 'Contacts',

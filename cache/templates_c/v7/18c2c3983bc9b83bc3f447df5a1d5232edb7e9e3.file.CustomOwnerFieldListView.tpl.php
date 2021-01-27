@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:36:17
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:09:36
          compiled from "modules/Vtiger/tpls/CustomOwnerFieldListView.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1228052605fe30181b900e2-80315320%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2010200976600f87f0aeeb96-77076116%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1228052605fe30181b900e2-80315320',
+  'nocache_hash' => '2010200976600f87f0aeeb96-77076116',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe30181bc98b',
+  'unifunc' => 'content_600f87f0b2585',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe30181bc98b')) {function content_5fe30181bc98b($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f87f0b2585')) {function content_600f87f0b2585($_smarty_tpl) {?>
 
 <span class="owners custom-popover-wrapper"><?php if ($_smarty_tpl->tpl_vars['OWNER_COUNT']->value==0){?><a class="no-owner" href="javascript: void(0)"></a><?php }elseif($_smarty_tpl->tpl_vars['OWNER_COUNT']->value==1){?><span class="stand-owner" href="javascript: void(0)"><a href="index.php?module=<?php echo $_smarty_tpl->tpl_vars['FIRST_OWNER']->value['type'];?>
 &parent=Settings&view=Detail&record=<?php echo $_smarty_tpl->tpl_vars['FIRST_OWNER']->value['id'];?>

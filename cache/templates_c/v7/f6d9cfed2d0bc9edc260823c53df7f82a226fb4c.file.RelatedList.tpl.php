@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-25 17:12:04
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:09:44
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Vtiger/RelatedList.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:10664586605fe5baf4197e73-72037717%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:585869739600f87f8c79d72-01799639%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10664586605fe5baf4197e73-72037717',
+  'nocache_hash' => '585869739600f87f8c79d72-01799639',
   'function' => 
   array (
   ),
@@ -62,9 +62,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe5baf449663',
+  'unifunc' => 'content_600f87f9004b9',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe5baf449663')) {function content_5fe5baf449663($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f87f9004b9')) {function content_600f87f9004b9($_smarty_tpl) {?>
 <?php $_smarty_tpl->tpl_vars['RELATED_MODULE_NAME'] = new Smarty_variable($_smarty_tpl->tpl_vars['RELATED_MODULE']->value->get('name'), null, 0);?><?php echo $_smarty_tpl->getSubTemplate (vtemplate_path("PicklistColorMap.tpl",$_smarty_tpl->tpl_vars['MODULE']->value), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('LISTVIEW_HEADERS'=>$_smarty_tpl->tpl_vars['RELATED_HEADERS']->value), 0);?>
 <div class="relatedContainer"><?php ob_start();?><?php if ($_smarty_tpl->tpl_vars['RELATION_FIELD']->value){?><?php echo $_smarty_tpl->tpl_vars['RELATION_FIELD']->value->isActiveField();?><?php }else{ ?><?php echo "false";?><?php }?><?php $_tmp1=ob_get_clean();?><?php $_smarty_tpl->tpl_vars['IS_RELATION_FIELD_ACTIVE'] = new Smarty_variable($_tmp1, null, 0);?><input type="hidden" name="currentPageNum" value="<?php echo $_smarty_tpl->tpl_vars['PAGING']->value->getCurrentPage();?>
 " /><input type="hidden" name="relatedModuleName" class="relatedModuleName" value="<?php echo $_smarty_tpl->tpl_vars['RELATED_MODULE_NAME']->value;?>

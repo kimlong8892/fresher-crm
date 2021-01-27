@@ -1,6 +1,6 @@
 <?php
 
-/* System auto-generated on 2021-01-25 04:38:24 pm.  */
+/* System auto-generated on 2021-01-26 10:27:56 am.  */
 
 $relationships = array(
     array(
@@ -196,6 +196,78 @@ $relationships = array(
         'listingFunctionName' => 'get_dependents_list',
         'leftSideReferenceFieldName' => null,
         'rightSideReferenceFieldName' => 'related_lead'
+    ),
+    array(
+        'leftSideModule' => 'Leads',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_lead'
+    ),
+    array(
+        'leftSideModule' => 'Leads',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_lead'
+    ),
+    array(
+        'leftSideModule' => 'Leads',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_lead'
+    ),
+    array(
+        'leftSideModule' => 'Leads',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_lead'
+    ),
+    array(
+        'leftSideModule' => 'Leads',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'related_lead'
+    ),
+    array(
+        'leftSideModule' => 'Leads',
+        'rightSideModule' => 'HelpDesk',
+        'relationshipType' => '1:N',
+        'relationshipName' => 'LBL_HELPDESK_LIST',
+        'enabledActions' => array(
+            'ADD'
+        ),
+        'listingFunctionName' => 'get_dependents_list',
+        'leftSideReferenceFieldName' => null,
+        'rightSideReferenceFieldName' => 'lead_id'
     ),
     array(
         'leftSideModule' => 'Leads',

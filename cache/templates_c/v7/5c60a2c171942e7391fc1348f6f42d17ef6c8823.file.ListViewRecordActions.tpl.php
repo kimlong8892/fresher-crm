@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-15 08:34:15
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:56:54
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Reports/ListViewRecordActions.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:6814302596000f11795dff0-53447877%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:840071505600f84f64f5e24-71297094%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '6814302596000f11795dff0-53447877',
+  'nocache_hash' => '840071505600f84f64f5e24-71297094',
   'function' => 
   array (
   ),
@@ -30,9 +30,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_6000f117a62dc',
+  'unifunc' => 'content_600f84f65eb90',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_6000f117a62dc')) {function content_6000f117a62dc($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f84f65eb90')) {function content_600f84f65eb90($_smarty_tpl) {?>
 <!--LIST VIEW RECORD ACTIONS--><div class="table-actions reportListActions"><?php if (!$_smarty_tpl->tpl_vars['SEARCH_MODE_RESULTS']->value){?><span class="input" ><input type="checkbox" value="<?php echo $_smarty_tpl->tpl_vars['LISTVIEW_ENTRY']->value->getId();?>
 " class="listViewEntriesCheckBox"/></span><?php }?><?php $_smarty_tpl->tpl_vars["REPORT_TYPE"] = new Smarty_variable($_smarty_tpl->tpl_vars['LISTVIEW_ENTRY']->value->get('reporttype'), null, 0);?><?php if ($_smarty_tpl->tpl_vars['REPORT_TYPE']->value=='chart'){?><span><a class="quickView fa fa-eye icon action" title="<?php echo vtranslate('LBL_QUICK_VIEW',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 "></a></span><?php }?><?php $_smarty_tpl->tpl_vars["CUSTOM_ROW_ACTIONS"] = new Smarty_variable("modules/".($_smarty_tpl->tpl_vars['MODULE']->value)."/tpls/ListViewCustomRowActions.tpl", null, 0);?><?php if (file_exists($_smarty_tpl->tpl_vars['CUSTOM_ROW_ACTIONS']->value)){?><?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['CUSTOM_ROW_ACTIONS']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>

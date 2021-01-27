@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-01-07 11:59:37
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 10:30:32
          compiled from "/var/www/html/crm-fresher/includes/runtime/../../layouts/v7/modules/Contacts/DetailViewHeaderTitle.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:10142415785ff69539e94618-48671996%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:842348250600f8cd88912f2-03196164%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10142415785ff69539e94618-48671996',
+  'nocache_hash' => '842348250600f8cd88912f2-03196164',
   'function' => 
   array (
   ),
@@ -30,9 +30,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5ff6953a02c08',
+  'unifunc' => 'content_600f8cd891b6b',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5ff6953a02c08')) {function content_5ff6953a02c08($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f8cd891b6b')) {function content_600f8cd891b6b($_smarty_tpl) {?>
 <div class="col-lg-6 col-md-6 col-sm-6"><div class="record-header clearfix "><div class="hidden-sm hidden-xs recordImage bgcontacts app-<?php echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;?>
 "><?php $_smarty_tpl->tpl_vars['IMAGE_DETAILS'] = new Smarty_variable($_smarty_tpl->tpl_vars['RECORD']->value->getImageDetails(), null, 0);?><?php  $_smarty_tpl->tpl_vars['IMAGE_INFO'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['IMAGE_INFO']->_loop = false;
  $_smarty_tpl->tpl_vars['ITER'] = new Smarty_Variable;

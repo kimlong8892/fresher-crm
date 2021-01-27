@@ -1,9 +1,7 @@
 <?php
 
-class Products_CheckWarrantyAjax_Action extends Vtiger_Action_Controller
-{
-    public function checkPermission(Vtiger_Request $request)
-    {
+class Products_CheckWarrantyAjax_Action extends Vtiger_Action_Controller {
+    public function checkPermission(Vtiger_Request $request) {
         $moduleName = $request->getModule();
         $moduleModel = Vtiger_Module_Model::getInstance($moduleName);
         $currentUserPriviligesModel = Users_Privileges_Model::getCurrentUserPrivilegesModel();
@@ -16,8 +14,7 @@ class Products_CheckWarrantyAjax_Action extends Vtiger_Action_Controller
         }
     }
 
-    public function process(Vtiger_Request $request)
-    {
+    public function process(Vtiger_Request $request) {
         $matchedProduct = Products_Record_Model::getInstanceBySerial($request->get('serial'));
         $productInfo = $matchedProduct->getData();
 
@@ -32,8 +29,7 @@ class Products_CheckWarrantyAjax_Action extends Vtiger_Action_Controller
             $productInfo['start_date'] = date("d-m-Y", strtotime($productInfo['start_date']));
             $productInfo['expiry_date'] = date("d-m-Y", strtotime($productInfo['expiry_date']));
         }
-
-
+        
         // response
         $result = array('matched_product' => $productInfo);
         $response = new Vtiger_Response();

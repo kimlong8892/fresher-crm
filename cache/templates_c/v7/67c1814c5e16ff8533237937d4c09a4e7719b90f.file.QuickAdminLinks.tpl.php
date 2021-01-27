@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2020-12-23 15:33:11
+<?php /* Smarty version Smarty-3.1.7, created on 2021-01-26 09:54:55
          compiled from "layouts/vlayout/modules/Vtiger/QuickAdminLinks.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7909367705fe300c775d0c5-01302299%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1976470352600f847f511543-96077543%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7909367705fe300c775d0c5-01302299',
+  'nocache_hash' => '1976470352600f847f511543-96077543',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_5fe300c777b13',
+  'unifunc' => 'content_600f847f52f8e',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5fe300c777b13')) {function content_5fe300c777b13($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_600f847f52f8e')) {function content_600f847f52f8e($_smarty_tpl) {?>
 
 <li class="dropdown"><div style="margin-top: 15px;"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-cog" aria-hidden="true" title="Quick Admin Links"></i></a><div style="width: 250px; padding: 10px" class="dropdown-menu" role="menu"><div><i class="fa fa-refresh" aria-hidden="true" title="Quick Admin Links"></i><a href="index.php?module=Vtiger&action=QuickRepair"><?php echo vtranslate('LBL_ADMIN_QUICK_REPAIR',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </a></div><hr style="margin: 10px 0 !important"><div><i class="fa fa-cog" aria-hidden="true"></i><a href="index.php?module=Vtiger&parent=Settings&view=Index"><?php echo vtranslate('LBL_ADMIN_SETTINGS',$_smarty_tpl->tpl_vars['MODULE']->value);?>
